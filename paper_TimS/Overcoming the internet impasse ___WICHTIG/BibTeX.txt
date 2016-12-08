@@ -1,0 +1,9 @@
+@article{anderson2005overcoming,
+  title={Overcoming the Internet impasse through virtualization},
+  author={Anderson, Thomas and Peterson, Larry and Shenker, Scott and Turner, Jonathan},
+  journal={Computer},
+  volume={38},
+  number={4},
+  pages={34--41},
+  year={2005}
+}

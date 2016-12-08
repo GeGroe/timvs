@@ -1,0 +1,9 @@
+\begin{thebibliography}{RSA78}
+
+\bibitem[RSA78]{Rivest78}
+R.L. Rivest, A.~Shamir und L.~Adleman.
+\newblock A Method for Obtaining Digital Signatures and Public-Key
+  Cryptosystems.
+\newblock {\em Communications of the ACM}, 21:120--126, 1978.
+
+\end{thebibliography}
