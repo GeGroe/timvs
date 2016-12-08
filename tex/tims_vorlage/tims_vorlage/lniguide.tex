@@ -7,17 +7,19 @@
 
 % Diese LaTeX-Vorlage entspricht dem Layout der GI-Edition Lecture Notes in Informatics (LNI), siehe auch: http://www.gi-ev.de/service/publikationen/lni/
 
-\author{Vorname Name\\\\Seminar: Trends in Mobilen und Verteilten Systemen \\Wintersemester 2013/2014\\\\Lehrstuhl für Mobile und Verteilte Systeme\\Institut für Informatik\\Ludwig-Maximilians-Universität München}
-\title{Thema der Ausarbeitung}
+\author{Miran Mizani, Gerhard Gröschl\\\\Seminar: Trends in Mobilen und Verteilten Systemen \\Wintersemester 2016/2017\\\\Lehrstuhl für Mobile und Verteilte Systeme\\Institut für Informatik\\Ludwig-Maximilians-Universität München}
+\title{Sicherheitsaspekte bei Deployment virtueller Netzwerkinfrastrukturen}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
+Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung, steigt die Nachfrage nach virtualisierten Infrastrukturen enorm. Serviceprovider müssen die Hardwarebasis für ihre Dienste nicht mehr selbst unterhalten und geben ihre dahingehende Verantwortung an Infrastrukturanbieter weiter. Um die Sicherheit dieser Strukturen nicht zu vernachlässigen, arbeiten viele Forscher in diesem Bereich und versuchen effiziente Algorithmen mit integrierter Beachtung der Sicherheitsaspekte zu finden. Diese Arbeit soll einen Überblick und eine Klassifizierung der Gefahren die solche Konstrukte betreffen, sowie eine Analyse zweier unterschiedlicher Ansätze zur Vermeidung möglichst vieler Risiken zum Zeitpunkt der Planung übermitteln.
+\newline
 Hier folgt eine kurze Zusammenfassung des Themas sowie der wichtigsten Erkenntnisse und Ergebnisse. Länge: ca. 200 Wörter.\end{abstract}
 
 \section{Einleitung}
-Die Ausarbeitung zum Seminar soll dem Layout der \textit{GI-Edition Lecture Notes in Informatics (LNI)} entsprechen. Die verwendete Literatur wird in der beiliegenden Datei \verb+literatur.bib+ verwaltet. Eine Referenz kann mittels des \verb+\cite{}+--Kommandos eingefügt werden, z.B. \cite{Rivest78}.
+Die Ausarbeitung zum Seminar soll dem Layout der \textit{GI-Edition Lecture Notes in Informatics (LNI)} entsprechen. Die verwendete Literatur wird in der beiliegenden Datei \verb+literatur.bib+ verwaltet. Eine Referenz kann mittels des \verb+\cite{}+--Kommandos eingefügt werden, z.B.
 
 \subsection{Hinweise für Abbildungen}
 Abbildungen müssen als \texttt{.pdf}, \texttt{.png}, oder \texttt{.jpg} eingebunden werden. Beispiel:
@@ -42,6 +44,8 @@ Abbildungen müssen als \texttt{.pdf}, \texttt{.png}, oder \texttt{.jpg} eingebun
 
 
 \section{Vermeidung von Gefahren via Secure VNE}
+Um den Anforderungen der heutigen Gefahren zu genügen, ist es unumgänglich sämtliche Grundsätze der IT-Sicherheit möglichst früh in die Planung der gewünschten Infrastruktur miteinzubeziehen. Nicht nur, weil das nachträgliche Schließen von Sicherheitslücken und Hinzufügen von Sicherheitskomponenten in finanzieller und zeitlicher Hinsicht 10 mal so teuer ist, wie die initiale Beachtung dieser Aspekte, sondern weil die vollständige Sicherheit eines nachgerüsteten Systems kaum gewährleistet werden kann \cite{Cole}. "`Security-by-Design"' ist einer der wichtigsten Begriffe bei der Planung öffentlich zugänglicher Strukturen. Dementsprechend groß ist die Nachfrage nach VNE-Algorithmen die bereits beim Prozess des Mappings möglichst viele Sicherheitsaspekte beachten und abdecken. Die vorausgehende Klassifizierung der bekannten Gefahren in VNE-relevant und nicht-VNE-relevant bildet die Grundlage für unsere weiteren Untersuchungen. Die folgenden zwei Algorithmen wurden ausgewählt, um deren Beachtung und Vermeidung der VNE-relevanten Gefahren zu untersuchen und zu beurteilen.
+
 
 \subsection{Algorithmus 1}
 \subsection{Algorithmus 2}
@@ -53,7 +57,7 @@ Abbildungen müssen als \texttt{.pdf}, \texttt{.png}, oder \texttt{.jpg} eingebun
 \section{Schlussfolgerung und Ausblick}
 
 
-\bibliography{literatur}
+\bibliography{literatur}{}
 
 \end{document}
 
