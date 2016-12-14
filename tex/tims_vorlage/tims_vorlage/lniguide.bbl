@@ -1,7 +1,12 @@
-\begin{thebibliography}{Col11}
+\begin{thebibliography}{MRR13}
 
 \bibitem[Col11]{Cole}
 Eric Cole.
 \newblock Network Security Bible: Edition 2, 2011.
+
+\bibitem[MRR13]{SVNE2}
+Raouf~Boutaba Muntasir Raihan~Rahman.
+\newblock Surviveable Virtual Network Embedding Algorithms for Network
+  Virtualization, 2013.
 
 \end{thebibliography}
