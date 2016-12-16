@@ -3,6 +3,8 @@
 
 \IfFileExists{latin1.sty}{\usepackage{latin1}}{\usepackage{isolatin1}}
 \usepackage{graphicx}
+\graphicspath{{pix/}{}}
+
 
 
 % Diese LaTeX-Vorlage entspricht dem Layout der GI-Edition Lecture Notes in Informatics (LNI), siehe auch: http://www.gi-ev.de/service/publikationen/lni/
@@ -47,18 +49,10 @@ Abbildungen müssen als \texttt{.pdf}, \texttt{.png}, oder \texttt{.jpg} eingebun
 Um den Anforderungen der heutigen Gefahren zu genügen, ist es unumgänglich sämtliche Grundsätze der IT-Sicherheit möglichst früh in die Planung der gewünschten Infrastruktur miteinzubeziehen. Nicht nur, weil das nachträgliche Schließen von Sicherheitslücken und Hinzufügen von Sicherheitskomponenten in finanzieller und zeitlicher Hinsicht zehnmal so teuer ist wie die initiale Beachtung dieser Aspekte, sondern weil die vollständige Sicherheit eines nachgerüsteten Systems kaum gewährleistet werden kann \cite{Cole}. "`Security-by-Design"' ist einer der wichtigsten Begriffe bei der Planung öffentlich zugänglicher Netzwerkstrukturen. Dementsprechend groß ist die Nachfrage nach VNE-Algorithmen, die bereits beim Prozess des Mappings möglichst viele Sicherheitsaspekte beachten und abdecken. Die vorausgehende Klassifizierung der bekannten Gefahren in "`VNE-relevant"' und "`nicht-VNE-relevant"' bildet die Grundlage für unsere weiteren Untersuchungen. Um zuvor noch einen genaueren Einblick in die Problematik von VNE zu gewähren, beginnen wir zunächst mit der Erläuterung des VNE-Problems sowie einem Überblick über die verschiedenen erfolgreichen Strategien bestehender VNE-Algorithmen, welche die Sicherheitsaspekte noch nicht beachten. 
 \newpage
 
-Betrachtet man das zugrundeliegende physische System als einen ungerichteten Graphen \newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
+Betrachtet man das zugrundeliegende physische System als einen ungerichteten Graphen
+\begin{center}
+	\includegraphics[width=0.7\textwidth]{physical_structure1}%
+\end{center}
 
 %Grafik
 und extrahiert die vorhandenen Elemente sowie deren Werte, erhält man die Basismenge \newline
