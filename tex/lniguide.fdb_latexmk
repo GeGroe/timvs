@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex lniguide"] 1481897877 "lniguide.aux" "lniguide.bbl" "lniguide" 1481897978
+["bibtex lniguide"] 1481984602 "lniguide.aux" "lniguide.bbl" "lniguide" 1481985264
   "./lnig.bst" 1346767696 28127 07924b6e6fa8e042e083eb4634d8fccb ""
   "literatur.bib" 1481889831 666 674aa6b4fd0da32ee5ef51d4c545eacf ""
-  "lniguide.aux" 1481897942 1505 1e8f54416908204777ad96769739ad3d ""
+  "lniguide.aux" 1481984672 1529 9629beda03f363b4e3d79bfe6037b911 ""
   "lniguide.bcf" 0 -1 0 ""
   (generated)
-  "lniguide.blg"
   "lniguide.bbl"
-["latex"] 1481897978 "lniguide.tex" "lniguide.dvi" "lniguide" 1481897978
+  "lniguide.blg"
+["latex"] 1481985264 "lniguide.tex" "lniguide.dvi" "lniguide" 1481985264
   "/etc/texmf/web2c/texmf.cnf" 1476895407 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -19,6 +19,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm" 1136768653 4408 25b74d011a4c66b7f212c0cc3c90061b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm" 1136768653 2288 f478fc8fed18759effb59f3dad7f3084 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm" 1136768653 4640 532ca3305aad10cc01d769f3f91f1029 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1136849748 45758 19968a0990191524e34e1994d4a31cb6 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1136849748 46026 6dab18b61c907687b520c72847215a68 ""
@@ -54,6 +55,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty" 1335995445 7075 bd0c34fbf1ae8fd1debd2a554e41b2d5 ""
   "/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty" 1335995445 22417 c74ff4af6a1aa2b65d1924020edbbe11 ""
   "/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def" 1306616590 55368 3c8a0d99822330f2dfabc0dfb09ce897 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd" 1137110629 576 95c2c0baea9c719a4be29a3d4122498b ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd" 1137110629 985 1ed784d7bfe47179f3550d2303b073f8 ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1137110629 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty" 1156702453 857 6c716f26c5eadfb81029fcd6ce2d45e6 ""
@@ -64,13 +66,13 @@
   "/var/lib/texmf/web2c/pdftex/latex.fmt" 1476895555 3855082 09e073c817a5bd9b6f883ffc7d089d8b ""
   "latin1.sty" 1346767696 1825 cb18b9c3de1027b70ef258843a8937ab ""
   "lni.cls" 1350647140 5130 a250419212ec19cc835b1bd7db436767 ""
-  "lniguide.aux" 1481897942 1505 1e8f54416908204777ad96769739ad3d ""
-  "lniguide.bbl" 1481897877 296 1d77400aa366f9e78409ee137c7ef305 "bibtex lniguide"
-  "lniguide.tex" 1481897975 5969 4b051574a14454145728619e698e2236 ""
+  "lniguide.aux" 1481984672 1529 9629beda03f363b4e3d79bfe6037b911 ""
+  "lniguide.bbl" 1481984602 296 1d77400aa366f9e78409ee137c7ef305 "bibtex lniguide"
+  "lniguide.tex" 1481985252 7253 c48e6a9676cdf3bcf5fddec7099ec7bc ""
   "pix/gilogo.pdf" 1346767696 3268 0d70b19db0345063976c0e0ee7ec2d91 ""
-  "pix/physical_structure1.pdf" 1481897485 9133 a89a7535372d5a0cd6854428794edf2d ""
+  "pix/physical_structure2.pdf" 1481903167 13377 8685de5408a0e264a04870857cb2a18e ""
   (generated)
-  "lniguide.pdf"
   "lniguide.aux"
-  "lniguide.log"
   "lniguide.dvi"
+  "lniguide.log"
+  "lniguide.pdf"

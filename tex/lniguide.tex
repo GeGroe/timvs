@@ -6,6 +6,8 @@
 \graphicspath{{pix/}{}}
 
 
+% remember: Inhaltsverzeichnis!
+
 
 % Diese LaTeX-Vorlage entspricht dem Layout der GI-Edition Lecture Notes in Informatics (LNI), siehe auch: http://www.gi-ev.de/service/publikationen/lni/
 
@@ -51,17 +53,32 @@ Um den Anforderungen der heutigen Gefahren zu genügen, ist es unumgänglich sämtl
 
 Betrachtet man das zugrundeliegende physische System als einen ungerichteten Graphen
 \begin{center}
-	\includegraphics[width=0.7\textwidth]{physical_structure1}%
+	\includegraphics[width=0.7\textwidth]{physical_structure2.pdf}\newline
+	\caption{\label{logo}(A bis E benennt die Knoten, L1 bis L6 benennt die Links, die Zahlen darunter stehen für die jeweiligeverfügbare Resourcenmenge(abstrakt))}
 \end{center}
+\vspace*{1cm}
 
 %Grafik
 und extrahiert die vorhandenen Elemente sowie deren Werte, erhält man die Basismenge \newline
-\newline
-\newline
-\newline
+\begin{center}
+G\textsuperscript{S} = \{N\textsuperscript{S}, L\textsuperscript{S}\}
+\vspace{0.5cm} \newline
+(N steht für die Menge der physischen Knoten, L für die Menge der physischen Links)
+\end{center}
+\begin{center}
+G\textsuperscript{S} = 
+\{\{
+(A\textsuperscript{S},50),(B\textsuperscript{S},30),(C\textsuperscript{S},70),
+(D\textsuperscript{S},40),(E\textsuperscript{S},20)\},
+\newline\{
+(L1\textsuperscript{S},3),(L2\textsuperscript{S},9),(L3\textsuperscript{S},8),
+(L4\textsuperscript{S},10),(L5\textsuperscript{S},4),(L6\textsuperscript{S},7)\}\}
+\end{center}
+
 \newline
 % Gs=...
-in welche die virtuellen Strukturen eingebettet werden sollen. Ein "`virtual network request"' (in Folge "`VNR"' genannt) kann hierbei ebenfalls als ein ungerichteter Graph gesehen\newline
+in welche die virtuellen Strukturen eingebettet werden sollen.\newline
+Ein "`virtual network request"' (in Folge "`VNR"' genannt) kann hierbei ebenfalls als ein ungerichteter Graph gesehen\newline
 \newline
 \newline
 \newline
@@ -78,11 +95,11 @@ und genauso in eine Menge übersetzt werden.\newline
 \newline
 \newline
 \newline
+In der Regel ist es üblich, nicht nur eine einzelne VNRs auf ein physisches System abzubilden, sondern gleich mehrere auf einmal. Ebenso wäre es theoretisch möglich, dass ein InP gleich mehrere getrennte unabhängige physische Strukturen betreibt, und somit mittels VNE das beste System für die Abbildung der Menge von VNRs eroiren möchte (theoretisch da eine Menge von physischen Systemen als ein gesamtes gesehen und in der Regel verwendet werden können.)
 \newline
-\newpage
 % Gv=...
 Die Attributmenge bei den grundlegenden VNE-Algorithmen beschränkt  sich zumeist auf Rechnerleistung und Bandbreite. 
-Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Attribute. Ein großes Problem bei der Berechnung des optimalen Mappings findet sich bei der Berechnungszeit. Die endliche Beschränkung der Knoten- sowie Link-Resourcen und die "`on-line nature"' von VNRs stellen zusätzliche Hindernisse dar. Da selbst Lösungen für einfache Anfragen, welche wenige Attribute beinhalten, exponentiellen Rechenaufwand benötigen, steigt der Aufwand sowohl mit der Anzahl der abzubildenden Knoten und Links, als auch mit steigender Attributanzahl dementsprechend. Teilweise gilt das Problem als rechnerisch unlösbar, grundsätzlich aber befinden wir uns im Komplexitätsbereich der NP-Vollständigkeit \cite{SVNE2}. Da die Erhöhung der Attributmenge - wie bereits genannt - grundsätzlich nicht positiv zur Laufzeit der existierenden Algorithmen beiträgt, werden wir den Komplexitätsbereich beim Hinzufügen von Sicherheitsanforderungen nicht verlassen. Dennoch gibt es Möglichkeiten, die den Rechenaufwand drastisch reduzieren können. Mit den folgenden beiden Algorithmen werden wir sowohl diese Möglichkeiten, als auch andere Vor- und Nach-Teile, genauer untersuchen.
+Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Attribute. Ein großes Problem bei der Berechnung des optimalen Mappings findet sich bei der Berechnungszeit. Die endliche Beschränkung der Knoten- sowie Link-Resourcen und die "`on-line nature"' von VNRs stellen zusätzliche Hindernisse dar. Da selbst Lösungen für einfache Anfragen (geringe Anzahl von Knoten und Links), welche wenige Attribute beinhalten, exponentiellen Rechenaufwand benötigen, steigt der Aufwand sowohl mit der Anzahl der abzubildenden Knoten und Links, als auch mit steigender Attributanzahl dementsprechend. Teilweise gilt das Problem als rechnerisch unlösbar, grundsätzlich aber befinden wir uns im Komplexitätsbereich der NP-Vollständigkeit \cite{SVNE2}. Da die Erhöhung der Attributmenge - wie bereits genannt - grundsätzlich nicht positiv zur Laufzeit der existierenden Algorithmen beiträgt, werden wir den Komplexitätsbereich beim Hinzufügen von Sicherheitsanforderungen nicht verlassen. Dennoch gibt es Möglichkeiten, die den Rechenaufwand drastisch reduzieren können. Mit den folgenden beiden Algorithmen werden wir sowohl diese Möglichkeiten, als auch andere Vor- und Nach-Teile, genauer untersuchen.
 
 
 
