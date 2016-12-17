@@ -5,3 +5,9 @@ Fragen an Michael
 Übersetzung englischer Begriffe?
  * embedding?
  * Mapping -?-> Ein Knoten soll "gemappt" werden?
+ * Layer?
+ * Cohosting?
+ * Hosten, gehostet
+ * Host / Guest
+ * Internet Ossification Problem?
+ * malicious VM -> schadhaft? (nicht böse?^^)
