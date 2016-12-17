@@ -22,3 +22,7 @@ Granularität und Beispiele
 	- Erklärung, warum Möglich
 	- Erklärung was es ist und warum möglich?
 	- Erklärung was es ist, warum möglich und Beispiel?
+ * APR-Spoofing. Graphiken benötigt?
+
+
+Abgrenzung zum Cloudcomputing?
