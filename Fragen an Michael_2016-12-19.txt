@@ -1,0 +1,7 @@
+Fragen an Michael
+======================
+
+
+Übersetzung englischer Begriffe?
+ * embedding?
+ * Mapping -?-> Ein Knoten soll "gemappt" werden?
