@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex lniguide"] 1481984602 "lniguide.aux" "lniguide.bbl" "lniguide" 1481985264
+["bibtex lniguide"] 1482006276 "lniguide.aux" "lniguide.bbl" "lniguide" 1482006278
   "./lnig.bst" 1346767696 28127 07924b6e6fa8e042e083eb4634d8fccb ""
-  "literatur.bib" 1481889831 666 674aa6b4fd0da32ee5ef51d4c545eacf ""
-  "lniguide.aux" 1481984672 1529 9629beda03f363b4e3d79bfe6037b911 ""
+  "literatur.bib" 1482005896 3509 fa09cfdb38f3fbafc4135730cc78bcd9 ""
+  "lniguide.aux" 1482005896 1527 8a825ec9d1b94c95c09df7138675c0f2 ""
   "lniguide.bcf" 0 -1 0 ""
   (generated)
   "lniguide.bbl"
   "lniguide.blg"
-["latex"] 1481985264 "lniguide.tex" "lniguide.dvi" "lniguide" 1481985264
+["latex"] 1482006278 "lniguide.tex" "lniguide.dvi" "lniguide" 1482006278
   "/etc/texmf/web2c/texmf.cnf" 1476895407 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -66,13 +66,15 @@
   "/var/lib/texmf/web2c/pdftex/latex.fmt" 1476895555 3855082 09e073c817a5bd9b6f883ffc7d089d8b ""
   "latin1.sty" 1346767696 1825 cb18b9c3de1027b70ef258843a8937ab ""
   "lni.cls" 1350647140 5130 a250419212ec19cc835b1bd7db436767 ""
-  "lniguide.aux" 1481984672 1529 9629beda03f363b4e3d79bfe6037b911 ""
-  "lniguide.bbl" 1481984602 296 1d77400aa366f9e78409ee137c7ef305 "bibtex lniguide"
-  "lniguide.tex" 1481985252 7253 c48e6a9676cdf3bcf5fddec7099ec7bc ""
+  "lniguide.aux" 1482005896 1527 8a825ec9d1b94c95c09df7138675c0f2 ""
+  "lniguide.bbl" 1482006276 296 1d77400aa366f9e78409ee137c7ef305 "bibtex lniguide"
+  "lniguide.tex" 1482005896 7419 c4fa506220ab08ef010ad856f7fb47d1 ""
+  "lniguide.toc" 0 -1 0 ""
   "pix/gilogo.pdf" 1346767696 3268 0d70b19db0345063976c0e0ee7ec2d91 ""
   "pix/physical_structure2.pdf" 1481903167 13377 8685de5408a0e264a04870857cb2a18e ""
   (generated)
   "lniguide.aux"
-  "lniguide.dvi"
-  "lniguide.log"
+  "lniguide.toc"
   "lniguide.pdf"
+  "lniguide.log"
+  "lniguide.dvi"
