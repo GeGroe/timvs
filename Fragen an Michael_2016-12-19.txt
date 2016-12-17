@@ -11,3 +11,14 @@ Fragen an Michael
  * Host / Guest
  * Internet Ossification Problem?
  * malicious VM -> schadhaft? (nicht böse?^^)
+ * Monitoring / monitoren?
+ * remote
+
+
+
+
+Granularität und Beispiele
+ * DoS
+	- Erklärung, warum Möglich
+	- Erklärung was es ist und warum möglich?
+	- Erklärung was es ist, warum möglich und Beispiel?
