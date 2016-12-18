@@ -11,4 +11,6 @@ I was expecting a `,' or a `}'---line 21 of file literatur.bib
  :  journal = {IEEE}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "WinNT2"
+Warning--to sort, need author or key in Xen
 (There were 2 error messages)

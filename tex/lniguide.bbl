@@ -15,4 +15,9 @@ Raouf~Boutaba Muntasir Raihan~Rahman.
 \newblock Surviveable Virtual Network Embedding Algorithms for Network
   Virtualization, 2013.
 
+\bibitem[Xen]{Xen}
+The {Xen} Project.
+\newblock \url{https://www.xenproject.org/}.
+\newblock Zugegriffen am 18.12.2016.
+
 \end{thebibliography}
