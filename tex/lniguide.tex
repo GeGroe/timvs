@@ -7,12 +7,7 @@
 \graphicspath{{pix/}{}}
 
 
-% remember: Inhaltsverzeichnis!
-
-
-% Diese LaTeX-Vorlage entspricht dem Layout der GI-Edition Lecture Notes in Informatics (LNI), siehe auch: http://www.gi-ev.de/service/publikationen/lni/
-
-\author{Gerhard Gröschl, Miran Mizani\\\{gerhard.groeschel, miran.mizani\}@campus.lmu.de\\\\
+\author{Gerhard Gröschl, Miran Mizani\\\{gerhard.groeschl, miran.mizani\}@campus.lmu.de\\\\
 Seminar: Trends in Mobilen und Verteilten Systemen \\Wintersemester 2016/2017\\\\
 Lehrstuhl für Mobile und Verteilte Systeme\\Institut für Informatik\\Ludwig-Maximilians-Universität München\\\\
 Betreuer: Michael T. Beck\\\textit{eingereicht am \today}}
@@ -25,7 +20,6 @@ Betreuer: Michael T. Beck\\\textit{eingereicht am \today}}
 
 \begin{abstract}
 Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt die Nachfrage nach virtualisierten Infrastrukturen enorm. Serviceprovider müssen die Hardwarebasis für ihre Dienste nicht mehr selbst unterhalten und geben ihre dahingehende Verantwortung an Infrastrukturanbieter weiter. Um die Sicherheit dieser Strukturen nicht zu vernachlässigen, arbeiten viele Forscher in diesem Bereich und versuchen effiziente Algorithmen mit integrierter Beachtung der Sicherheitsaspekte zu finden. Diese Arbeit soll einen Überblick und eine Klassifizierung der Gefahren, die solche Konstrukte betreffen, sowie eine Analyse zweier unterschiedlicher Ansätze zur Vermeidung möglichst vieler Risiken zum Zeitpunkt der Planung übermitteln.
-\newline
 %Hier folgt eine kurze Zusammenfassung des Themas sowie der wichtigsten Erkenntnisse und Ergebnisse. Länge: ca. 200 Wörter.
 \end{abstract}
 
@@ -35,16 +29,16 @@ Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt
 \newpage
 
 \section{Einleitung}
-Die Ausarbeitung zum Seminar soll dem Layout der \textit{GI-Edition Lecture Notes in Informatics (LNI)} entsprechen. Die verwendete Literatur wird in der beiliegenden Datei \verb+literatur.bib+ verwaltet. Eine Referenz kann mittels des \verb+\cite{}+--Kommandos eingefügt werden, z.B.
+% Die Ausarbeitung zum Seminar soll dem Layout der \textit{GI-Edition Lecture Notes in Informatics (LNI)} entsprechen. Die verwendete Literatur wird in der beiliegenden Datei \verb+literatur.bib+ verwaltet. Eine Referenz kann mittels des \verb+\cite{}+--Kommandos eingefügt werden, z.B.
 
-\subsection{Hinweise für Abbildungen}
-Abbildungen müssen als \texttt{.pdf}, \texttt{.png}, oder \texttt{.jpg} eingebunden werden. Beispiel:
-\begin{figure}[htb]
-  \begin{center}
-    \includegraphics[width=1cm]{gilogo.pdf}
-    \caption{\label{logo}Das Logo der GI}
-  \end{center}
-\end{figure}
+% \subsection{Hinweise für Abbildungen}
+% Abbildungen müssen als \texttt{.pdf}, \texttt{.png}, oder \texttt{.jpg} eingebunden werden. Beispiel:
+% \begin{figure}[htb]
+%   \begin{center}
+%     \includegraphics[width=1cm]{gilogo.pdf}
+%     \caption{\label{logo}Das Logo der GI}
+%   \end{center}
+% \end{figure}
 
 
 
@@ -61,22 +55,22 @@ Abbildungen müssen als \texttt{.pdf}, \texttt{.png}, oder \texttt{.jpg} eingebun
 
 \section{Vermeidung von Gefahren via Secure VNE}
 Um den Anforderungen der heutigen Gefahren zu genügen, ist es unumgänglich sämtliche Grundsätze der IT-Sicherheit möglichst früh in die Planung der gewünschten Infrastruktur miteinzubeziehen. Nicht nur, weil das nachträgliche Schließen von Sicherheitslücken und Hinzufügen von Sicherheitskomponenten in finanzieller und zeitlicher Hinsicht zehnmal so teuer ist wie die initiale Beachtung dieser Aspekte, sondern weil die vollständige Sicherheit eines nachgerüsteten Systems kaum gewährleistet werden kann \cite{Cole}. "`Security-by-Design"' ist einer der wichtigsten Begriffe bei der Planung öffentlich zugänglicher Netzwerkstrukturen. Dementsprechend groß ist die Nachfrage nach VNE-Algorithmen, die bereits beim Prozess des Mappings möglichst viele Sicherheitsaspekte beachten und abdecken. Die vorausgehende Klassifizierung der bekannten Gefahren in "`VNE-relevant"' und "`nicht-VNE-relevant"' bildet die Grundlage für unsere weiteren Untersuchungen. Um zuvor noch einen genaueren Einblick in die Problematik von VNE zu gewähren, beginnen wir zunächst mit der Erläuterung des VNE-Problems sowie einem Überblick über die verschiedenen erfolgreichen Strategien bestehender VNE-Algorithmen, welche die Sicherheitsaspekte noch nicht beachten. 
-\newpage
 
 Betrachtet man das zugrundeliegende physische System als einen ungerichteten Graphen
 \begin{center}
 	\includegraphics[width=0.7\textwidth]{physical_structure2.pdf}\newline
-%	\caption{\label{logo}(A bis E benennt die Knoten, L1 bis L6 benennt die Links, die Zahlen darunter stehen für die jeweiligeverfügbare Resourcenmenge(abstrakt))}
+	  % \caption{\label{logo}(A bis E benennt die Knoten, L1 bis L6 benennt die Links, die Zahlen darunter stehen für die jeweiligeverfügbare Resourcenmenge(abstrakt))}
 \end{center}
 \vspace*{1cm}
 
 %Grafik
-und extrahiert die vorhandenen Elemente sowie deren Werte, erhält man die Basismenge \newline
+und extrahiert die vorhandenen Elemente sowie deren Werte, erhält man die Basismenge
 \begin{center}
-G\textsuperscript{S} = \{N\textsuperscript{S}, L\textsuperscript{S}\}
-\vspace{0.5cm} \newline
+G\textsuperscript{S} = \{N\textsuperscript{S}, L\textsuperscript{S}\}\newline
+
 (N steht für die Menge der physischen Knoten, L für die Menge der physischen Links)
 \end{center}
+
 \begin{center}
 G\textsuperscript{S} = 
 \{\{
@@ -86,42 +80,46 @@ G\textsuperscript{S} =
 (L1\textsuperscript{S},3),(L2\textsuperscript{S},9),(L3\textsuperscript{S},8),
 (L4\textsuperscript{S},10),(L5\textsuperscript{S},4),(L6\textsuperscript{S},7)\}\}
 \end{center}
+in welche die virtuellen Strukturen eingebettet werden sollen.
 
-~\newline
-% Gs=...
-in welche die virtuellen Strukturen eingebettet werden sollen.\newline
-Ein "`virtual network request"' (in Folge "`VNR"' genannt) kann hierbei ebenfalls als ein ungerichteter Graph gesehen\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
-\newline
+Ein "`virtual network request"' (in Folge "`VNR"' genannt) kann hierbei ebenfalls als ein ungerichteter Graph gesehen
+\begin{center}
+	\includegraphics[width=0.4\textwidth]{VNR1.pdf}\newline
+	  % \caption{\label{logo}(A bis E benennt die Knoten, L1 bis L6 benennt die Links, die Zahlen darunter stehen für die jeweiligeverfügbare Resourcenmenge(abstrakt))}
+\end{center}
 %Grafik
 und genauso in eine Menge übersetzt werden.\newline
-\newline
-\newline
-\newline
-In der Regel ist es üblich, nicht nur eine einzelne VNRs auf ein physisches System abzubilden, sondern gleich mehrere auf einmal. Ebenso wäre es theoretisch möglich, dass ein InP gleich mehrere getrennte unabhängige physische Strukturen betreibt, und somit mittels VNE das beste System für die Abbildung der Menge von VNRs eroiren möchte (theoretisch da eine Menge von physischen Systemen als ein gesamtes gesehen und in der Regel verwendet werden können.)
+\begin{center}
+\begin{lstlisting}
+G\textsuperscript{V} = \{N\textsuperscript{V}, L\textsuperscript{V}\}\newline
+(N steht für die Menge der virtuellen Knoten, L für die Menge der virtuellen Links)
+\end{lstlisting}
+\end{center}
+
+\begin{center}
+G\textsuperscript{V} = \{\{
+(A\textsuperscript{V},20),(B\textsuperscript{V},10),(C\textsuperscript{V},25)\} , \{
+(L1\textsuperscript{V},5),(L2\textsuperscript{V},3),(L3\textsuperscript{V},4)\}\}
+\end{center}
+
+\begin{center}
+\begin{lstlisting}
+Gesucht ist nun eine Abbildungsfunktion f : G\textsuperscript{V} \rightarrow G\textsuperscript{S}
+\end{lstlisting}
+\end{center}
+
+In der Regel ist es üblich, nicht nur eine einzelne VNRs auf ein physisches System abzubilden, sondern gleich mehrere auf einmal. Ebenso wäre es theoretisch möglich, dass ein Infrastruktur-Provider gleich mehrere getrennte unabhängige physische Strukturen betreibt, und somit mittels VNE das beste System für die Abbildung der Menge von VNRs eroiren möchte. Dies könnte beispielsweise der Fall sein, wenn ein Serviceprovider ein VNR mit der Bedingung "`alle Elemente mögen sich am selben Standort befinden, egal an welchem"' in Auftrag gibt, und der Infrastruktur-Provider über mehrere Hardware-Standorte verfügt.
 \newline
 % Gv=...
 Die Attributmenge bei den grundlegenden VNE-Algorithmen beschränkt  sich zumeist auf Rechnerleistung und Bandbreite. 
-Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Attribute. Ein großes Problem bei der Berechnung des optimalen Mappings findet sich bei der Berechnungszeit. Die endliche Beschränkung der Knoten- sowie Link-Resourcen und die "`on-line nature"' von VNRs stellen zusätzliche Hindernisse dar. Da selbst Lösungen für einfache Anfragen (geringe Anzahl von Knoten und Links), welche wenige Attribute beinhalten, exponentiellen Rechenaufwand benötigen, steigt der Aufwand sowohl mit der Anzahl der abzubildenden Knoten und Links, als auch mit steigender Attributanzahl dementsprechend. Teilweise gilt das Problem als rechnerisch unlösbar, grundsätzlich aber befinden wir uns im Komplexitätsbereich der NP-Vollständigkeit \cite{SVNE2}. Da die Erhöhung der Attributmenge - wie bereits genannt - grundsätzlich nicht positiv zur Laufzeit der existierenden Algorithmen beiträgt, werden wir den Komplexitätsbereich beim Hinzufügen von Sicherheitsanforderungen nicht verlassen. Dennoch gibt es Möglichkeiten, die den Rechenaufwand drastisch reduzieren können. Mit den folgenden beiden Algorithmen werden wir sowohl diese Möglichkeiten, als auch andere Vor- und Nach-Teile, genauer untersuchen.
+Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Attribute. Ein großes Problem bei der Berechnung des optimalen Mappings findet sich bei der Berechnungszeit. Die endliche Beschränkung der Knoten- sowie Link-Resourcen und die "`on-line nature"' von VNRs stellen zusätzliche Hindernisse dar. Da selbst Lösungen für einfache Anfragen (geringe Anzahl von Knoten und Links), welche wenige Attribute beinhalten, exponentiellen Rechenaufwand benötigen, steigt der Aufwand sowohl mit der Anzahl der abzubildenden Knoten und Links, als auch mit steigender Attributanzahl dementsprechend. Teilweise gilt das Problem als rechnerisch unlösbar, grundsätzlich aber befinden wir uns im Komplexitätsbereich der NP-Vollständigkeit \cite{SVNE2}. Da die Erhöhung der Attributmenge - wie bereits genannt - grundsätzlich nicht positiv zur Laufzeit der existierenden Algorithmen beiträgt, werden wir den Komplexitätsbereich beim Hinzufügen von Sicherheitsanforderungen nicht verlassen. Dennoch gibt es Möglichkeiten, die den Rechenaufwand reduzieren können. Mit den folgenden beiden Modellen werden wir sowohl diese Möglichkeiten, als auch andere Vor- und Nach-Teile, genauer untersuchen.
 
 
 
-\subsection{Algorithmus 1}
-\subsection{Algorithmus 2}
+\subsection{Modell 1}
+\subsection{Modell 2}
 \subsection{Vergleich}
-
 \section{Ungelöste Probleme}
-
-
 \section{Schlussfolgerung und Ausblick}
 Frage: Auf welcher Ebene wird virtualisiert? Auf IP-Ebene? Was ist dann aber mit IP-Support-Protokollen (ARP)? Oder nicht-IP-Protokollen? Will ich ein Netzwerk virtualisieren, oder nur den IP-Verkehr? Verkapselung führt zu Leistungseinbußen. \cite{cabuk2007towards}
 
