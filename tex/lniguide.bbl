@@ -1,4 +1,10 @@
-\begin{thebibliography}{MRR13}
+\begin{thebibliography}{CDRS07}
+
+\bibitem[CDRS07]{cabuk2007towards}
+Serdar Cabuk, Chris~I Dalton, HariGovind Ramasamy und Matthias Schunter.
+\newblock Towards automated provisioning of secure virtualized networks.
+\newblock In {\em Proceedings of the 14th ACM conference on Computer and
+  communications security}, Seiten 235--245. ACM, 2007.
 
 \bibitem[Col11]{Cole}
 Eric Cole.
