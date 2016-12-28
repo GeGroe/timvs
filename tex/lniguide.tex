@@ -39,22 +39,8 @@ Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt
 %     \caption{\label{logo}Das Logo der GI}
 %   \end{center}
 % \end{figure}
-
-
-
-
-
-\section{Sicherheitsaspekte bei virtuellen Netzwerk-Infrastrukturen}
-
-\subsection{Herkömmliche Gefahren}
-
-\subsection{Spezielle Gefahren bei virtualisierten Umgebungen}
-
-\subsection{VNE-Relevante Gefahren}
-
-
-\section{Vermeidung von Gefahren via Secure VNE}
-Um den Anforderungen der heutigen Gefahren zu genügen, ist es unumgänglich sämtliche Grundsätze der IT-Sicherheit möglichst früh in die Planung der gewünschten Infrastruktur miteinzubeziehen. Nicht nur, weil das nachträgliche Schließen von Sicherheitslücken und Hinzufügen von Sicherheitskomponenten in finanzieller und zeitlicher Hinsicht zehnmal so teuer ist wie die initiale Beachtung dieser Aspekte, sondern weil die vollständige Sicherheit eines nachgerüsteten Systems kaum gewährleistet werden kann \cite{Cole}. "`Security-by-Design"' ist einer der wichtigsten Begriffe bei der Planung öffentlich zugänglicher Netzwerkstrukturen. Dementsprechend groß ist die Nachfrage nach VNE-Algorithmen, die bereits beim Prozess des Mappings möglichst viele Sicherheitsaspekte beachten und abdecken. Die vorausgehende Klassifizierung der bekannten Gefahren in "`VNE-relevant"' und "`nicht-VNE-relevant"' bildet die Grundlage für unsere weiteren Untersuchungen. Um zuvor noch einen genaueren Einblick in die Problematik von VNE zu gewähren, beginnen wir zunächst mit der Erläuterung des VNE-Problems sowie einem Überblick über die verschiedenen erfolgreichen Strategien bestehender VNE-Algorithmen, welche die Sicherheitsaspekte noch nicht beachten. 
+\section{Virtual Network Embedding}
+Um den Anforderungen der heutigen Gefahren zu genügen, ist es unumgänglich sämtliche Grundsätze der IT-Sicherheit möglichst früh in die Planung der gewünschten Infrastruktur miteinzubeziehen. Nicht nur, weil das nachträgliche Schließen von Sicherheitslücken und Hinzufügen von Sicherheitskomponenten in finanzieller und zeitlicher Hinsicht zehnmal so teuer ist wie die initiale Beachtung dieser Aspekte, sondern weil die vollständige Sicherheit eines nachgerüsteten Systems kaum gewährleistet werden kann \cite{Cole}."`Security-by-Design"' ist einer der wichtigsten Begriffe bei der Planung öffentlich zugänglicher Netzwerkstrukturen. Dementsprechend groß ist die Nachfrage nach VNE-Algorithmen, die bereits beim Prozess des Mappings möglichst viele Sicherheitsaspekte beachten und abdecken. Die vorausgehende Klassifizierung der bekannten Gefahren in "`VNE-relevant"' und "`nicht-VNE-relevant"' bildet die Grundlage für unsere weiteren Untersuchungen. Um zuvor noch einen genaueren Einblick in die Problematik von VNE zu gewähren, beginnen wir zunächst mit der Erläuterung des VNE-Problems sowie einem Überblick über die verschiedenen erfolgreichen Strategien bestehender VNE-Algorithmen, welche die Sicherheitsaspekte noch nicht beachten. 
 
 Betrachtet man das zugrundeliegende physische System als einen ungerichteten Graphen
 \begin{center}
@@ -112,12 +98,74 @@ In der Regel ist es üblich, nicht nur eine einzelne VNRs auf ein physisches Syst
 \newline
 % Gv=...
 Die Attributmenge bei den grundlegenden VNE-Algorithmen beschränkt  sich zumeist auf Rechnerleistung und Bandbreite. 
-Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Attribute. Ein großes Problem bei der Berechnung des optimalen Mappings findet sich bei der Berechnungszeit. Die endliche Beschränkung der Knoten- sowie Link-Resourcen und die "`on-line nature"' von VNRs stellen zusätzliche Hindernisse dar. Da selbst Lösungen für einfache Anfragen (geringe Anzahl von Knoten und Links), welche wenige Attribute beinhalten, exponentiellen Rechenaufwand benötigen, steigt der Aufwand sowohl mit der Anzahl der abzubildenden Knoten und Links, als auch mit steigender Attributanzahl dementsprechend. Teilweise gilt das Problem als rechnerisch unlösbar, grundsätzlich aber befinden wir uns im Komplexitätsbereich der NP-Vollständigkeit \cite{SVNE2}. Da die Erhöhung der Attributmenge - wie bereits genannt - grundsätzlich nicht positiv zur Laufzeit der existierenden Algorithmen beiträgt, werden wir den Komplexitätsbereich beim Hinzufügen von Sicherheitsanforderungen nicht verlassen. Dennoch gibt es Möglichkeiten, die den Rechenaufwand reduzieren können. Mit den folgenden beiden Modellen werden wir sowohl diese Möglichkeiten, als auch andere Vor- und Nach-Teile, genauer untersuchen.
+Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Attribute. Ein großes Problem bei der Berechnung des optimalen Mappings findet sich bei der Berechnungszeit. Die endliche Beschränkung der Knoten- sowie Link-Resourcen und die "`on-line nature"' von VNRs stellen zusätzliche Hindernisse dar. Da selbst Lösungen für einfache Anfragen (geringe Anzahl von Knoten und Links), welche wenige Attribute beinhalten, exponentiellen Rechenaufwand benötigen, steigt der Aufwand sowohl mit der Anzahl der abzubildenden Knoten und Links, als auch mit steigender Attributanzahl dementsprechend. Teilweise gilt das Problem als rechnerisch unlösbar, grundsätzlich aber befinden wir uns im Komplexitätsbereich der NP-Vollständigkeit \cite{SVNE2}. Da die Erhöhung der Attributmenge - wie bereits genannt - grundsätzlich nicht positiv zur Laufzeit der existierenden Algorithmen beiträgt, werden wir den Komplexitätsbereich beim Hinzufügen von Sicherheitsanforderungen nicht verlassen. Dennoch gibt es Möglichkeiten, die den Rechenaufwand reduzieren können. Im Folgenden widmen wir uns allerdings zuerst einer Übersicht über die Gefahren, welche bei VNE eine Rolle spielen.
 
 
 
-\subsection{Modell 1}
-\subsection{Modell 2}
+\section{Sicherheitsaspekte bei virtuellen Netzwerk-Infrastrukturen}
+
+\subsection{Herkömmliche Gefahren}
+
+\subsection{Spezielle Gefahren bei virtualisierten Umgebungen}
+
+\subsection{VNE-Relevante Gefahren}
+
+
+\section{Vermeidung von Gefahren via Secure VNE (SVNE)}
+Da wir nun einen Überblick zu VNE sowie den ... Gefahren gegeben haben, widmen wir uns nun zwei verschiedenen SVNE-Lösungsansätzen.
+
+\subsection{Ansatz 1}
+Hierbei beschäftigen wir uns mit dem Lösungsansatz aus \cite{wang2016towards}. 
+Das Hauptaugenmerk bezüglich der Sicherheitsaspekte legen Wang et al auf Traffic-Verschlüsselung und die Separierung von VMs unterschiedlicher Trust-Levels. Mittels"`Security plan design"'werden die drei folgenden strukturellen Aspekte betrachtet und in dementsprechende Levels eingeteilt.
+
+"The Network plan":
+Ein VNR wird als Netzwerk betrachtet und seinem Level entsprechend isoliert. "`High"'fordert und beansprucht ein gesamtes Netz bzw. Subnetz der physischen Infrastruktur für sich. Hiermit soll die Wahrscheinlichkeit für DOS-Angriffe oder ähnliche vermindert werden, da"`Mehr-Parteien-Netzwerke"'die Hauptschwachstellen für solche Angriffe darstellen \cite{DOS}. Auch Sniffing durch kompromittierte Hosts im selben Netz wird durch diese Maßnahme verhindert. Während "high"'Resourcenteilung somit komplett verweigert, lässt der Level"`medium"'zumindest ein gemeinsam genutztes Netz für VNRs vom selben Eigentümer zu.
+
+"The Node plan":
+Die einzelnen virtuellen Knoten eines VNR stellen Isolierungsanforderungen an die physischen Knoten. Wie auch beim"`network plan", werden die Levels"`high","`medium"'und"`none"'definiert und umgesetzt."`high"'fordert die alleinige Existenz eines VNR-Knotens,"`medium"'lässt VNR-Knoten vom selben Eigentümer auf ein und demselben physischen Knoten zu. Durch diesen Plan sollen Angriffe von VM zu VM über gemeinsam genutzte Resourcen unterbunden werden. Zusätzlich wird das Risiko eines Angriffs vom physischen Host verringert, da der Angriffsvektor"`VM zu physischem Host"'eliminiert wird.
+
+"The Link plan":
+End-to-End(E2E), Point-to-Point(P2P) und"`none"'sind die hier wählbaren Levels. Während E2E nur an den Endpunkten Verschlüsselungskapazitäten zu Verfügung stellen muss, benötigt P2P diese Kapazitäten an allen Hops des abgebildeten Links. Die heutzutage sehr gängigen man-in-the-middle Angriffe sollen dadurch wesentlich erschwert werden. 
+
+VNRs werden nun, wie in Kapitel 2 bereits gezeigt, in ungerichtete Graphen mit Standardanforderungentransformiert. Zusätzlich werden hier auch noch Sicherheitsanforderungen integriert.\newline
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{SVNR.pdf}\newline
+\end{center}
+Nun wird ein vier-stufiges Pre-Processing durchgeführt, um die Berechnung der optimalen Abbildung der VNRs zu vereinfachen. Hierbei werden als ersten die Standardanforderungen der virtuellen Knoten mit den zu Verfügung stehenden Kapazitäten der physischen Knoten verglichen. Sollten physische Knoten bestimmte Anforderungen nicht erfüllen, werden sie aus der Berechung ausgeschlossen. Der zweite Schritt ist dem"`Network plan"'gewidmet. Sollte ein physischer Knoten, welcher den Anforderungen des"`Network plan"'nicht genügt sich in einem Kandidaten-Netzwerk befinden, wird das Subnetz aus den Berechnungen ausgeschlossen. Im dritten Schritt werden die Sicherheitsanforderungen der einzelnen Knoten betrachtet und nicht entsprechende physischen Knoten werden abermals entfernt. Der letzte Schritt widmet sich den Sicherheitsanforderungen aus dem"`Link plan"'und streicht Links aus den weiteren Berrechnungen, welche den Verschlüsselungsanforderungen der virtuellen Links nicht genüge tun.\newline
+\begin{center}
+	\includegraphics[width=1\textwidth]{pre-processing.pdf}\newline
+\end{center}
+Mit den aus dem Pre-Processing gewonnen Information bildet man nun einen Hilsgraphen, welcher die übrig gebliebenen Möglichkeiten der Einbettung zeigt.\newline
+\begin{center}
+	\includegraphics[width=0.6\textwidth]{aux.pdf}\newline
+\end{center}
+Dieses Pre-Processing reduziert das SVNE-Problem auf ein"`multi-commodity-flow"'Problem [mit einem Wert (Rohstoff?) pro Link]. \cite{MCF}
+Im weiteren Vorgehen werden nun zwei Fälle unterschieden."`Path-splitting", im weiteren SVNE-PS und"`no-path-splitting", im weitern SVNE-NPS, sind zusätzliche Sicherheitsvorgaben, welche im Vorfeld definiert werden müssen, um die Wahl des Algorithmus zu ermöglichen. Sollte SVNE-PS gewählt werden, beziehen sich die Gleichungen nur auf die Erfüllung der geforderten Attribute.
+Sollte SVNE-NPS gewählt werden, werden die für Link-Abbildungen verantwortlichen Gleichungen ersetzt.\newline
+\begin{center}
+	\includegraphics[width=1\textwidth]{notations.pdf}\newline
+	\newline
+	\includegraphics[width=1\textwidth]{variables.pdf}\newline
+\end{center}
+\begin{center}
+	\includegraphics[width=1\textwidth]{algo.pdf}\newline
+\end{center}
+Die Berechnungen wurden mittels induktiver logischer Programmierung unter Verwendung von CPLEX\cite{CPLEX} und durch k-shortest-path anhand aller abzubildenden Elemente limitiert.
+Für die Testumgebungen wurden zufällig erzeugte VNRs mit 2 bis 10 Knoten und halbsovielen Links erzeugt. Auch die Rechenkapazität wie Bandbreite wurden durch Zufallsgeneratoren mit Werten im Bereich von 1 bis 10 gewählt und verteilt. Die Anzahl der VNRs beträgtt einer Poisson-Verteilung nach einen Durchschnitt von 4 VNR pro 100 Zeiteinheiten, mit einer jeweiligen durchschnittlichen Einsatzzeit von 1000 Zeiteinheiten.
+
+Die zugrundeliegenden physischen Netze wurden ebenfalls zufällig erzeugt und beinhalteten 10 bis 50 Knoten, sowie halbsoviele Links. Die Rechen- sowie Bandbreiten-Kapazitäten wurden gleichmäßig verteilt und enthielten Werte zwischen 1 und 50. Die Verschlüsselungskapazitäten der Knoten  wurde über die gesamte Testreihe ebenfalls gleichmäßig verteilt.
+
+Die folgende Statisk zeigt einen Durchschnittsvergleich zwischen dem, als Standard gewählten, VNE-Algorithmus\cite{Std} und den beiden SVNE-Varianten PS und NPS. Dazu sei gesagt dass sämtliche Algorithmen ihre Berechnungen anhand des Hilfsgraphen durchgeführt haben und durch k=3 bzw. k=4 limitiert wurden.\newline
+\newline
+Grafik\newline
+\newline
+Man sieht  hier einen deutlichen Zeitvorsprung von PS und NPS gegenüber dem Standard-Algorithmus. Da hier jedoch auch der Standard-Algorithmus vom Pre-Processing profitiert, wäre ein Vergleich, welcher die Dauer des Pre-Processings mit aufnimmt und den Standard-Algorithmus ohne Pre-Processing arbeiten ließe, anschaulicher und aussagekräftiger.
+Dennoch ist ein Punkt durchaus überraschend und bemerkenswert: Der Standard-Algorithmus benötigt deutlich länger, obwohl er keine Sicherheitsaspekte mitbeurteilt, im Gegenzug zu seinen Kontrahenten.
+
+In welchem Komplexitätsbereich sich das Pre-Processing befindet wird hier leider nicht erwähnt.
+
+
+\subsection{Ansatz 2}
 \subsection{Vergleich}
 \section{Ungelöste Probleme}
 \section{Schlussfolgerung und Ausblick}

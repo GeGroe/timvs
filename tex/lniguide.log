@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.10.19)  18 DEC 2016 21:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.12.21)  28 DEC 2016 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -220,16 +220,16 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 File: pix/physical_structure2.pdf Graphic file (type pdf)
 
 <use pix/physical_structure2.pdf>
-Package pdftex.def Info: pix/physical_structure2.pdf used on input line 61.
+Package pdftex.def Info: pix/physical_structure2.pdf used on input line 47.
 (pdftex.def)             Requested size: 250.9522pt x 130.08708pt.
  [3 <./pix/physical_structure2.pdf>]
 <pix/VNR1.pdf, id=20, 323.2075pt x 242.9075pt>
 File: pix/VNR1.pdf Graphic file (type pdf)
  <use pix/VNR1.pdf>
-Package pdftex.def Info: pix/VNR1.pdf used on input line 87.
+Package pdftex.def Info: pix/VNR1.pdf used on input line 73.
 (pdftex.def)             Requested size: 143.39969pt x 107.77287pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
@@ -240,17 +240,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.93 \begin{lstlisting}
+l.79 \begin{lstlisting}
                        
 ? 
 
-! LaTeX Error: \begin{center} on input line 92 ended by \end{lstlisting}.
+! LaTeX Error: \begin{center} on input line 78 ended by \end{lstlisting}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 \end{lstlisting}
+l.82 \end{lstlisting}
                      
 ? 
 
@@ -260,50 +260,191 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.106 \begin{lstlisting}
-                        
+l.92 \begin{lstlisting}
+                       
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.107 ...tion f : G\textsuperscript{V} \rightarrow
+l.93 ...ktion f : G\textsuperscript{V} \rightarrow
                                                    G\textsuperscript{S}
 ? 
 
-! LaTeX Error: \begin{center} on input line 105 ended by \end{lstlisting}.
+! LaTeX Error: \begin{center} on input line 91 ended by \end{lstlisting}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.108 \end{lstlisting}
-                      
+l.94 \end{lstlisting}
+                     
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.108 \end{lstlisting}
-                      
+l.94 \end{lstlisting}
+                     
 ? 
-[4 <./pix/VNR1.pdf>] (./lniguide.bbl [5]) [6] (./lniguide.aux) ) 
+[4 <./pix/VNR1.pdf>]
+Overfull \hbox (20.4227pt too wide) in paragraph at lines 124--126
+\OT1/ptm/m/n/10 run-gen an die phy-si-schen Kno-ten. Wie auch beim[]net-work pl
+an", wer-den die Levels[]high",[]me-
+ []
+
+[5]
+Overfull \hbox (1.52193pt too wide) in paragraph at lines 127--129
+[]\OT1/ptm/m/n/10 "The Link plan": End-to-End(E2E), Point-to-Point(P2P) und[]no
+-ne\sind die hier w[]ahlbaren
+ []
+
+
+Overfull \hbox (0.24162pt too wide) in paragraph at lines 127--129
+\OT1/ptm/m/n/10 heut-zu-ta-ge sehr g[]angigen man-in-the-middle An-grif-fe sol-
+len da-durch we-sent-lich er-schwert
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+<pix/SVNR.pdf, id=31, 731.73375pt x 398.48875pt>
+File: pix/SVNR.pdf Graphic file (type pdf)
+ <use pix/SVNR.pdf>
+Package pdftex.def Info: pix/SVNR.pdf used on input line 132.
+(pdftex.def)             Requested size: 286.80486pt x 156.18828pt.
+
+Overfull \hbox (32.66127pt too wide) in paragraph at lines 134--135
+\OT1/ptm/m/n/10 wer-den sie aus der Be-re-chung aus-ge-schlos-sen. Der zwei-te 
+Schritt ist dem[]Net-work plan\gewidmet.
+ []
+
+
+Overfull \hbox (2.12166pt too wide) in paragraph at lines 134--135
+\OT1/ptm/m/n/10 aus-ge-schlos-sen. Im drit-ten Schritt wer-den die Si-cher-heit
+s-an-for-de-run-gen der ein-zel-nen Kno-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+<pix/pre-processing.pdf, id=32, 1415.2875pt x 466.74374pt>
+File: pix/pre-processing.pdf Graphic file (type pdf)
+
+<use pix/pre-processing.pdf>
+Package pdftex.def Info: pix/pre-processing.pdf used on input line 136.
+(pdftex.def)             Requested size: 358.50471pt x 118.22398pt.
+ [6 <./pix/SVNR.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+<pix/aux.pdf, id=43, 634.37pt x 357.335pt>
+File: pix/aux.pdf Graphic file (type pdf)
+ <use pix/aux.pdf>
+Package pdftex.def Info: pix/aux.pdf used on input line 140.
+(pdftex.def)             Requested size: 215.10501pt x 121.16513pt.
+
+Overfull \hbox (9.97119pt too wide) in paragraph at lines 142--145
+\OT1/ptm/m/n/10 Dieses Pre-Processing re-du-ziert das SVNE-Problem auf ein[]mul
+ti-commodity-flow\Problem
+ []
+
+
+Overfull \hbox (4.09059pt too wide) in paragraph at lines 142--145
+\OT1/ptm/m/n/10 F[]alle unterschieden.[]Path-splitting", im wei-te-ren SVNE-PS 
+und[]no-path-splitting", im wei-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
+
+ []
+
+<pix/notations.pdf, id=44, 673.51625pt x 548.0475pt>
+File: pix/notations.pdf Graphic file (type pdf)
+ <use pix/notations.pdf>
+Package pdftex.def Info: pix/notations.pdf used on input line 146.
+(pdftex.def)             Requested size: 358.50471pt x 291.71817pt.
+
+<pix/variables.pdf, id=45, 706.64pt x 83.31125pt>
+File: pix/variables.pdf Graphic file (type pdf)
+ <use pix/variables.pdf>
+Package pdftex.def Info: pix/variables.pdf used on input line 148.
+(pdftex.def)             Requested size: 358.50471pt x 42.26697pt.
+
+[7 <./pix/pre-processing.pdf> <./pix/aux.pdf
+
+pdfTeX warning: latex (file ./pix/aux.pdf): PDF inclusion: multiple pdfs with p
+age group included in a single page
+>] <pix/algo.pdf, id=63, 737.75626pt x 1136.245pt>
+File: pix/algo.pdf Graphic file (type pdf)
+ <use pix/algo.pdf>
+Package pdftex.def Info: pix/algo.pdf used on input line 151.
+(pdftex.def)             Requested size: 358.50471pt x 552.13576pt.
+ [8 <./pix/notations.pdf> <./pix/variables.pdf
+
+pdfTeX warning: latex (file ./pix/variables.pdf): PDF inclusion: multiple pdfs 
+with page group included in a single page
+>]
+Overfull \vbox (5.84285pt too high) has occurred while \output is active []
+
+
+[9 <./pix/algo.pdf>]
+Overfull \hbox (11.04128pt too wide) in paragraph at lines 156--157
+\OT1/ptm/m/n/10 schl[]usselungskapazit[]aten der Kno-ten wur-de []uber die ge-s
+am-te Testrei-he eben-falls gleichm[]a^^Yig
+ []
+
+
+Overfull \hbox (17.62134pt too wide) in paragraph at lines 158--164
+[]\OT1/ptm/m/n/10 Die fol-gen-de Sta-tisk zeigt einen Durch-schnitts-ver-gleich
+ zwi-schen dem, als Stan-dard gew[]ahlten,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--164
+
+ []
+
+
+Overfull \hbox (15.27144pt too wide) in paragraph at lines 158--164
+\OT1/ptm/m/n/10 Standard-Algorithmus oh-ne Pre-Processing ar-bei-ten lie-^^Ye, 
+an-schau-li-cher und aus-sa-ge-kr[]aftiger.
+ []
+
+
+Overfull \hbox (12.3121pt too wide) in paragraph at lines 158--164
+\OT1/ptm/m/n/10 Den-noch ist ein Punkt durch-aus []uberraschend und be-mer-kens
+-wert: Der Standard-Algorithmus
+ []
+
+(./lniguide.bbl [10]) [11] (./lniguide.aux) ) 
 Here is how much of TeX's memory you used:
- 2167 strings out of 493030
- 30599 string characters out of 6136259
- 98299 words of memory out of 5000000
- 5662 multiletter control sequences out of 15000+600000
+ 2208 strings out of 493030
+ 31270 string characters out of 6136259
+ 97332 words of memory out of 5000000
+ 5697 multiletter control sequences out of 15000+600000
  18267 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,7n,26p,1277b,257s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/tex
-live/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on lniguide.pdf (6 pages, 88478 bytes).
+ 37i,7n,26p,1276b,257s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fon
+ts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on lniguide.pdf (11 pages, 583963 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
