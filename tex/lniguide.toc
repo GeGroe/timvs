@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {3.3}VNE-Relevante Gefahren}{5}
 \contentsline {section}{\numberline {4}Vermeidung von Gefahren via Secure VNE (SVNE)}{5}
 \contentsline {subsection}{\numberline {4.1}Ansatz 1}{5}
-\contentsline {subsection}{\numberline {4.2}Ansatz 2}{10}
-\contentsline {subsection}{\numberline {4.3}Vergleich}{10}
-\contentsline {section}{\numberline {5}Ungel\"oste Probleme}{10}
-\contentsline {section}{\numberline {6}Schlussfolgerung und Ausblick}{10}
+\contentsline {subsection}{\numberline {4.2}Ansatz 2}{11}
+\contentsline {subsection}{\numberline {4.3}Vergleich}{11}
+\contentsline {section}{\numberline {5}Ungel\"oste Probleme}{11}
+\contentsline {section}{\numberline {6}Schlussfolgerung und Ausblick}{11}

@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex lniguide"] 1482944926 "lniguide.aux" "lniguide.bbl" "lniguide" 1482945535
+["bibtex lniguide"] 1482945836 "lniguide.aux" "lniguide.bbl" "lniguide" 1482945837
   "./lnig.bst" 1482344598 28127 07924b6e6fa8e042e083eb4634d8fccb ""
   "literatur.bib" 1482943795 5185 232400d2cf216da89da3c52bed074aca ""
-  "lniguide.aux" 1482945015 1646 e2c48c1a2afe694ebeab09e728540f37 ""
+  "lniguide.aux" 1482945762 1650 4fcbb0c19a737267992efe6ba5db736d ""
   "lniguide.bcf" 0 -1 0 ""
   (generated)
-  "lniguide.blg"
   "lniguide.bbl"
-["latex"] 1482945535 "lniguide.tex" "lniguide.dvi" "lniguide" 1482945535
+  "lniguide.blg"
+["latex"] 1482945837 "lniguide.tex" "lniguide.dvi" "lniguide" 1482945837
   "/etc/texmf/web2c/texmf.cnf" 1482347278 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -63,10 +63,10 @@
   "/var/lib/texmf/web2c/pdftex/latex.fmt" 1482347441 3854827 af025ea840aa1e81e5f053dc4cab4e2e ""
   "latin1.sty" 1482344598 1825 cb18b9c3de1027b70ef258843a8937ab ""
   "lni.cls" 1482344598 5130 a250419212ec19cc835b1bd7db436767 ""
-  "lniguide.aux" 1482945015 1646 e2c48c1a2afe694ebeab09e728540f37 ""
-  "lniguide.bbl" 1482944927 1361 6953af6422e86ade80468294400d4281 "bibtex lniguide"
-  "lniguide.tex" 1482945531 14925 288cab6d6c9d15a5ffa733d4d219c4a6 ""
-  "lniguide.toc" 1482945015 891 1352ae57a5ee0ef50739a8ffbb924965 ""
+  "lniguide.aux" 1482945762 1650 4fcbb0c19a737267992efe6ba5db736d ""
+  "lniguide.bbl" 1482945836 1361 6953af6422e86ade80468294400d4281 "bibtex lniguide"
+  "lniguide.tex" 1482945834 14982 19afc82f699b2c9810124f222bf65b63 ""
+  "lniguide.toc" 1482945762 895 549d222bf016ad7dbf198d5b6f1c403b ""
   "pix/SVNR.pdf" 1482944379 45079 39bf5afb7e6a66497b18e60df343150b ""
   "pix/VNR1.pdf" 1482344598 8081 48ea07510d2021f4570945b7ae4434de ""
   "pix/algo.pdf" 1482945513 83218 e670747a59f562b26e07cab861f40808 ""
@@ -74,10 +74,11 @@
   "pix/notations.pdf" 1482944803 83596 1c7f3018fb00101cf1b0f4657499e268 ""
   "pix/physical_structure2.pdf" 1482344598 13377 8685de5408a0e264a04870857cb2a18e ""
   "pix/pre-processing.pdf" 1482944526 194600 6c4dddbf729806ae8900e490d9b2156c ""
+  "pix/statistic.pdf" 1482945738 53570 68f8ff322a3e21c7421fd07b16eaf94d ""
   "pix/variables.pdf" 1482944880 14858 8b13c9177fb508cc456667d3b3756698 ""
   (generated)
+  "lniguide.dvi"
   "lniguide.log"
   "lniguide.aux"
-  "lniguide.dvi"
   "lniguide.pdf"
   "lniguide.toc"

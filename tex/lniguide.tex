@@ -156,9 +156,9 @@ Für die Testumgebungen wurden zufällig erzeugte VNRs mit 2 bis 10 Knoten und hal
 Die zugrundeliegenden physischen Netze wurden ebenfalls zufällig erzeugt und beinhalteten 10 bis 50 Knoten, sowie halbsoviele Links. Die Rechen- sowie Bandbreiten-Kapazitäten wurden gleichmäßig verteilt und enthielten Werte zwischen 1 und 50. Die Verschlüsselungskapazitäten der Knoten  wurde über die gesamte Testreihe ebenfalls gleichmäßig verteilt.
 
 Die folgende Statisk zeigt einen Durchschnittsvergleich zwischen dem, als Standard gewählten, VNE-Algorithmus\cite{Std} und den beiden SVNE-Varianten PS und NPS. Dazu sei gesagt dass sämtliche Algorithmen ihre Berechnungen anhand des Hilfsgraphen durchgeführt haben und durch k=3 bzw. k=4 limitiert wurden.\newline
-\newline
-Grafik\newline
-\newline
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{statistic.pdf}\newline
+\end{center}
 Man sieht  hier einen deutlichen Zeitvorsprung von PS und NPS gegenüber dem Standard-Algorithmus. Da hier jedoch auch der Standard-Algorithmus vom Pre-Processing profitiert, wäre ein Vergleich, welcher die Dauer des Pre-Processings mit aufnimmt und den Standard-Algorithmus ohne Pre-Processing arbeiten ließe, anschaulicher und aussagekräftiger.
 Dennoch ist ein Punkt durchaus überraschend und bemerkenswert: Der Standard-Algorithmus benötigt deutlich länger, obwohl er keine Sicherheitsaspekte mitbeurteilt, im Gegenzug zu seinen Kontrahenten.
 

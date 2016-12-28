@@ -129,6 +129,9 @@ INPUT ./pix/variables.pdf
 INPUT pix/algo.pdf
 INPUT ./pix/algo.pdf
 INPUT ./pix/algo.pdf
+INPUT pix/statistic.pdf
+INPUT ./pix/statistic.pdf
+INPUT ./pix/statistic.pdf
 INPUT lniguide.bbl
 INPUT lniguide.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
