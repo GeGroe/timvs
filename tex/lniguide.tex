@@ -4,6 +4,7 @@
 \IfFileExists{latin1.sty}{\usepackage{latin1}}{\usepackage{isolatin1}}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{listings}
 \graphicspath{{pix/}{}}
 
 
@@ -143,13 +144,14 @@ Dieses Pre-Processing reduziert das SVNE-Problem auf ein"`multi-commodity-flow"'
 Im weiteren Vorgehen werden nun zwei Fälle unterschieden."`Path-splitting", im weiteren SVNE-PS und"`no-path-splitting", im weitern SVNE-NPS, sind zusätzliche Sicherheitsvorgaben, welche im Vorfeld definiert werden müssen, um die Wahl des Algorithmus zu ermöglichen. Sollte SVNE-PS gewählt werden, beziehen sich die Gleichungen nur auf die Erfüllung der geforderten Attribute.
 Sollte SVNE-NPS gewählt werden, werden die für Link-Abbildungen verantwortlichen Gleichungen ersetzt.\newline
 \begin{center}
+	\includegraphics[width=1\textwidth]{algo.pdf}\newline
+\end{center}
+\begin{center}
 	\includegraphics[width=1\textwidth]{notations.pdf}\newline
 	\newline
 	\includegraphics[width=1\textwidth]{variables.pdf}\newline
 \end{center}
-\begin{center}
-	\includegraphics[width=1\textwidth]{algo.pdf}\newline
-\end{center}
+
 Die Berechnungen wurden mittels induktiver logischer Programmierung unter Verwendung von CPLEX\cite{CPLEX} und durch k-shortest-path anhand aller abzubildenden Elemente limitiert.
 Für die Testumgebungen wurden zufällig erzeugte VNRs mit 2 bis 10 Knoten und halbsovielen Links erzeugt. Auch die Rechenkapazität wie Bandbreite wurden durch Zufallsgeneratoren mit Werten im Bereich von 1 bis 10 gewählt und verteilt. Die Anzahl der VNRs beträgtt einer Poisson-Verteilung nach einen Durchschnitt von 4 VNR pro 100 Zeiteinheiten, mit einer jeweiligen durchschnittlichen Einsatzzeit von 1000 Zeiteinheiten.
 
@@ -166,6 +168,31 @@ In welchem Komplexitätsbereich sich das Pre-Processing befindet wird hier leider
 
 
 \subsection{Ansatz 2}
+
+Im zweiten Ansatz widmen wir uns dem Modell aus \cite{algo2}. Dieser Ansatz arbeitet mit abstrakten Sicherheitslevels. Im Folgenden werden zwar Skalare hierfür verwendet, was allerdings nicht zwingend so vorgesehen ist. Man könnte stattdessen auch komplexere Sicherheitsvektoren verwenden, welche bei Weitem detailliertere Sicherheitsmerkmale beschreiben. Des weiteren verfügt jeder physische wie auch virtuelle Knoten über zwei Sicherheitswerte: Anforderungslevel und (eigenes) Sicherheitslevel. Der Anforderungslevel definiert das Minimum-Level des Gegenübers, der Sicherheitslevel definiert die eigenen gewünschten Sicherheitsmerkmale. Virtuelle Links verfügen über Anforderungslevels, physische Links nur über Sicherheitslevels. Die vorausgesetzten Basisanforderungen, welchen alle VNRs unterliegen, beschränken sich auf 4 Regeln, welche mittels der zuvor genannten Merkmale umgesetzt werden:
+
+\begin{lstlisting}
+1) Ein physischer Knoten sollte einen Sicherheitslevel garantieren, 
+   der höher ist als die Anforderungen der darauf abzubildenden
+   virtuellen Knoten.
+
+2) Der Sicherheitslevel des virtuellen Knotens sollte höher sein, 
+   als das Anforderungslevel des physichen Knotens.
+
+3) Alle virtuellen Knoten, welche auf den selben physischen Knoten
+   abgebildet werden, sollten über einen ausreichenden Sicherheitslevel
+   verfügen.
+
+4) Der Anforderungslevel des virtuellen Links sollte stets niedriger
+   sein, als das Sicherheitslevel des physischen Links.
+\end{lstlisting}
+
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{algo2graph.pdf}\newline
+\end{center}
+
+Wie man in Abbildung X sieht, werden auch bei diesem Modell VNRs und physische Netze in ungerichtete Graphen transformiert. Die in Klammern gestellten Parameter beschreiben Anforderungslevel(D) und Sicherheitslevel(L). Die hier durchgeführte Abbildung berücksichtigt nicht nur die Sicherheitsanforderungen aller Parteien unter Berücksichtigung der Basisanforderungen, sondern achtet zusätzlich noch auf Kostenminimierung. Insgesamt existieren drei Abbildungsmöglichkeiten, die gewählte ist jedoch die günstigste, unter dem Aspekt keine Sicherheitsresourcen zu verschwenden. Dieser VNR hätte auch auf EDGH abgebildet werden können, wobei der Link ED über einen Sicherheitslevel verfügt, welcher höher als nötig ist. Würde dies nicht beachtet werden, könnte es zu unnötigen Engpässen bei der Behandlung von VNRs mit höheren Anforderungslevels kommen.
+
 \subsection{Vergleich}
 \section{Ungelöste Probleme}
 \section{Schlussfolgerung und Ausblick}
