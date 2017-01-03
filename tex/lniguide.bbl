@@ -35,6 +35,10 @@ X.~Cao Q.~Hu, Y.~Wan.
 J.B.~Orlin R.K.~Ahuja, R.L.~Magnanti.
 \newblock Network Flow: Theory, Algorithms and Applications, 1993.
 
+\bibitem[SL15]{algo2}
+Hong Xu Ming~Xu Shuhao~Liu, Zhiping~Cai.
+\newblock Towards Security-aware Virtual Network Embedding, 2015.
+
 \bibitem[WCC16]{wang2016towards}
 Yang Wang, Phanvu Chau und Fuyu Chen.
 \newblock Towards a secured network virtualization.

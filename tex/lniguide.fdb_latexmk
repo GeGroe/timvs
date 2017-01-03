@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex lniguide"] 1483029622 "lniguide.aux" "lniguide.bbl" "lniguide" 1483029623
+["bibtex lniguide"] 1483446233 "lniguide.aux" "lniguide.bbl" "lniguide" 1483446292
   "./lnig.bst" 1482344598 28127 07924b6e6fa8e042e083eb4634d8fccb ""
-  "literatur.bib" 1482943795 5185 232400d2cf216da89da3c52bed074aca ""
-  "lniguide.aux" 1483028880 1667 a6172aebb67d2c8f85803958e21edadd ""
+  "literatur.bib" 1483033850 5335 8a4edd436e16f05ac840fa811cea448a ""
+  "lniguide.aux" 1483446236 1693 deadee35edea2798f0b2d8b443a4b968 ""
   "lniguide.bcf" 0 -1 0 ""
   (generated)
   "lniguide.bbl"
   "lniguide.blg"
-["latex"] 1483029623 "lniguide.tex" "lniguide.dvi" "lniguide" 1483029623
+["latex"] 1483446292 "lniguide.tex" "lniguide.dvi" "lniguide" 1483446292
   "/etc/texmf/web2c/texmf.cnf" 1482347278 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -17,6 +17,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm" 1136768653 4408 25b74d011a4c66b7f212c0cc3c90061b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm" 1136768653 2288 f478fc8fed18759effb59f3dad7f3084 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm" 1136768653 4640 532ca3305aad10cc01d769f3f91f1029 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1136849748 46026 6dab18b61c907687b520c72847215a68 ""
@@ -65,13 +66,14 @@
   "/var/lib/texmf/web2c/pdftex/latex.fmt" 1482347441 3854827 af025ea840aa1e81e5f053dc4cab4e2e ""
   "latin1.sty" 1482344598 1825 cb18b9c3de1027b70ef258843a8937ab ""
   "lni.cls" 1482344598 5130 a250419212ec19cc835b1bd7db436767 ""
-  "lniguide.aux" 1483028880 1667 a6172aebb67d2c8f85803958e21edadd ""
-  "lniguide.bbl" 1483029622 1361 6953af6422e86ade80468294400d4281 "bibtex lniguide"
-  "lniguide.tex" 1483029617 17464 31d983301f1497481f109940a32a3527 ""
-  "lniguide.toc" 1483028880 895 38fc94085e0d801e2273e755b6e827c5 ""
+  "lniguide.aux" 1483446236 1693 deadee35edea2798f0b2d8b443a4b968 ""
+  "lniguide.bbl" 1483446233 1491 66553e68e367dd4b0a7569f5f1b48dc2 "bibtex lniguide"
+  "lniguide.tex" 1483446230 17621 a4ec565684d7f92918cdc7272c4a9be4 ""
+  "lniguide.toc" 1483446236 899 fe824b440ed352039e53f17b430c66d1 ""
   "pix/SVNR.pdf" 1482944379 45079 39bf5afb7e6a66497b18e60df343150b ""
   "pix/VNR1.pdf" 1482344598 8081 48ea07510d2021f4570945b7ae4434de ""
   "pix/algo.pdf" 1482945513 83218 e670747a59f562b26e07cab861f40808 ""
+  "pix/algo2.pdf" 1483446284 113694 527555fe098cc70c7845c040b43631d3 ""
   "pix/algo2graph.pdf" 1483028861 75438 ea4ee603fdd5280733d7e486e2da95b2 ""
   "pix/aux.pdf" 1482944729 68370 227724b0cadd989855d55714bd8b149e ""
   "pix/notations.pdf" 1482944803 83596 1c7f3018fb00101cf1b0f4657499e268 ""
@@ -80,8 +82,8 @@
   "pix/statistic.pdf" 1482945738 53570 68f8ff322a3e21c7421fd07b16eaf94d ""
   "pix/variables.pdf" 1482944880 14858 8b13c9177fb508cc456667d3b3756698 ""
   (generated)
-  "lniguide.aux"
-  "lniguide.dvi"
-  "lniguide.log"
   "lniguide.toc"
   "lniguide.pdf"
+  "lniguide.aux"
+  "lniguide.log"
+  "lniguide.dvi"
