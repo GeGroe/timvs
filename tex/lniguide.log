@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.12.21)  3 JAN 2017 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.12.21)  3 JAN 2017 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -417,70 +417,75 @@ File: pix/variables.pdf Graphic file (type pdf)
 Package pdftex.def Info: pix/variables.pdf used on input line 148.
 (pdftex.def)             Requested size: 358.50471pt x 42.26697pt.
 
-Overfull \hbox (11.04128pt too wide) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+
+Overfull \hbox (11.04128pt too wide) in paragraph at lines 156--157
 \OT1/ptm/m/n/10 schl[]usselungskapazit[]aten der Kno-ten wur-de []uber die ge-s
 am-te Testrei-he eben-falls gleichm[]a^^Yig
- []
-
-
-Overfull \hbox (17.62134pt too wide) in paragraph at lines 156--157
-[]\OT1/ptm/m/n/10 Die fol-gen-de Sta-tisk zeigt einen Durch-schnitts-ver-gleich
- zwi-schen dem, als Stan-dard gew[]ahlten,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-
  []
 
 [9 <./pix/notations.pdf> <./pix/variables.pdf
 
 pdfTeX warning: latex (file ./pix/variables.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
->] <pix/statistic.pdf, id=90, 726.715pt x 391.4625pt>
+>]
+Overfull \hbox (17.62134pt too wide) in paragraph at lines 158--159
+[]\OT1/ptm/m/n/10 Die fol-gen-de Sta-tisk zeigt einen Durch-schnitts-ver-gleich
+ zwi-schen dem, als Stan-dard gew[]ahlten,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+<pix/statistic.pdf, id=90, 726.715pt x 391.4625pt>
 File: pix/statistic.pdf Graphic file (type pdf)
  <use pix/statistic.pdf>
-Package pdftex.def Info: pix/statistic.pdf used on input line 158.
+Package pdftex.def Info: pix/statistic.pdf used on input line 160.
 (pdftex.def)             Requested size: 286.80486pt x 154.49756pt.
 
-Overfull \hbox (15.27144pt too wide) in paragraph at lines 160--162
+Overfull \hbox (15.27144pt too wide) in paragraph at lines 162--164
 \OT1/ptm/m/n/10 Standard-Algorithmus oh-ne Pre-Processing ar-bei-ten lie-^^Ye, 
 an-schau-li-cher und aus-sa-ge-kr[]aftiger.
  []
 
 
-Overfull \hbox (12.3121pt too wide) in paragraph at lines 160--162
+Overfull \hbox (12.3121pt too wide) in paragraph at lines 162--164
 \OT1/ptm/m/n/10 Den-noch ist ein Punkt durch-aus []uberraschend und be-mer-kens
 -wert: Der Standard-Algorithmus
  []
 
-
-Overfull \hbox (43.49937pt too wide) in paragraph at lines 171--172
+[10 <./pix/statistic.pdf>]
+Overfull \hbox (43.49937pt too wide) in paragraph at lines 173--174
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[10 <./pix/statistic.pdf>]
-Overfull \hbox (19.49913pt too wide) in paragraph at lines 172--173
+
+Overfull \hbox (19.49913pt too wide) in paragraph at lines 174--175
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (31.49925pt too wide) in paragraph at lines 175--176
+Overfull \hbox (31.49925pt too wide) in paragraph at lines 177--178
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (37.49931pt too wide) in paragraph at lines 178--179
+Overfull \hbox (37.49931pt too wide) in paragraph at lines 180--181
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (67.49962pt too wide) in paragraph at lines 179--180
+Overfull \hbox (67.49962pt too wide) in paragraph at lines 181--182
 [][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (49.49944pt too wide) in paragraph at lines 182--183
+Overfull \hbox (49.49944pt too wide) in paragraph at lines 184--185
 [][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -488,42 +493,65 @@ Overfull \hbox (49.49944pt too wide) in paragraph at lines 182--183
 File: pix/algo2graph.pdf Graphic file (type pdf)
 
 <use pix/algo2graph.pdf>
-Package pdftex.def Info: pix/algo2graph.pdf used on input line 187.
+Package pdftex.def Info: pix/algo2graph.pdf used on input line 189.
 (pdftex.def)             Requested size: 286.80486pt x 183.90488pt.
 
-Overfull \hbox (25.04152pt too wide) in paragraph at lines 190--191
+Overfull \hbox (25.04152pt too wide) in paragraph at lines 192--193
 \OT1/ptm/m/n/10 dung ber[]ucksichtigt nicht nur die Si-cher-heits-an-for-de-run
 -gen al-ler Par-tei-en un-ter Ber[]ucksichtigung
  []
 
-<pix/algo2.pdf, id=102, 304.2567pt x 510.94891pt>
+[11 <./pix/algo2graph.pdf>] <pix/algo2.pdf, id=112, 309.55649pt x 569.96942pt>
 File: pix/algo2.pdf Graphic file (type pdf)
- <use pix/algo2.pdf>
-Package pdftex.def Info: pix/algo2.pdf used on input line 192.
-(pdftex.def)             Requested size: 358.50471pt x 602.05688pt.
- [11 <./pix/algo2graph.pdf>]
-Overfull \vbox (55.76398pt too high) has occurred while \output is active []
 
+<use pix/algo2.pdf>
+Package pdftex.def Info: pix/algo2.pdf used on input line 194.
+(pdftex.def)             Requested size: 286.80486pt x 528.11795pt.
+ [12] [13 <./pix/algo2.pdf>]
+<pix/usav.pdf, id=129, 258.72661pt x 209.3421pt>
+File: pix/usav.pdf Graphic file (type pdf)
+ <use pix/usav.pdf>
+Package pdftex.def Info: pix/usav.pdf used on input line 205.
+(pdftex.def)             Requested size: 286.80486pt x 232.06583pt.
 
-[12 <./pix/algo2.pdf>] (./lniguide.bbl) [13] (./lniguide.aux) ) 
+<pix/csav.pdf, id=130, 182.6022pt x 219.9417pt>
+File: pix/csav.pdf Graphic file (type pdf)
+ <use pix/csav.pdf>
+Package pdftex.def Info: pix/csav.pdf used on input line 209.
+(pdftex.def)             Requested size: 286.80486pt x 345.46693pt.
+ [14 <./pix/usav.pdf>] <pix/linkmapping.pdf, id=141, 204.2832pt x 234.1548pt>
+File: pix/linkmapping.pdf Graphic file (type pdf)
+
+<use pix/linkmapping.pdf>
+Package pdftex.def Info: pix/linkmapping.pdf used on input line 213.
+(pdftex.def)             Requested size: 286.80486pt x 328.74342pt.
+ [15 <./pix/csav.pdf>]
+<pix/nodemapping.pdf, id=154, 258.72661pt x 220.9053pt>
+File: pix/nodemapping.pdf Graphic file (type pdf)
+
+<use pix/nodemapping.pdf>
+Package pdftex.def Info: pix/nodemapping.pdf used on input line 217.
+(pdftex.def)             Requested size: 286.80486pt x 244.88419pt.
+ [16 <./pix/linkmapping.pdf>] (./lniguide.bbl [17 <./pix/nodemapping.pdf>]) [18
+] (./lniguide.aux) ) 
 Here is how much of TeX's memory you used:
- 3545 strings out of 493030
- 50165 string characters out of 6136259
+ 3565 strings out of 493030
+ 50535 string characters out of 6136259
  124706 words of memory out of 5000000
- 7019 multiletter control sequences out of 15000+600000
+ 7035 multiletter control sequences out of 15000+600000
  18267 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,32p,1276b,1439s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texl
-ive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on lniguide.pdf (13 pages, 826865 bytes).
+ 38i,7n,32p,1276b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on lniguide.pdf (18 pages, 1039101 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 198 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

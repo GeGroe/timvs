@@ -148,6 +148,8 @@ Sollte SVNE-NPS gewählt werden, werden die für Link-Abbildungen verantwortlichen
 	\includegraphics[width=1\textwidth]{variables.pdf}\newline
 \end{center}
 
+Fehlt: Kurze Beschreibung der Punkte 1-13\newline
+
 Die Berechnungen wurden mittels induktiver logischer Programmierung unter Verwendung von CPLEX\cite{CPLEX} und durch k-shortest-path anhand aller abzubildenden Elemente limitiert.
 Für die Testumgebungen wurden zufällig erzeugte VNRs mit 2 bis 10 Knoten und halbsovielen Links erzeugt. Auch die Rechenkapazität wie Bandbreite wurden durch Zufallsgeneratoren mit Werten im Bereich von 1 bis 10 gewählt und verteilt. Die Anzahl der VNRs beträgt einer Poisson-Verteilung nach einen Durchschnitt von 4 VNR pro 100 Zeiteinheiten, mit einer jeweiligen durchschnittlichen Einsatzzeit von 1000 Zeiteinheiten.
 
@@ -189,8 +191,32 @@ Im zweiten Ansatz widmen wir uns dem Modell aus \cite{algo2}. Dieser Ansatz arbe
 
 Wie man in Abbildung X sieht, werden auch bei diesem Modell VNRs und physische Netze in ungerichtete Graphen transformiert. Die in Klammern gestellten Parameter beschreiben Anforderungslevel(D) und Sicherheitslevel(L). Die hier durchgeführte Abbildung berücksichtigt nicht nur die Sicherheitsanforderungen aller Parteien unter Berücksichtigung der Basisanforderungen, sondern achtet zusätzlich noch auf Kostenminimierung. Insgesamt existieren drei Abbildungsmöglichkeiten, die gewählte ist jedoch die günstigste, unter dem Aspekt keine Sicherheitsresourcen zu verschwenden. Dieser VNR hätte auch auf EDGH abgebildet werden können, wobei der Link ED über einen Sicherheitslevel verfügt, welcher höher als nötig ist. Würde dies nicht beachtet werden, könnte es zu unnötigen Engpässen bei der Behandlung von VNRs mit höheren Anforderungslevels kommen. Um ein solches Verhalten zu erreichen, wurden zusätzlich Kosten- und Nutzen-Funktionen in die Berechnung integriert.
 \begin{center}
-	\includegraphics[width=1\textwidth]{algo2.pdf}\newline
+	\includegraphics[width=0.8\textwidth]{algo2.pdf}\newline
 \end{center}
+
+Fehlt: Kurze Beschreibung der Punkte 1-16
+
+Der zugehörige Abbildungsalgorithmus bietet nun zwei Optionen: uSAV und cSAV. Im Gegensatz zu uSAV werden bei cSAV Knoten und Links separat voneinander behandelt. !!!Weitere Unterschiede!!! 5 Zeilen ca..
+Beide Algorithmen arbeiten allerdings mit den selben Sub-Algorithmen: Node Mapping und Link Mapping
+
+
+
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{usav.pdf}\newline
+\end{center}
+
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{csav.pdf}\newline
+\end{center}
+
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{linkmapping.pdf}\newline
+\end{center}
+
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{nodemapping.pdf}\newline
+\end{center}
+
 
 
 \subsection{Vergleich}
@@ -198,6 +224,7 @@ Wie man in Abbildung X sieht, werden auch bei diesem Modell VNRs und physische N
 \section{Schlussfolgerung und Ausblick}
 Frage: Auf welcher Ebene wird virtualisiert? Auf IP-Ebene? Was ist dann aber mit IP-Support-Protokollen (ARP)? Oder nicht-IP-Protokollen? Will ich ein Netzwerk virtualisieren, oder nur den IP-Verkehr? Verkapselung führt zu Leistungseinbußen. \cite{cabuk2007towards}
 
+FEHLT [GG]: Optimierung der Grafiken, Erklärung der Ansatz2-Algorithmen, Ansatz2 Komplexitung und Performanz, 
 
 \bibliography{literatur}{}
 
