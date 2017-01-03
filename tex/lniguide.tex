@@ -7,17 +7,21 @@
 \usepackage{listings}
 \graphicspath{{pix/}{}}
 
-
 \author{Gerhard Gröschl, Miran Mizani\\\{gerhard.groeschl, miran.mizani\}@campus.lmu.de\\\\
 Seminar: Trends in Mobilen und Verteilten Systemen \\Wintersemester 2016/2017\\\\
 Lehrstuhl für Mobile und Verteilte Systeme\\Institut für Informatik\\Ludwig-Maximilians-Universität München\\\\
 Betreuer: Michael T. Beck\\\textit{eingereicht am \today}}
 \title{Sicherheitsaspekte bei Deployment virtueller Netzwerkinfrastrukturen}
 
+
+
 \begin{document}
 \maketitle
 
 \vfill
+FEHLT [GG]: Optimierung der Grafiken, Erklärung der Ansatz2-Algorithmen, Ansatz2 Komplexität und Performanz, Vergleich, Einfärbung der Gleichung Ansatz1, Legende maMo Ansatz2
+
+FRAGEN[GG]: mathematische Modelle rausnehmen?
 
 \begin{abstract}
 Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt die Nachfrage nach virtualisierten Infrastrukturen enorm. Serviceprovider müssen die Hardwarebasis für ihre Dienste nicht mehr selbst unterhalten und geben ihre dahingehende Verantwortung an Infrastrukturanbieter weiter. Um die Sicherheit dieser Strukturen nicht zu vernachlässigen, arbeiten viele Forscher in diesem Bereich und versuchen effiziente Algorithmen mit integrierter Beachtung der Sicherheitsaspekte zu finden. Diese Arbeit soll einen Überblick und eine Klassifizierung der Gefahren, die solche Konstrukte betreffen, sowie eine Analyse zweier unterschiedlicher Ansätze zur Vermeidung möglichst vieler Risiken zum Zeitpunkt der Planung übermitteln.
@@ -109,21 +113,22 @@ Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Att
 
 
 \section{Vermeidung von Gefahren via Secure VNE (SVNE)}
-Da wir nun einen Überblick zu VNE sowie den ... Gefahren gegeben haben, widmen wir uns nun zwei verschiedenen SVNE-Lösungsansätzen.
+Da wir nun einen Überblick zu VNE sowie den bestehenden Gefahren gegeben haben, widmen wir uns nun zwei verschiedenen SVNE-Lösungsansätzen.
 
 \subsection{Ansatz 1}
+
 Hierbei beschäftigen wir uns mit dem Lösungsansatz aus \cite{wang2016towards}. 
 Das Hauptaugenmerk bezüglich der Sicherheitsaspekte legen Wang et al auf Traffic-Verschlüsselung und die Separierung von VMs unterschiedlicher Trust-Levels. Mittels"`Security plan design"'werden die drei folgenden strukturellen Aspekte betrachtet und in dementsprechende Levels eingeteilt.
-
-"The Network plan":\newline
+\begin{itemize}
+\item The Network plan:\newline
 Ein VNR wird als Netzwerk betrachtet und seinem Level entsprechend isoliert. "`High"'fordert und beansprucht ein gesamtes Netz bzw. Subnetz der physischen Infrastruktur für sich. Hiermit soll die Wahrscheinlichkeit für DOS-Angriffe oder ähnliche vermindert werden, da"`Mehr-Parteien-Netzwerke"'die Hauptschwachstellen für solche Angriffe darstellen \cite{DOS}. Auch Sniffing durch kompromittierte Hosts im selben Netz wird durch diese Maßnahme verhindert. Während "high"'Resourcenteilung somit komplett verweigert, lässt der Level"`medium"'zumindest ein gemeinsam genutztes Netz für VNRs vom selben Eigentümer zu.
 
-"The Node plan":\newline
+\item The Node plan:\newline
 Die einzelnen virtuellen Knoten eines VNR stellen Isolierungsanforderungen an die physischen Knoten. Wie auch beim"`network plan", werden die Levels"`high","`medium"'und"`none"'definiert und umgesetzt."`high"'fordert die alleinige Existenz eines VNR-Knotens,"`medium"'lässt VNR-Knoten vom selben Eigentümer auf ein und demselben physischen Knoten zu. Durch diesen Plan sollen Angriffe von VM zu VM über gemeinsam genutzte Resourcen unterbunden werden. Zusätzlich wird das Risiko eines Angriffs vom physischen Host verringert, da der Angriffsvektor"`VM zu physischem Host"'eliminiert wird.
 
-"The Link plan":\newline
+\item The Link plan:\newline
 End-to-End(E2E), Point-to-Point(P2P) und"`none"'sind die hier wählbaren Levels. Während E2E nur an den Endpunkten Verschlüsselungskapazitäten zu Verfügung stellen muss, benötigt P2P diese Kapazitäten an allen Hops des abgebildeten Links. Die heutzutage sehr gängigen man-in-the-middle Angriffe sollen dadurch wesentlich erschwert werden. 
-
+\end{itemize}
 VNRs werden nun, wie in Kapitel 2 bereits gezeigt, in ungerichtete Graphen mit Standardanforderungentransformiert. Zusätzlich werden hier auch noch Sicherheitsanforderungen integriert.\newline
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{SVNR.pdf}\newline
@@ -167,28 +172,28 @@ In welchem Komplexitätsbereich sich das Pre-Processing befindet wird hier leider
 
 \subsection{Ansatz 2}
 
-Im zweiten Ansatz widmen wir uns dem Modell aus \cite{algo2}. Dieser Ansatz arbeitet mit abstrakten Sicherheitslevels. Im Folgenden werden zwar Skalare hierfür verwendet, was allerdings nicht zwingend so vorgesehen ist. Man könnte stattdessen auch komplexere Sicherheitsvektoren verwenden, welche bei Weitem detailliertere Sicherheitsmerkmale beschreiben. Des weiteren verfügt jeder physische wie auch virtuelle Knoten über zwei Sicherheitswerte: Anforderungslevel und (eigenes) Sicherheitslevel. Der Anforderungslevel definiert das Minimum-Level des Gegenübers, der Sicherheitslevel definiert die eigenen gewünschten Sicherheitsmerkmale. Virtuelle Links verfügen über Anforderungslevels, physische Links nur über Sicherheitslevels. Die vorausgesetzten Basisanforderungen, welchen alle VNRs unterliegen, beschränken sich auf 4 Regeln, welche mittels der zuvor genannten Merkmale umgesetzt werden:
-
-\begin{lstlisting}
-1) Ein physischer Knoten sollte einen Sicherheitslevel garantieren, 
+Im zweiten Ansatz widmen wir uns dem Modell aus \cite{algo2}. Dieser Ansatz arbeitet mit abstrakten Sicherheitslevels. Im Folgenden werden zwar Skalare hierfür verwendet, was allerdings nicht zwingend so vorgesehen ist. Stattdessen wäre eine Verwendung komplexerer Sicherheitsvektoren möglich, welche bei weitem detailliertere Sicherheitsmerkmale  beschreiben könnten. Des weiteren verfügt jeder physische wie auch virtuelle Knoten über zwei Sicherheitswerte: Anforderungslevel und (eigenes) Sicherheitslevel. Der Anforderungslevel definiert das Minimum-Level des Gegenübers, der Sicherheitslevel definiert die eigenen gewünschten Sicherheitsmerkmale. Virtuelle Links verfügen über Anforderungslevels, physische Links nur über Sicherheitslevels. Die vorausgesetzten Basisanforderungen, welchen alle VNRs unterliegen, beschränken sich auf 4 Regeln, welche mittels der zuvor genannten Merkmale umgesetzt werden:
+\begin{itemize}
+\begin{listing}
+\item Ein physischer Knoten sollte einen Sicherheitslevel garantieren, 
    der höher ist als die Anforderungen der darauf abzubildenden
    virtuellen Knoten.
 
-2) Der Sicherheitslevel des virtuellen Knotens sollte höher sein, 
+\item Der Sicherheitslevel des virtuellen Knotens sollte höher sein, 
    als das Anforderungslevel des physichen Knotens.
 
-3) Alle virtuellen Knoten, welche auf den selben physischen Knoten
+\item Alle virtuellen Knoten, welche auf den selben physischen Knoten
    abgebildet werden, sollten über einen ausreichenden Sicherheitslevel
    verfügen.
 
-4) Der Anforderungslevel des virtuellen Links sollte stets niedriger
+\item Der Anforderungslevel des virtuellen Links sollte stets niedriger
    sein, als das Sicherheitslevel des physischen Links.
-\end{lstlisting}
+\end{listing}
 
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{algo2graph.pdf}\newline
 \end{center}
-
+\end{itemize}
 Wie man in Abbildung X sieht, werden auch bei diesem Modell VNRs und physische Netze in ungerichtete Graphen transformiert. Die in Klammern gestellten Parameter beschreiben Anforderungslevel(D) und Sicherheitslevel(L). Die hier durchgeführte Abbildung berücksichtigt nicht nur die Sicherheitsanforderungen aller Parteien unter Berücksichtigung der Basisanforderungen, sondern achtet zusätzlich noch auf Kostenminimierung. Insgesamt existieren drei Abbildungsmöglichkeiten, die gewählte ist jedoch die günstigste, unter dem Aspekt keine Sicherheitsresourcen zu verschwenden. Dieser VNR hätte auch auf EDGH abgebildet werden können, wobei der Link ED über einen Sicherheitslevel verfügt, welcher höher als nötig ist. Würde dies nicht beachtet werden, könnte es zu unnötigen Engpässen bei der Behandlung von VNRs mit höheren Anforderungslevels kommen. Um ein solches Verhalten zu erreichen, wurden zusätzlich Kosten- und Nutzen-Funktionen in die Berechnung integriert.
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{algo2.pdf}\newline
@@ -196,25 +201,28 @@ Wie man in Abbildung X sieht, werden auch bei diesem Modell VNRs und physische N
 
 Fehlt: Kurze Beschreibung der Punkte 1-16
 
-Der zugehörige Abbildungsalgorithmus bietet nun zwei Optionen: uSAV und cSAV. Im Gegensatz zu uSAV werden bei cSAV Knoten und Links separat voneinander behandelt. !!!Weitere Unterschiede!!! 5 Zeilen ca..
-Beide Algorithmen arbeiten allerdings mit den selben Sub-Algorithmen: Node Mapping und Link Mapping
-
+Der zugehörige Abbildungsalgorithmus bietet nun zwei Optionen: uSAV und cSAV. uSAV ist für den laufenden Betrieb, also die Abbildung bestehender VNRs sowie der Abbildung neu hinzugekommener VNRs zuständig und bildet diese zeitsparend ab. Das heißt die optimale Abbildung wird hier zwar selten erreicht, dafür wird unter Betrachtung der Kosten-/Nutzen-Berechung ein günstiges Ergebnis erzielt. cSAV arbeitet, im Gegenzug zu uSAV, auf optimale Abbildungen hin. Um dies zu erreichen trennt cSAV Knoten- und Link-Abbildungen strikt, was zu enormen Verschlechterungen bei "no-path-splitting"-Anforderungen führt.
+Beide Algorithmen arbeiten mit den selben  Heuristiken und Sub-Algorithmen: Node Mapping und Link Mapping
 
 
 \begin{center}
+uSAV\newline
 	\includegraphics[width=0.8\textwidth]{usav.pdf}\newline
 \end{center}
-
+\newpage
 \begin{center}
+cSAV\newline
 	\includegraphics[width=0.8\textwidth]{csav.pdf}\newline
 \end{center}
-
+\newpage
 \begin{center}
-	\includegraphics[width=0.8\textwidth]{linkmapping.pdf}\newline
-\end{center}
-
-\begin{center}
+Knoten-Abbildungen\newline
 	\includegraphics[width=0.8\textwidth]{nodemapping.pdf}\newline
+\end{center}
+\newpage
+\begin{center}
+Link-Abbildungen\newline
+	\includegraphics[width=0.8\textwidth]{linkmapping.pdf}\newline
 \end{center}
 
 
@@ -224,7 +232,7 @@ Beide Algorithmen arbeiten allerdings mit den selben Sub-Algorithmen: Node Mappi
 \section{Schlussfolgerung und Ausblick}
 Frage: Auf welcher Ebene wird virtualisiert? Auf IP-Ebene? Was ist dann aber mit IP-Support-Protokollen (ARP)? Oder nicht-IP-Protokollen? Will ich ein Netzwerk virtualisieren, oder nur den IP-Verkehr? Verkapselung führt zu Leistungseinbußen. \cite{cabuk2007towards}
 
-FEHLT [GG]: Optimierung der Grafiken, Erklärung der Ansatz2-Algorithmen, Ansatz2 Komplexitung und Performanz, 
+
 
 \bibliography{literatur}{}
 
