@@ -1,7 +1,7 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Einleitung}{3}
-\contentsline {section}{\numberline {2}Das Virtuel Network Embedding Problem}{4}
-\contentsline {section}{\numberline {3}Sicherheitsaspekte virtueller Netzwerk-Infrastrukturen / -systeme}{6}
+\contentsline {section}{\numberline {2}Das Virtual Network Embedding Problem}{4}
+\contentsline {section}{\numberline {3}Sicherheitsaspekte virtueller Netzinfrastrukturen}{6}
 \contentsline {subsection}{\numberline {3.1}Sicherheitsanforderungen}{6}
 \contentsline {subsection}{\numberline {3.2}Herk\"ommliche Gefahren in Netzinfrastrukturen}{6}
 \contentsline {subsection}{\numberline {3.3}Neue Verwundbarkeiten in virtualisierten Umgebungen}{6}
