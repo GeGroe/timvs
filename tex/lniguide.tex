@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{listings}
+\usepackage{nameref}
 \graphicspath{{pix/}{}}
 
 \author{Gerhard Gröschl, Miran Mizani\\\{gerhard.groeschl, miran.mizani\}@campus.lmu.de\\\\
@@ -34,6 +35,11 @@ Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt
 \newpage
 
 \section{Einleitung}
+\label{sec:Einleitung}
+\input{Kapitel/einleitung}
+
+
+
 % Die Ausarbeitung zum Seminar soll dem Layout der \textit{GI-Edition Lecture Notes in Informatics (LNI)} entsprechen. Die verwendete Literatur wird in der beiliegenden Datei \verb+literatur.bib+ verwaltet. Eine Referenz kann mittels des \verb+\cite{}+--Kommandos eingefügt werden, z.B.
 
 % \subsection{Hinweise für Abbildungen}
@@ -44,7 +50,10 @@ Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt
 %     \caption{\label{logo}Das Logo der GI}
 %   \end{center}
 % \end{figure}
-\section{Das Newtork Embedding Problem}
+
+
+\section{Das Virtuel Network Embedding Problem}
+\label{sec:VNE-Problem}
 Um den Anforderungen der heutigen Gefahren zu genügen, ist es unumgänglich sämtliche Grundsätze der IT-Sicherheit möglichst früh in die Planung der gewünschten Infrastruktur miteinzubeziehen. Nicht nur, weil das nachträgliche Schließen von Sicherheitslücken und Hinzufügen von Sicherheitskomponenten in finanzieller und zeitlicher Hinsicht zehnmal so teuer ist wie die initiale Beachtung dieser Aspekte, sondern weil die vollständige Sicherheit eines nachgerüsteten Systems kaum gewährleistet werden kann \cite{Cole}."`Security-by-Design"' ist einer der wichtigsten Begriffe bei der Planung öffentlich zugänglicher Netzwerkstrukturen. Dementsprechend groß ist die Nachfrage nach VNE-Algorithmen, die bereits beim Prozess des Mappings möglichst viele Sicherheitsaspekte beachten und abdecken. Die vorausgehende Klassifizierung der bekannten Gefahren in "`VNE-relevant"' und "`nicht-VNE-relevant"' bildet die Grundlage für unsere weiteren Untersuchungen. Um zuvor noch einen genaueren Einblick in die Problematik von VNE zu gewähren, beginnen wir zunächst mit der Erläuterung des VNE-Problems sowie einem Überblick über die verschiedenen erfolgreichen Strategien bestehender VNE-Algorithmen, welche die Sicherheitsaspekte noch nicht beachten. 
 
 Betrachtet man das zugrundeliegende physische System als einen ungerichteten Graphen
@@ -103,16 +112,29 @@ Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Att
 
 
 
-\section{Sicherheitsaspekte bei virtuellen Netzwerk-Infrastrukturen}
+\section{Sicherheitsaspekte virtueller Netzwerk-Infrastrukturen / -systeme}
+\label{sec:gefahren}
 
-\subsection{Herkömmliche Gefahren}
+\subsection{Sicherheitsanforderungen}
+\label{subsec:gefahren_anforderungen}
+\input{Kapitel/sicherheitsanforderungen}
 
-\subsection{Spezielle Gefahren bei virtualisierten Umgebungen}
+\subsection{Herkömmliche Gefahren in Netzinfrastrukturen}
+\label{subsec:gefahren_allg}
+
+
+
+\subsection{Neue Verwundbarkeiten in virtualisierten Umgebungen}
+\label{subsec:gefahren_virt}
+\input{Kapitel/gefahren_virt}
+
 
 \subsection{VNE-Relevante Gefahren}
+\label{subsec:gefahren_vnerelevant}	
 
 
 \section{Vermeidung von Gefahren via Secure VNE (SVNE)}
+\label{sec:svne}
 Da wir nun einen Überblick zu VNE sowie den bestehenden Gefahren gegeben haben, widmen wir uns nun zwei verschiedenen SVNE-Lösungsansätzen.
 
 \subsection{Ansatz 1}
@@ -228,8 +250,15 @@ Link-Abbildungen\newline
 
 
 \subsection{Vergleich}
+\label{subsec:svne_vergleich}
+
+
+
 \section{Ungelöste Probleme}
+\label{sec:offenefragen}
+
 \section{Schlussfolgerung und Ausblick}
+\label{sec:schluss}
 Frage: Auf welcher Ebene wird virtualisiert? Auf IP-Ebene? Was ist dann aber mit IP-Support-Protokollen (ARP)? Oder nicht-IP-Protokollen? Will ich ein Netzwerk virtualisieren, oder nur den IP-Verkehr? Verkapselung führt zu Leistungseinbußen. \cite{cabuk2007towards}
 
 

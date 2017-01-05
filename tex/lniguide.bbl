@@ -1,4 +1,19 @@
-\begin{thebibliography}{CDRS07}
+\gdef\etalchar#1{$^{#1}$}
+\begin{thebibliography}{GCH{\etalchar{+}}16}
+
+\bibitem[APST05]{anderson2005overcoming}
+Thomas Anderson, Larry Peterson, Scott Shenker und Jonathan Turner.
+\newblock Overcoming the Internet impasse through virtualization.
+\newblock {\em Computer}, 38(4):34--41, 2005.
+
+\bibitem[BOB{\etalchar{+}}12]{bays2012security}
+Leonardo~Richter Bays, Rodrigo~Ruas Oliveira, Luciana~Salete Buriol,
+  Marinho~Pilla Barcellos und Luciano~Paschoal Gaspary.
+\newblock Security-aware optimal resource allocation for virtual network
+  embedding.
+\newblock In {\em Proceedings of the 8th International Conference on Network
+  and Service Management}, Seiten 378--384. International Federation for
+  Information Processing, 2012.
 
 \bibitem[CDRS07]{cabuk2007towards}
 Serdar Cabuk, Chris~I Dalton, HariGovind Ramasamy und Matthias Schunter.
@@ -9,6 +24,20 @@ Serdar Cabuk, Chris~I Dalton, HariGovind Ramasamy und Matthias Schunter.
 \bibitem[Col11]{Cole}
 Eric Cole.
 \newblock Network Security Bible: Edition 2, 2011.
+
+\bibitem[FBB{\etalchar{+}}13]{fischer2013virtual}
+Andreas Fischer, Juan~Felipe Botero, Michael~Till Beck, Hermann De~Meer und
+  Xavier Hesselbach.
+\newblock Virtual network embedding: A survey.
+\newblock {\em IEEE Communications Surveys \& Tutorials}, 15(4):1888--1906,
+  2013.
+
+\bibitem[GCH{\etalchar{+}}16]{gong2016virtual}
+Shuiqing Gong, Jing Chen, Conghui Huang, Qingchao Zhu und Siyi Zhao.
+\newblock Virtual Network Embedding through Security Risk Awareness and
+  Optimization.
+\newblock {\em KSII Transactions on Internet \& Information Systems}, 10(7),
+  2016.
 
 \bibitem[hi]{CPLEX}
 http://www 01.ibm.com/software.
