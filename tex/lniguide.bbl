@@ -1,3 +1,47 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{CDRS07}
+
+\bibitem[CDRS07]{cabuk2007towards}
+Serdar Cabuk, Chris~I Dalton, HariGovind Ramasamy und Matthias Schunter.
+\newblock Towards automated provisioning of secure virtualized networks.
+\newblock In {\em Proceedings of the 14th ACM conference on Computer and
+  communications security}, Seiten 235--245. ACM, 2007.
+
+\bibitem[Col11]{Cole}
+Eric Cole.
+\newblock Network Security Bible: Edition 2, 2011.
+
+\bibitem[hi]{CPLEX}
+http://www 01.ibm.com/software.
+\newblock CPLEX.
+
+\bibitem[Liu10]{DOS}
+H.~Liu.
+\newblock A new form of dos attack in a cloud and its avoidance mechanism, in:
+  Proceedings of the 2010 ACM Workshop on Cloud Computing Security Workshop,
+  2010.
+
+\bibitem[MRR13]{SVNE2}
+Raouf~Boutaba Muntasir Raihan~Rahman.
+\newblock Surviveable Virtual Network Embedding Algorithms for Network
+  Virtualization, 2013.
+
+\bibitem[QH13]{Std}
+X.~Cao Q.~Hu, Y.~Wan.
+\newblock Resolve the virtual network embedding problem: a column generation
+  approach.
+\newblock {\em INFOCOM, 2013 Proceedings IEEE}, 2013.
+
+\bibitem[RA93]{MCF}
+J.B.~Orlin R.K.~Ahuja, R.L.~Magnanti.
+\newblock Network Flow: Theory, Algorithms and Applications, 1993.
+
+\bibitem[SL15]{algo2}
+Hong Xu Ming~Xu Shuhao~Liu, Zhiping~Cai.
+\newblock Towards Security-aware Virtual Network Embedding, 2015.
+
+\bibitem[WCC16]{wang2016towards}
+Yang Wang, Phanvu Chau und Fuyu Chen.
+\newblock Towards a secured network virtualization.
+\newblock {\em Computer Networks}, 104:55--65, 2016.
 
 \end{thebibliography}
