@@ -28,6 +28,16 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 INPUT latin1.sty
 INPUT latin1.sty
 INPUT latin1.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
@@ -168,6 +178,9 @@ INPUT ./pix/nodemapping.pdf
 INPUT pix/linkmapping.pdf
 INPUT ./pix/linkmapping.pdf
 INPUT ./pix/linkmapping.pdf
+INPUT pix/perf_algo2.pdf
+INPUT ./pix/perf_algo2.pdf
+INPUT ./pix/perf_algo2.pdf
 INPUT lniguide.bbl
 INPUT lniguide.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
