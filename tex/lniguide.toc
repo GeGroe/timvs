@@ -9,6 +9,6 @@
 \contentsline {section}{\numberline {4}Vermeidung von Gefahren via Secure VNE (SVNE)}{7}
 \contentsline {subsection}{\numberline {4.1}Ansatz 1}{7}
 \contentsline {subsection}{\numberline {4.2}Ansatz 2}{12}
-\contentsline {subsection}{\numberline {4.3}Vergleich}{18}
-\contentsline {section}{\numberline {5}Ungel?ste Probleme}{18}
-\contentsline {section}{\numberline {6}Schlussfolgerung und Ausblick}{18}
+\contentsline {subsection}{\numberline {4.3}Vergleich}{19}
+\contentsline {section}{\numberline {5}Ungel?ste Probleme}{19}
+\contentsline {section}{\numberline {6}Schlussfolgerung und Ausblick}{19}

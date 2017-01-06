@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex lniguide"] 1483703619 "lniguide.aux" "lniguide.bbl" "lniguide" 1483703621
+["bibtex lniguide"] 1483707751 "lniguide.aux" "lniguide.bbl" "lniguide" 1483707753
   "./lnig.bst" 1482344598 28127 07924b6e6fa8e042e083eb4634d8fccb ""
   "literatur.bib" 1483703549 5450 30f8c81ac210a8b31355c5b8ce20a515 ""
-  "lniguide.aux" 1483703549 3101 f5fd1b264f35cec77b392523ba573352 ""
+  "lniguide.aux" 1483707682 3099 8c2455b5ddaf33b8371fa4dbc99a9296 ""
   "lniguide.bcf" 0 -1 0 ""
   (generated)
   "lniguide.blg"
   "lniguide.bbl"
-["latex"] 1483703621 "lniguide.tex" "lniguide.dvi" "lniguide" 1483703621
+["latex"] 1483707753 "lniguide.tex" "lniguide.dvi" "lniguide" 1483707753
   "/etc/texmf/web2c/texmf.cnf" 1482347278 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -79,16 +79,16 @@
   "Kapitel/sicherheitsanforderungen.tex" 1483703549 13 157757b4820cbfb7073dc726d8d92f94 ""
   "latin1.sty" 1482344598 1825 cb18b9c3de1027b70ef258843a8937ab ""
   "lni.cls" 1482344598 5130 a250419212ec19cc835b1bd7db436767 ""
-  "lniguide.aux" 1483703549 3101 f5fd1b264f35cec77b392523ba573352 ""
-  "lniguide.bbl" 1483703619 2763 9b4453ef249a0eea205717ce179524e2 "bibtex lniguide"
-  "lniguide.tex" 1483703595 19939 e3f5e526401623ea7063f38fa8b2e94b ""
-  "lniguide.toc" 1483703549 1012 fafdd5d7d9fa5f332a81c7287627d53e ""
+  "lniguide.aux" 1483707682 3099 8c2455b5ddaf33b8371fa4dbc99a9296 ""
+  "lniguide.bbl" 1483707751 2763 9b4453ef249a0eea205717ce179524e2 "bibtex lniguide"
+  "lniguide.tex" 1483707749 21378 76f3b9f850b74504a811d9353b9aca76 ""
+  "lniguide.toc" 1483707682 1008 f520d13f64b7ef2be09088796bbab07c ""
   "pix/SVNR.pdf" 1482944379 45079 39bf5afb7e6a66497b18e60df343150b ""
   "pix/VNR1.pdf" 1482344598 8081 48ea07510d2021f4570945b7ae4434de ""
   "pix/algo.pdf" 1482945513 83218 e670747a59f562b26e07cab861f40808 ""
   "pix/algo2.pdf" 1483448792 131387 0e3b58ff9a1fadb0dcb91dba8d17fa83 ""
   "pix/algo2graph.pdf" 1483028861 75438 ea4ee603fdd5280733d7e486e2da95b2 ""
-  "pix/aux.pdf" 1483703538 68370 227724b0cadd989855d55714bd8b149e ""
+  "pix/auxgraph.pdf" 1483703538 68370 227724b0cadd989855d55714bd8b149e ""
   "pix/csav.pdf" 1483456178 69064 40d0780895c7c3ae3d492f9ca9449a77 ""
   "pix/linkmapping.pdf" 1483456585 50225 42438f6aa7290e2db951fcca5bc2114d ""
   "pix/nodemapping.pdf" 1483456683 56292 2d832e685ad3660dc7367460467a8051 ""

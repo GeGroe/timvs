@@ -135,9 +135,9 @@ INPUT ./pix/SVNR.pdf
 INPUT pix/pre-processing.pdf
 INPUT ./pix/pre-processing.pdf
 INPUT ./pix/pre-processing.pdf
-INPUT pix/aux.pdf
-INPUT ./pix/aux.pdf
-INPUT ./pix/aux.pdf
+INPUT pix/auxgraph.pdf
+INPUT ./pix/auxgraph.pdf
+INPUT ./pix/auxgraph.pdf
 INPUT pix/algo.pdf
 INPUT ./pix/algo.pdf
 INPUT ./pix/algo.pdf
