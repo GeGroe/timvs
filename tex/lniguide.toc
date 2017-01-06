@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {2}Das Virtual Network Embedding Problem}{4}
 \contentsline {section}{\numberline {3}Sicherheitsaspekte virtueller Netzinfrastrukturen}{6}
 \contentsline {subsection}{\numberline {3.1}Sicherheitsanforderungen}{6}
-\contentsline {subsection}{\numberline {3.2}Herk?mmliche Gefahren in Netzinfrastrukturen}{6}
+\contentsline {subsection}{\numberline {3.2}Herk\IeC {\"o}mmliche Gefahren in Netzinfrastrukturen}{6}
 \contentsline {subsection}{\numberline {3.3}Neue Verwundbarkeiten in virtualisierten Umgebungen}{6}
 \contentsline {subsection}{\numberline {3.4}VNE-Relevante Gefahren}{7}
 \contentsline {section}{\numberline {4}Vermeidung von Gefahren via Secure VNE (SVNE)}{7}
