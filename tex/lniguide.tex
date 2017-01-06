@@ -195,8 +195,7 @@ In welchem Komplexit?sbereich sich das Pre-Processing befindet wird hier leider 
 \subsection{Ansatz 2}
 
 Im zweiten Ansatz widmen wir uns dem Modell aus \cite{algo2}. Dieser Ansatz arbeitet mit abstrakten Sicherheitslevels. Im Folgenden werden zwar Skalare hierf?r verwendet, was allerdings nicht zwingend so vorgesehen ist. Stattdessen w?e eine Verwendung komplexerer Sicherheitsvektoren m?glich, welche bei weitem detailliertere Sicherheitsmerkmale  beschreiben k?nnten. Des weiteren verf?gt jeder physische wie auch virtuelle Knoten ?ber zwei Sicherheitswerte: Anforderungslevel und (eigenes) Sicherheitslevel. Der Anforderungslevel definiert das Minimum-Level des Gegen?bers, der Sicherheitslevel definiert die eigenen gew?nschten Sicherheitsmerkmale. Virtuelle Links verf?gen ?ber Anforderungslevels, physische Links nur ?ber Sicherheitslevels. Die vorausgesetzten Basisanforderungen, welchen alle VNRs unterliegen, beschr?ken sich auf 4 Regeln, welche mittels der zuvor genannten Merkmale umgesetzt werden:
-%\begin{itemize}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}%\begin{listing} %%% ich glaube, wenn dann {lstlisting}
+\begin{itemize}
 \item Ein physischer Knoten sollte einen Sicherheitslevel garantieren, 
    der h?her ist als die Anforderungen der darauf abzubildenden
    virtuellen Knoten.
@@ -215,7 +214,6 @@ Im zweiten Ansatz widmen wir uns dem Modell aus \cite{algo2}. Dieser Ansatz arbe
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{algo2graph.pdf}\newline
 \end{center}
-%\end{itemize}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Wie man in Abbildung X sieht, werden auch bei diesem Modell VNRs und physische Netze in ungerichtete Graphen transformiert. Die in Klammern gestellten Parameter beschreiben Anforderungslevel(D) und Sicherheitslevel(L). Die hier durchgef?hrte Abbildung ber?cksichtigt nicht nur die Sicherheitsanforderungen aller Parteien unter Ber?cksichtigung der Basisanforderungen, sondern achtet zus?zlich noch auf Kostenminimierung. Insgesamt existieren drei Abbildungsm?glichkeiten, die gew?lte ist jedoch die g?nstigste, unter dem Aspekt keine Sicherheitsresourcen zu verschwenden. Dieser VNR h?te auch auf EDGH abgebildet werden k?nnen, wobei der Link ED ?ber einen Sicherheitslevel verf?gt, welcher h?her als n?tig ist. W?rde dies nicht beachtet werden, k?nnte es zu unn?tigen Engp?sen bei der Behandlung von VNRs mit h?heren Anforderungslevels kommen. Um ein solches Verhalten zu erreichen, wurden zus?zlich Kosten- und Nutzen-Funktionen in die Berechnung integriert.
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{algo2.pdf}\newline
@@ -223,9 +221,17 @@ Wie man in Abbildung X sieht, werden auch bei diesem Modell VNRs und physische N
 
 Fehlt: Kurze Beschreibung der Punkte 1-16
 
-Der zugeh?rige Abbildungsalgorithmus bietet nun zwei Optionen: uSAV und cSAV. uSAV ist f?r den laufenden Betrieb, also die Abbildung bestehender VNRs sowie der Abbildung neu hinzugekommener VNRs zust?dig und bildet diese zeitsparend ab. Das hei? die optimale Abbildung wird hier zwar selten erreicht, daf?r wird unter Betrachtung der Kosten-/Nutzen-Berechung ein g?nstiges Ergebnis erzielt. cSAV arbeitet, im Gegenzug zu uSAV, auf optimale Abbildungen hin. Um dies zu erreichen trennt cSAV Knoten- und Link-Abbildungen strikt, was zu enormen Verschlechterungen bei "no-path-splitting"-Anforderungen f?hrt.
-Beide Algorithmen arbeiten mit den selben  Heuristiken und Sub-Algorithmen: Node Mapping und Link Mapping
+Das außergewöhnliche bei diesem Ansatz ist die Verwendung zweier unterschiedlicher Algorithmen, welche sich gegenseitig ergänzen: uSAV und cSAV.
+\begin{itemize}
+	\item uSAV \newline
+	uSAV, der unkooridinierte zwei-Phasen-Algorithmus, behandelt Knoten- und Link-Abbildungen getrennt voneinander. Dementsprechend liegt die Schwäche von uSAV in der Abbildung von non-splittable-links. uSAV ist ein terminierender Algorithmus, welcher die Abbildung der Knoten priorisiert und dahingehend ein sehr gutes Ergebnis mit wenig Aufwand erzielt. Jedoch kann es, durch die Priorisierung der Knoten, zu hohen Kosten bei der Link-Abbildung kommen.
 
+	\item cSAV \newline
+	cSAV, der koordinierte Algorithmus, behandelt Knoten und Links gemeinsam, und kann zur Optimierung, des bereits von uSAV gelieferten Ergebnisses verwendet werden. cSAV liefert zwar optimalere Ergebnisse als uSAV, benötigt aber auch mehr Zeit. Hier muss Zeitaufwand mit gelieferter Leistung abgewogen werden.
+
+\end{itemize} 
+
+Beide Varianten nutzen die selben Heuristiken ((und Sub-Algorithmen)). Der Author schlägt für ideale Ergebnisse eine kombinierte Benutzung der beiden Varianten vor.
 
 \begin{center}
 uSAV\newline
@@ -238,12 +244,12 @@ cSAV\newline
 \end{center}
 \newpage
 \begin{center}
-Knoten-Abbildungen\newline
+Sub-Algorithmus 1: Knoten-Abbildungen\newline
 	\includegraphics[width=0.8\textwidth]{nodemapping.pdf}\newline
 \end{center}
 \newpage
 \begin{center}
-Link-Abbildungen\newline
+Sub-Algorithmus 2: Link-Abbildungen\newline
 	\includegraphics[width=0.8\textwidth]{linkmapping.pdf}\newline
 \end{center}
 
