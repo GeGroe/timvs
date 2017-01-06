@@ -161,7 +161,7 @@ Nun wird ein vier-stufiges Pre-Processing durchgef?hrt, um die Berechnung der op
 \end{center}
 Mit den aus dem Pre-Processing gewonnen Information bildet man nun einen Hilsgraphen, welcher die ?brig gebliebenen M?glichkeiten der Einbettung zeigt.\newline
 \begin{center}
-	\includegraphics[width=0.6\textwidth]{aux.pdf}\newline 
+	\includegraphics[width=0.6\textwidth]{auxgraph.pdf}\newline 
 \end{center}
 Dieses Pre-Processing reduziert das SVNE-Problem auf ein"`multi-commodity-flow"'Problem [mit einem Wert (Rohstoff?) pro Link]. \cite{MCF}
 Im weiteren Vorgehen werden nun zwei F?le unterschieden."`Path-splitting", im weiteren SVNE-PS und"`no-path-splitting", im weitern SVNE-NPS, sind zus?zliche Sicherheitsvorgaben, welche im Vorfeld definiert werden m?ssen, um die Wahl des Algorithmus zu erm?glichen. Sollte SVNE-PS gew?lt werden, beziehen sich die Gleichungen nur auf die Erf?llung der geforderten Attribute.
@@ -252,6 +252,16 @@ Sub-Algorithmus 1: Knoten-Abbildungen\newline
 Sub-Algorithmus 2: Link-Abbildungen\newline
 	\includegraphics[width=0.8\textwidth]{linkmapping.pdf}\newline
 \end{center}
+
+Die Testumgebung dieses Ansatzes wurde mittels GT-ITM-Tool\{cite-missing!} erstellt. 
+
+Die physischen Netze wurden in der Größenordnung eines mittleres ISP angesetzt, und betrugen 100 Knoten und 500 Links. Die Bandbreite und Rechenkapazität wurden, wie auch im vorherigen Ansatz, gleichmäßig verteilt und betrugen Werte zwischen 50 und 100. Die abstrakten Sicherheitslevels der physischen Elemente wurden zwischen 0 und 4 gleichmäßig verteilt. Die Anforderungslevels wurden ebenfalls aus dem Bereich 0-4 gewählt, und so verteilt, dass kein physisches Element ein höheres Anforderungslevel als Sicherheitslevel besitzt.
+
+Die VNRs beinhalteten 2 bis 20 Knoten sowie halbsoviele Links. Die Bandbreite- und Rechenkapazitäts-Forderungen wurden zwischen 0 und 50 gewählt und ebenfalls gleichmäßig verteilt.
+Die zeitlichen Parameter wurden auf durchschnittlich (Poisson-Verteilung) 5 Anforderungen pro 100 Zeiteinheiten begrenzt. Die Verwendungszeit eines VNRs folgt einer Exponential-Verteilung und betrugt im Durchschnitt 500 Zeiteinheiten. Eine einzelne Simulation erhielt 1500 VNRs und dauerte 30000 Zeiteinheiten.
+
+Als Vergleichswert wurde der Algorithmus aus \{cite-6-missing} verwendet.
+
 
 
 
