@@ -8,10 +8,10 @@
 \contentsline {paragraph}{von NI}{7}
 \contentsline {paragraph}{von VN/VM}{7}
 \contentsline {paragraph}{von User}{7}
-\contentsline {subsection}{\numberline {3.4}VNE-Relevante Gefahren}{11}
-\contentsline {section}{\numberline {4}Vermeidung von Gefahren via Secure VNE (SVNE)}{11}
-\contentsline {subsection}{\numberline {4.1}Ansatz 1}{11}
-\contentsline {subsection}{\numberline {4.2}Ansatz 2}{16}
-\contentsline {subsection}{\numberline {4.3}Vergleich}{23}
-\contentsline {section}{\numberline {5}Ungel\IeC {\"o}ste Probleme}{24}
-\contentsline {section}{\numberline {6}Schlussfolgerung und Ausblick}{24}
+\contentsline {subsection}{\numberline {3.4}VNE-Relevante Gefahren}{7}
+\contentsline {section}{\numberline {4}Vermeidung von Gefahren via Secure VNE (SVNE)}{7}
+\contentsline {subsection}{\numberline {4.1}Ansatz 1}{7}
+\contentsline {subsection}{\numberline {4.2}Ansatz 2}{12}
+\contentsline {subsection}{\numberline {4.3}Vergleich}{19}
+\contentsline {section}{\numberline {5}Ungel\IeC {\"o}ste Probleme}{20}
+\contentsline {section}{\numberline {6}Schlussfolgerung und Ausblick}{20}
