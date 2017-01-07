@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.22)  7 JAN 2017 14:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.22)  7 JAN 2017 17:09
 entering extended mode
 **lniguide.tex
 
@@ -493,13 +493,45 @@ las-sen. Den-noch gibt es M?glichkeiten,
 ("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
 Kapitel/sicherheitsanforderungen.tex")
 ("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
-Kapitel/gefahren_virt.tex" [6])
+Kapitel/gefahren_virt.tex" [6]
+Overfull \hbox (2.10187pt too wide) in paragraph at lines 18--25
+\OT1/ptm/m/n/10 hos-tet zwei virt. Netz-te\ Layer: Sub-strat-netz, VN1, VN2 (vg
+l. fi-scher2011position)> ODER
+ []
+
+
+Overfull \hbox (25.10156pt too wide) in paragraph at lines 18--25
+\OT1/ptm/m/n/10 Layer durch Vir-tua-li-sie-rung: Phys. Ress., Virt. Layer, Virt
+. Ress. VMs (vgl. fi-scher2011position)>
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 44.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 44.
+
+Underfull \hbox (badness 3250) in paragraph at lines 44--44
+[][]\OT1/ptm/m/n/8 Die Be-trach-tung von []VM ge-gen VMs auf an-de-ren phy-si-s
+chen Hosts` d[]urfte ver-gleich-bar mit
+ []
+
+[7]
+
+LaTeX Warning: Citation `FEHLT' on page 8 undefined on input line 62.
+
+[8] [9]
+Overfull \hbox (6.96146pt too wide) in paragraph at lines 143--146
+[]\OT1/ptm/m/n/10 Rechtliche Ri-si-ken \OMS/cmsy/m/n/10  \OT1/ptm/m/n/10 Da Su
+b-strat-net-ze nicht zwin-gend r[]aumlich eng be-schr[]ankt sein m[]ussen,
+ []
+
+) [10]
 Overfull \hbox (0.7624pt too wide) in paragraph at lines 149--151
 \OT1/ptm/m/n/10 VNR-Knotens,[]me-di-um\l?st VNR-Knoten vom sel-ben Ei-gent?mer 
 auf ein und dem-
  []
 
-[7]
+
 Overfull \hbox (16.71205pt too wide) in paragraph at lines 152--154
 \OT1/ptm/m/n/10 End-to-End(E2E), Point-to-Point(P2P) und[]no-ne\sind die hier w
 ?lbaren Le-vels. W?rend
@@ -510,7 +542,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-<pix/SVNR.pdf, id=37, 731.73375pt x 398.48875pt>
+[11] <pix/SVNR.pdf, id=49, 731.73375pt x 398.48875pt>
 File: pix/SVNR.pdf Graphic file (type pdf)
  <use pix/SVNR.pdf>
 Package pdftex.def Info: pix/SVNR.pdf used on input line 157.
@@ -532,19 +564,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
-<pix/pre-processing.pdf, id=38, 1415.2875pt x 466.74374pt>
+<pix/pre-processing.pdf, id=50, 1415.2875pt x 466.74374pt>
 File: pix/pre-processing.pdf Graphic file (type pdf)
 
 <use pix/pre-processing.pdf>
 Package pdftex.def Info: pix/pre-processing.pdf used on input line 161.
 (pdftex.def)             Requested size: 358.50471pt x 118.22398pt.
- [8 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
-ex/pix/SVNR.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
-<pix/auxgraph.pdf, id=49, 634.37pt x 357.335pt>
+[12 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/SVNR.pdf> <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git
+-Repo/timvs/tex/pix/pre-processing.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Miran Mizani/Studium/Informatik/6. 
+Semester/TimS/git-Repo/timvs/tex/pix/pre-processing.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] <pix/auxgraph.pdf, id=67, 634.37pt x 357.335pt>
 File: pix/auxgraph.pdf Graphic file (type pdf)
  <use pix/auxgraph.pdf>
 Package pdftex.def Info: pix/auxgraph.pdf used on input line 165.
@@ -566,30 +604,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--170
 
  []
 
-<pix/algo.pdf, id=50, 737.75626pt x 1136.245pt>
+<pix/algo.pdf, id=68, 737.75626pt x 1136.245pt>
 File: pix/algo.pdf Graphic file (type pdf)
  <use pix/algo.pdf>
 Package pdftex.def Info: pix/algo.pdf used on input line 171.
 (pdftex.def)             Requested size: 358.50471pt x 552.13576pt.
- [9 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
-ex/pix/pre-processing.pdf> <C:/Users/Miran Mizani/Studium/Informatik/6. Semeste
-r/TimS/git-Repo/timvs/tex/pix/auxgraph.pdf
-
-pdfTeX warning: pdflatex.exe (file C:/Users/Miran Mizani/Studium/Informatik/6. 
-Semester/TimS/git-Repo/timvs/tex/pix/auxgraph.pdf): PDF inclusion: multiple pdf
-s with page group included in a single page
->]
+ [13 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+tex/pix/auxgraph.pdf>]
 Overfull \vbox (17.84285pt too high) has occurred while \output is active []
 
 
-[10 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
-ex/pix/algo.pdf>] <pix/notations.pdf, id=77, 673.51625pt x 548.0475pt>
+[14 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/algo.pdf>] <pix/notations.pdf, id=90, 673.51625pt x 548.0475pt>
 File: pix/notations.pdf Graphic file (type pdf)
 
 <use pix/notations.pdf>
 Package pdftex.def Info: pix/notations.pdf used on input line 174.
 (pdftex.def)             Requested size: 358.50471pt x 291.71817pt.
- <pix/variables.pdf, id=78, 706.64pt x 83.31125pt>
+ <pix/variables.pdf, id=91, 706.64pt x 83.31125pt>
 File: pix/variables.pdf Graphic file (type pdf)
 
 <use pix/variables.pdf>
@@ -617,14 +649,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-[11 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+[15 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
 ex/pix/notations.pdf> <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/Tim
 S/git-Repo/timvs/tex/pix/variables.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Miran Mizani/Studium/Informatik/6. 
 Semester/TimS/git-Repo/timvs/tex/pix/variables.pdf): PDF inclusion: multiple pd
 fs with page group included in a single page
->] <pix/statistic.pdf, id=95, 726.715pt x 391.4625pt>
+>] <pix/statistic.pdf, id=108, 726.715pt x 391.4625pt>
 File: pix/statistic.pdf Graphic file (type pdf)
  <use pix/statistic.pdf>
 Package pdftex.def Info: pix/statistic.pdf used on input line 188.
@@ -641,8 +673,8 @@ Overfull \hbox (11.75204pt too wide) in paragraph at lines 190--192
 -wert: Der Standard-Algorithmus
  []
 
-[12 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
-ex/pix/statistic.pdf>] <pix/algo2graph.pdf, id=106, 1065.9825pt x 683.55376pt>
+[16 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/statistic.pdf>] <pix/algo2graph.pdf, id=119, 1065.9825pt x 683.55376pt>
 File: pix/algo2graph.pdf Graphic file (type pdf)
 
 <use pix/algo2graph.pdf>
@@ -654,41 +686,41 @@ Overfull \hbox (23.9214pt too wide) in paragraph at lines 218--219
 en al-ler Par-tei-en un-ter Ber?cksichtigung
  []
 
-<pix/algo2.pdf, id=107, 309.55649pt x 569.96942pt>
+<pix/algo2.pdf, id=120, 309.55649pt x 569.96942pt>
 File: pix/algo2.pdf Graphic file (type pdf)
  <use pix/algo2.pdf>
 Package pdftex.def Info: pix/algo2.pdf used on input line 220.
 (pdftex.def)             Requested size: 286.80486pt x 528.11795pt.
- [13 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
-tex/pix/algo2graph.pdf>] [14 <C:/Users/Miran Mizani/Studium/Informatik/6. Semes
+ [17 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+tex/pix/algo2graph.pdf>] [18 <C:/Users/Miran Mizani/Studium/Informatik/6. Semes
 ter/TimS/git-Repo/timvs/tex/pix/algo2.pdf>]
 Overfull \hbox (5.60182pt too wide) in paragraph at lines 235--236
 []\OT1/ptm/m/n/10 Beide Va-ri-an-ten nut-zen die sel-ben Heu-ris-ti-ken ((und S
 ub-Algorithmen)). Der Au-t-hor schl[]agt
  []
 
-<pix/usav.pdf, id=131, 272.93971pt x 243.30899pt>
+<pix/usav.pdf, id=143, 272.93971pt x 243.30899pt>
 File: pix/usav.pdf Graphic file (type pdf)
  <use pix/usav.pdf>
 Package pdftex.def Info: pix/usav.pdf used on input line 239.
 (pdftex.def)             Requested size: 286.80486pt x 255.6676pt.
- [15 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
-tex/pix/usav.pdf>] <pix/csav.pdf, id=144, 269.80798pt x 307.3884pt>
+ [19 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+tex/pix/usav.pdf>] <pix/csav.pdf, id=157, 269.80798pt x 307.3884pt>
 File: pix/csav.pdf Graphic file (type pdf)
  <use pix/csav.pdf>
 Package pdftex.def Info: pix/csav.pdf used on input line 244.
 (pdftex.def)             Requested size: 286.80486pt x 326.78227pt.
 
-[16 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
-ex/pix/csav.pdf>] <pix/nodemapping.pdf, id=155, 258.2448pt x 211.2693pt>
+[20 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/csav.pdf>] <pix/nodemapping.pdf, id=168, 258.2448pt x 211.2693pt>
 File: pix/nodemapping.pdf Graphic file (type pdf)
 
 <use pix/nodemapping.pdf>
 Package pdftex.def Info: pix/nodemapping.pdf used on input line 249.
 (pdftex.def)             Requested size: 286.80486pt x 234.65677pt.
- [17 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+ [21 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
 tex/pix/nodemapping.pdf>]
-<pix/linkmapping.pdf, id=168, 239.4546pt x 260.17201pt>
+<pix/linkmapping.pdf, id=181, 239.4546pt x 260.17201pt>
 File: pix/linkmapping.pdf Graphic file (type pdf)
 
 <use pix/linkmapping.pdf>
@@ -700,42 +732,44 @@ Overfull \hbox (0.79245pt too wide) in paragraph at lines 261--263
 ]ahlt und eben-falls gleichm[]aig
  []
 
-[18 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+[22 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
 ex/pix/linkmapping.pdf>]
-<pix/perf_algo2.pdf, id=179, 422.53859pt x 212.2329pt>
+<pix/perf_algo2.pdf, id=192, 422.53859pt x 212.2329pt>
 File: pix/perf_algo2.pdf Graphic file (type pdf)
 
 <use pix/perf_algo2.pdf>
 Package pdftex.def Info: pix/perf_algo2.pdf used on input line 270.
 (pdftex.def)             Requested size: 358.50471pt x 180.07172pt.
- [19 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+ [23 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
 tex/pix/perf_algo2.pdf>]
 ("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
 lniguide.bbl"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
-) [20]
+ [24]) [25]
 ("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
-lniguide.aux") ) 
+lniguide.aux")
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3733 strings out of 493921
- 52889 string characters out of 3147261
- 112311 words of memory out of 3000000
- 6937 multiletter control sequences out of 15000+200000
- 20090 words of font info for 38 fonts, out of 3000000 for 9000
+ 3750 strings out of 493921
+ 53079 string characters out of 3147261
+ 116401 words of memory out of 3000000
+ 6949 multiletter control sequences out of 15000+200000
+ 24172 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,7n,32p,1263b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
-mes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on lniguide.pdf (20 pages, 1284141 bytes).
+ 42i,8n,32p,1263b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on lniguide.pdf (25 pages, 1299903 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
+ 232 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

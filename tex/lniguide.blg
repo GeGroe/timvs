@@ -1,63 +1,21 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: lniguide.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: lniguide.aux
 The style file: lnig.bst
 Database file #1: literatur.bib
-I was expecting a `,' or a `}'---line 25 of file literatur.bib
+I was expecting a `,' or a `}'---line 13 of file literatur.bib
  :  
  :  pages = {211 ff}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 41 of file literatur.bib
+I was expecting a `,' or a `}'---line 21 of file literatur.bib
  :  
  :  journal = {IEEE}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "FEHLT"
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 2517 of file lnig.bst
+while executing---line 1259 of file lnig.bst
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 2517 of file lnig.bst
+while executing---line 1259 of file lnig.bst
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 2651 of file lnig.bst
-You've used 13 entries,
-            2539 wiz_defined-function locations,
-            634 strings with 6508 characters,
-and the built_in function-call counts, 4944 in all, are:
-= -- 481
-> -- 248
-< -- 9
-+ -- 87
-- -- 86
-* -- 328
-:= -- 811
-add.period$ -- 35
-call.type$ -- 13
-change.case$ -- 72
-chr.to.int$ -- 13
-cite$ -- 13
-duplicate$ -- 187
-empty$ -- 367
-format.name$ -- 98
-if$ -- 1013
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 7
-newline$ -- 63
-num.names$ -- 39
-pop$ -- 103
-preamble$ -- 1
-purify$ -- 98
-quote$ -- 0
-skip$ -- 185
-stack$ -- 0
-substring$ -- 225
-swap$ -- 33
-text.length$ -- 9
-text.prefix$ -- 2
-top$ -- 0
-type$ -- 104
-warning$ -- 0
-while$ -- 44
-width$ -- 15
-write$ -- 154
+while executing---line 1326 of file lnig.bst
 (There were 5 error messages)
