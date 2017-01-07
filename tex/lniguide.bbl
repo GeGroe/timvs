@@ -54,6 +54,10 @@ Raouf~Boutaba Muntasir Raihan~Rahman.
 \newblock Surviveable Virtual Network Embedding Algorithms for Network
   Virtualization, 2013.
 
+\bibitem[NW]{natarajansecurity}
+Sriram Natarajan und Tilman Wolf.
+\newblock Security Issues in Network Virtualization for the Future Internet.
+
 \bibitem[QH13]{Std}
 X.~Cao Q.~Hu, Y.~Wan.
 \newblock Resolve the virtual network embedding problem: a column generation
@@ -63,13 +67,6 @@ X.~Cao Q.~Hu, Y.~Wan.
 \bibitem[RA93]{MCF}
 J.B.~Orlin R.K.~Ahuja, R.L.~Magnanti.
 \newblock Network Flow: Theory, Algorithms and Applications, 1993.
-
-\bibitem[RTSS09]{ristenpart2009hey}
-Thomas Ristenpart, Eran Tromer, Hovav Shacham und Stefan Savage.
-\newblock Hey, you, get off of my cloud: exploring information leakage in
-  third-party compute clouds.
-\newblock In {\em Proceedings of the 16th ACM conference on Computer and
-  communications security}, Seiten 199--212. ACM, 2009.
 
 \bibitem[SL15]{algo2}
 Hong Xu Ming~Xu Shuhao~Liu, Zhiping~Cai.

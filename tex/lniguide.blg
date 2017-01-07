@@ -11,11 +11,12 @@ I was expecting a `,' or a `}'---line 21 of file literatur.bib
  :  journal = {IEEE}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "FEHLT"
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
 while executing---line 1259 of file lnig.bst
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
 while executing---line 1259 of file lnig.bst
+Warning--empty journal in natarajansecurity
+Warning--empty year in natarajansecurity
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
 while executing---line 1326 of file lnig.bst
 (There were 5 error messages)
