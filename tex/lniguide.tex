@@ -122,11 +122,20 @@ Lokalit?, GPU-Leistung und RAM-Menge w?en einige weitere m?gliche Standard-Attri
 
 \subsection{\underline{Herkömmliche Gefahren in Netzinfrastrukturen}}
 \label{subsec:gefahren_allg}
-
+[ENTFÄLLT GGFS.]
 
 
 \subsection{\underline{Neue} Verwundbarkeiten in virtualisierten Umgebungen}
 \label{subsec:gefahren_virt}
+Wie in der Einleitung[KAPITELNUMMER?] angedeutet bietet Netzwerkvirtualisierung einige Vorteile gegenüber bisherigen Netzarchitekturen. Durch die Einführung einer weiteren Schicht zwischen Hardware und Anwendungssoftware (Abbildung \ref{fig:gefahren_dreiEbenenDerVirtualisierung}) und dem gemeinsamen Hosten verschiedener virtueller Netzwerke auf gemeinsamen Substratnetz tun sich aber auch verschiedene neue Verwundbarkeiten auf. \cite{gong2016virtual, natarajansecurity, wu2010network, garfinkel2005virtual, dahbur2011survey} haben bereits einige Sicherheitsrisiken analysiert, welche im Folgenden klassifiziert und ergänzt werden.
+
+\begin{figure}[htb]
+  \begin{center}
+    \includegraphics[width=10cm]{gefahren_dreiEbenenDerVirtualisierung.png}
+    \caption{\label{fig:gefahren_dreiEbenenDerVirtualisierung} Drei-Schichtenarchitektur der Netzwerkvirtualisierung. \newline Substratnetz hostet zwei virtuelle Netze}
+  \end{center}
+\end{figure}
+
 \input{Kapitel/gefahren_virt}
 
 
@@ -285,7 +294,9 @@ Um nun die beiden vorgestellten Ansätze in einen Vergleich zu bringen, möchten
 
 \section{Schlussfolgerung und Ausblick}
 \label{sec:schluss}
-Frage: Auf welcher Ebene wird virtualisiert? Auf IP-Ebene? Was ist dann aber mit IP-Support-Protokollen (ARP)? Oder nicht-IP-Protokollen? Will ich ein Netzwerk virtualisieren, oder nur den IP-Verkehr? Verkapselung f?hrt zu Leistungseinbu?n. \cite{cabuk2007towards}
+Frage: Auf welcher Ebene wird virtualisiert? Auf IP-Ebene? Was ist dann aber mit IP-Support-Protokollen (ARP)? Oder nicht-IP-Protokollen? Will ich ein Netzwerk virtualisieren, oder nur den IP-Verkehr? Verkapselung führt zu Leistungseinbußn. \cite{cabuk2007towards}
+
+Fragen aus den Herausforderungen, die sich aus Sicherheitsrisiken ergeben...
 
 
 

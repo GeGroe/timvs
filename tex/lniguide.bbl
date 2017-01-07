@@ -1,5 +1,5 @@
 \gdef\etalchar#1{$^{#1}$}
-\begin{thebibliography}{GCH{\etalchar{+}}16}
+\begin{thebibliography}{WDWY10}
 
 \bibitem[APST05]{anderson2005overcoming}
 Thomas Anderson, Larry Peterson, Scott Shenker und Jonathan Turner.
@@ -25,6 +25,12 @@ Serdar Cabuk, Chris~I Dalton, HariGovind Ramasamy und Matthias Schunter.
 Eric Cole.
 \newblock Network Security Bible: Edition 2, 2011.
 
+\bibitem[DMT11]{dahbur2011survey}
+Kamal Dahbur, Bassil Mohammad und Ahmad~Bisher Tarakji.
+\newblock A survey of risks, threats and vulnerabilities in cloud computing.
+\newblock In {\em Proceedings of the 2011 International conference on
+  intelligent semantic Web-services and applications}, Seite~12. ACM, 2011.
+
 \bibitem[FBB{\etalchar{+}}13]{fischer2013virtual}
 Andreas Fischer, Juan~Felipe Botero, Michael~Till Beck, Hermann De~Meer und
   Xavier Hesselbach.
@@ -38,6 +44,12 @@ Shuiqing Gong, Jing Chen, Conghui Huang, Qingchao Zhu und Siyi Zhao.
   Optimization.
 \newblock {\em KSII Transactions on Internet \& Information Systems}, 10(7),
   2016.
+
+\bibitem[GR05]{garfinkel2005virtual}
+Tal Garfinkel und Mendel Rosenblum.
+\newblock When virtual is harder than real: Security challenges in virtual
+  machine based computing environments.
+\newblock In {\em HotOS}, 2005.
 
 \bibitem[hi]{CPLEX}
 http://www 01.ibm.com/software.
@@ -58,6 +70,11 @@ Raouf~Boutaba Muntasir Raihan~Rahman.
 Sriram Natarajan und Tilman Wolf.
 \newblock Security Issues in Network Virtualization for the Future Internet.
 
+\bibitem[OCJ08]{oberheide2008empirical}
+Jon Oberheide, Evan Cooke und Farnam Jahanian.
+\newblock Empirical exploitation of live virtual machine migration.
+\newblock In {\em Proc. of BlackHat DC convention}. Citeseer, 2008.
+
 \bibitem[QH13]{Std}
 X.~Cao Q.~Hu, Y.~Wan.
 \newblock Resolve the virtual network embedding problem: a column generation
@@ -68,6 +85,18 @@ X.~Cao Q.~Hu, Y.~Wan.
 J.B.~Orlin R.K.~Ahuja, R.L.~Magnanti.
 \newblock Network Flow: Theory, Algorithms and Applications, 1993.
 
+\bibitem[RT08]{rutkowska2008bluepilling}
+Joanna Rutkowska und Alexander Tereshkin.
+\newblock Bluepilling the xen hypervisor.
+\newblock {\em Black Hat USA}, 2008.
+
+\bibitem[RTSS09]{ristenpart2009hey}
+Thomas Ristenpart, Eran Tromer, Hovav Shacham und Stefan Savage.
+\newblock Hey, you, get off of my cloud: exploring information leakage in
+  third-party compute clouds.
+\newblock In {\em Proceedings of the 16th ACM conference on Computer and
+  communications security}, Seiten 199--212. ACM, 2009.
+
 \bibitem[SL15]{algo2}
 Hong Xu Ming~Xu Shuhao~Liu, Zhiping~Cai.
 \newblock Towards Security-aware Virtual Network Embedding, 2015.
@@ -76,5 +105,11 @@ Hong Xu Ming~Xu Shuhao~Liu, Zhiping~Cai.
 Yang Wang, Phanvu Chau und Fuyu Chen.
 \newblock Towards a secured network virtualization.
 \newblock {\em Computer Networks}, 104:55--65, 2016.
+
+\bibitem[WDWY10]{wu2010network}
+Hanqian Wu, Yi~Ding, Chuck Winer und Li~Yao.
+\newblock Network security for virtual machine in cloud computing.
+\newblock In {\em Computer Sciences and Convergence Information Technology
+  (ICCIT), 2010 5th International Conference on}, Seiten 18--21. IEEE, 2010.
 
 \end{thebibliography}
