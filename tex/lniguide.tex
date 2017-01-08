@@ -21,7 +21,10 @@ Betreuer: Michael T. Beck\\\textit{eingereicht am \today}}
 \maketitle
 
 \vfill
-FEHLT [GG]: Optimierung der Grafiken, farbliches Herausheben der Sicherheitskriterien in mathematischen Modellen
+FEHLT [GG]: Optimierung der Grafiken, farbliches Herausheben der Sicherheitskriterien in mathematischen Modellen\\
+TODO [MM]: Übergänge zwischen den Texten beider Autoren\\
+TODO [MM]: Unterstrichene Passagen überarbeiten. Kommentare entfernen\\
+TODO [MM]: Graphiken erstellen / berarbeiten
 
 \begin{abstract}
 Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt die Nachfrage nach virtualisierten Infrastrukturen enorm. Serviceprovider müssen die Hardwarebasis für ihre Dienste nicht mehr selbst unterhalten und geben ihre dahingehende Verantwortung an Infrastrukturanbieter weiter. Um die Sicherheit dieser Strukturen nicht zu vernachlässigen, arbeiten viele Forscher in diesem Bereich und versuchen effiziente Algorithmen mit integrierter Beachtung der Sicherheitsaspekte zu finden. Diese Arbeit soll einen Überblick und eine Klassifizierung der Gefahren, die solche Konstrukte betreffen, sowie eine Analyse zweier unterschiedlicher Ansätze zur Vermeidung möglichst vieler Risiken zum Zeitpunkt der Planung übermitteln.
@@ -114,13 +117,13 @@ Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-
 \section{Sicherheitsaspekte virtueller Netzinfrastrukturen}
 \label{sec:gefahren}
 
-\subsection{Sicherheitsanforderungen}
+\subsection{(Sicherheits-)Anforderungen an virtualisierte Umgebungen}
 \label{subsec:gefahren_anforderungen}
 \input{Kapitel/sicherheitsanforderungen}
 
 \subsection{\underline{Herkömmliche Gefahren in Netzinfrastrukturen}}
 \label{subsec:gefahren_allg}
-[ENTFÄLLT GGFS.]
+[ENTFÄLLT VERMUTLICH. KONZENTRATION AUF 'NEU HINZUKOMMENDE' GEFAHREN (SIEHE KAPITEL \textit{\nameref{subsec:gefahren_virt}})]
 
 
 \subsection{\underline{Neue} Verwundbarkeiten in virtualisierten Umgebungen}
@@ -139,6 +142,8 @@ Wie in der Einleitung[KAPITELNUMMER?] angedeutet bietet Netzwerkvirtualisierung 
 
 \subsection{VNE-Relevante Gefahren}
 \label{subsec:gefahren_vnerelevant}	
+[TODO] Benennung von (Kategorien an) Gefahren aus dem vorherigen Kapitel, denen mit dem VNE-Prozess begegnet werden kann.
+
 
 
 \section{Vermeidung von Gefahren via Secure VNE (SVNE)}
