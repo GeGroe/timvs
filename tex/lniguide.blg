@@ -1,22 +1,65 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: lniguide.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: lniguide.aux
 The style file: lnig.bst
 Database file #1: literatur.bib
-I was expecting a `,' or a `}'---line 13 of file literatur.bib
+I was expecting a `,' or a `}'---line 25 of file literatur.bib
  :  
  :  pages = {211 ff}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 21 of file literatur.bib
+I was expecting a `,' or a `}'---line 41 of file literatur.bib
  :  
  :  journal = {IEEE}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 1259 of file lnig.bst
+while executing---line 2517 of file lnig.bst
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 1259 of file lnig.bst
+while executing---line 2517 of file lnig.bst
 Warning--empty journal in natarajansecurity
 Warning--empty year in natarajansecurity
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 1326 of file lnig.bst
+while executing---line 2651 of file lnig.bst
+You've used 20 entries,
+            2539 wiz_defined-function locations,
+            667 strings with 7812 characters,
+and the built_in function-call counts, 8015 in all, are:
+= -- 790
+> -- 417
+< -- 12
++ -- 148
+- -- 146
+* -- 526
+:= -- 1306
+add.period$ -- 59
+call.type$ -- 20
+change.case$ -- 113
+chr.to.int$ -- 20
+cite$ -- 22
+duplicate$ -- 319
+empty$ -- 588
+format.name$ -- 165
+if$ -- 1664
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 14
+newline$ -- 97
+num.names$ -- 60
+pop$ -- 168
+preamble$ -- 1
+purify$ -- 153
+quote$ -- 0
+skip$ -- 295
+stack$ -- 0
+substring$ -- 335
+swap$ -- 65
+text.length$ -- 12
+text.prefix$ -- 2
+top$ -- 0
+type$ -- 160
+warning$ -- 2
+while$ -- 72
+width$ -- 21
+write$ -- 242
 (There were 5 error messages)
