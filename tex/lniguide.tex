@@ -23,8 +23,8 @@ Betreuer: Michael T. Beck\\\textit{eingereicht am \today}}
 \vfill
 FEHLT [GG]: Optimierung der Grafiken, farbliches Herausheben der Sicherheitskriterien in mathematischen Modellen\\
 TODO [MM]: Übergänge zwischen den Texten beider Autoren\\
-TODO [MM]: Unterstrichene Passagen überarbeiten. Kommentare entfernen\\
-TODO [MM]: Graphiken erstellen / berarbeiten
+TODO [MM]: Unterstrichene Passagen überarbeiten oder löschen. Kommentare entfernen\\
+TODO [MM]: Graphiken erstellen / überarbeiten.
 
 \begin{abstract}
 Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt die Nachfrage nach virtualisierten Infrastrukturen enorm. Serviceprovider müssen die Hardwarebasis für ihre Dienste nicht mehr selbst unterhalten und geben ihre dahingehende Verantwortung an Infrastrukturanbieter weiter. Um die Sicherheit dieser Strukturen nicht zu vernachlässigen, arbeiten viele Forscher in diesem Bereich und versuchen effiziente Algorithmen mit integrierter Beachtung der Sicherheitsaspekte zu finden. Diese Arbeit soll einen Überblick und eine Klassifizierung der Gefahren, die solche Konstrukte betreffen, sowie eine Analyse zweier unterschiedlicher Ansätze zur Vermeidung möglichst vieler Risiken zum Zeitpunkt der Planung übermitteln.
@@ -132,7 +132,7 @@ Wie in der Einleitung[KAPITELNUMMER?] angedeutet bietet Netzwerkvirtualisierung 
 
 \begin{figure}[htb]
   \begin{center}
-    \includegraphics[width=10cm]{gefahren_dreiEbenenDerVirtualisierung.png}
+    \includegraphics[width=\textwidth]{gefahren_dreiEbenenDerVirtualisierung.pdf}
     \caption{\label{fig:gefahren_dreiEbenenDerVirtualisierung} Drei-Schichtenarchitektur der Netzwerkvirtualisierung. \newline Substratnetz hostet zwei virtuelle Netze}
   \end{center}
 \end{figure}
@@ -156,7 +156,7 @@ Hierbei beschäftigen wir uns mit dem Lösungsansatz aus \cite{wang2016towards}.
 Das Hauptaugenmerk bezüglich der Sicherheitsaspekte legen Wang et. al. auf Traffic-Verschlüsselung und die Separierung von VMs unterschiedlicher Trust-Levels. Mittels"`Security plan design"'werden die drei folgenden strukturellen Aspekte betrachtet und in dementsprechende Levels eingeteilt.
 \begin{itemize}
 \item The Network plan:\newline
-Ein VNR wird als Netzwerk betrachtet und seinem Level entsprechend isoliert. "`High"'fordert und beansprucht ein gesamtes Netz bzw. Subnetz der physischen Infrastruktur für sich. Hiermit soll die Wahrscheinlichkeit für DOS-Angriffe oder ähnliche vermindert werden, da"`Mehr-Parteien-Netzwerke"'die Hauptschwachstellen für solche Angriffe darstellen \cite{DOS}. Auch Sniffing durch kompromittierte Hosts im selben Netz wird durch diese Maßahme verhindert. Während "high"'Resourcenteilung somit komplett verweigert, lässt der Level"`medium"'zumindest ein gemeinsam genutztes Netz für VNRs vom selben Eigentümer zu.
+Ein VNR wird als Netzwerk betrachtet und seinem Level entsprechend isoliert. "`High"' fordert und beansprucht ein gesamtes Netz bzw. Subnetz der physischen Infrastruktur für sich. Hiermit soll die Wahrscheinlichkeit für DOS-Angriffe oder ähnliche vermindert werden, da"`Mehr-Parteien-Netzwerke"'die Hauptschwachstellen für solche Angriffe darstellen \cite{DOS}. Auch Sniffing durch kompromittierte Hosts im selben Netz wird durch diese Maßahme verhindert. Während "high"' Resourcenteilung somit komplett verweigert, lässt der Level"`medium"'zumindest ein gemeinsam genutztes Netz für VNRs vom selben Eigentümer zu.
 
 \item The Node plan:\newline
 Die einzelnen virtuellen Knoten eines VNR stellen Isolierungsanforderungen an die physischen Knoten. Wie auch beim"`network plan", werden die Levels"`high","`medium"'und"`none"'definiert und umgesetzt."`high"'fordert die alleinige Existenz eines VNR-Knotens,"`medium"'lässt VNR-Knoten vom selben Eigentümer auf ein und demselben physischen Knoten zu. Durch diesen Plan sollen Angriffe von VM zu VM über gemeinsam genutzte Resourcen unterbunden werden. Zusätzlich wird das Risiko eines Angriffs vom physischen Host verringert, da der Angriffsvektor"`VM zu physischem Host"'eliminiert wird.
