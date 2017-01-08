@@ -1,1 +1,42 @@
-Dummytext. :)
+[FALLS NÖTIG / GEWÜNSCHT. SONST WIRD DIESES KAPITEL NICHT AUSGEARBEITET UND ENTFÄLLT] Netzwerkvirtualisierung ist eine Methode unabhängige und voneinander isolierte logische Netzwerke auf einem gemeinsamen physischen Netzwerk zu betreiben. Dieses Kapitel widmet sich möglichen Anforderungen, die an ein so solches System gestellt werden könnten.
+
+
+\begin{itemize}
+\item	Anonymität und Privatsphäre von Nutzern (vertrauenswürdige Paketweiterleitung, wenn das virt. Netzwerk bei einem Drittanbieter gehostet ist)
+\item	VM Interkonnektivität
+\item	Möglichkeit zur Zusammenarbeit mit nicht-virtualisierten Netzen und Anwendungen\\	Bsp. Günstige Webhosting-Lösungen auf vServern sollen auch von nicht-virt. Maschinen aus erreichbar sein.
+\item	Angriffe von Endnutzern sollten nicht in der Lage sein das Substratnetz zu beeinträchtigen, während Attackenverkehr hingegen identifiziert und gefiltert werden können soll.
+\item	Substratnetz sollte nicht VN-Verkehr monitoren, sniffen, manipulieren, stören/unterbrechen (können).
+\item	Umgekehrt sollte auch das VN keine Informationen über das Substratnetz sammeln (können).
+\item	Substratnetz sollte effektive Kontrollmechanismen gegen unerlaubte Erlangung von Infos aus/über das VN bereitstellen.
+\item	\dots
+\end{itemize}
+
+
+\paragraph*{Mögliche Richtlinien}
+
+\begin{itemize}
+\item ~[IN DIESER ARBEIT WERDEN FOLGENDE BEGRIFFE IN DIESEM SINNE VERSTANDEN / KURZE BEGRIFFSDEFINITION]
+\item Isolation ist Hauptaufgabe / Kernpunkt [-> Ausbauen]	
+	\begin{itemize}
+	\item Keine gegenseitige Beeinflussung der VMs oder VNs
+	\item Keine Beeinflussung zwischen VMs verschiedener Mieter / VNs.
+	\item Von zwei VMs gemeinsam genutzte Ressourcen sind logisch voneinander getrennt. Kein ungewollter direkter Informationsfluss.[Fußnote: Ausführliche Betrachtung indirekten Informationsflusses z.B. via verdeckter Kanäle oder side channel Attacken würde den Umfang dieser Arbeit übersteigen.]
+	\item Problem: Kunde weiß nicht, ob die „Nachbar-VM“ vertrauenswürdig ist.
+	\item Die gehosteten VNs sollten keine Attacken gegen privilegierte Informationen der Substratinfrastruktur fahren.
+	\end{itemize}
+\item	Datenschutz
+\item	Vertraulichkeit, Integrität, Verfügbarkeit (CIA)
+	\begin{itemize}
+	\item Vertraulichkeit: Zwei VMs innerhalb desselben VNs sollen in der Lage sein frei miteinander zu kommunizieren, ohne dann dabei ein Dritter durch Belauschung an Kommunikationsinhalte gelangen kann.
+	\item Integrität: Ein virt. Knoten / VM soll nicht in der Lage sein, (Kommunikations-)Daten Anderer zu manipulieren und die eigene Urheberschaft der Veränderungen einer anderen Instanz zuzuschreiben. 
+	\end{itemize}
+\item	Informationsflusskontrolle
+\item	Mitglieder- und Zulassungsverwaltung in Virt. Netzen.
+\end{itemize}
+
+\paragraph*{Herausforderungen:} %[natarajansecurity]
+\begin{itemize}
+	\item Kann das Substratnetz Paketvermittlung effektiv durchführen, ohne Informationen über das VN zu sammeln oder Privatsphäre zu verletzen?
+	\item \dots
+\end{itemize}

@@ -1,27 +1,32 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.12.21)  8 JAN 2017 02:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.22)  8 JAN 2017 16:35
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
 **lniguide.tex
-(./lniguide.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(./lni.cls
+
+("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
+lniguide.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+
+("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
+lni.cls"
 Document Class: lni 2004/13/07 v0.41, by Robert Tolksdorf, Berlin
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/fleqn.clo
-File: fleqn.clo 2015/03/31 v1.1i Standard LaTeX option (flush left equations)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fleqn.clo"
+File: fleqn.clo 1998/08/17 v1.1c Standard LaTeX option (flush left equations)
 \mathindent=\dimen102
-Applying: [2015/01/01] Make \[ robust on input line 50.
-LaTeX Info: Redefining \[ on input line 51.
-Already applied: [0000/00/00] Make \[ robust on input line 62.
-Applying: [2015/01/01] Make \] robust on input line 74.
-LaTeX Info: Redefining \] on input line 75.
-Already applied: [0000/00/00] Make \] robust on input line 83.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -35,14 +40,20 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen103
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2016/02/24 3.9q The Babel package
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2012/08/20 v3.3p English support from the babel system
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2016/02/24 3.9q Babel common definitions
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen104
 )
@@ -50,43 +61,38 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
-Language: ngerman 2013/12/13 v2.7 German support for babel (new orthography)
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
-Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\ngermanb.ldf"
+Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
 \l@naustrian = a dialect from \language\l@ngerman 
-\l@nswissgerman = a dialect from \language\l@ngerman 
-Package babel Info: Making " an active character on input line 88.
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package babel Info: Making " an active character on input line 92.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\times.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks14
 \verbatim@line=\toks15
 \verbatim@in@stream=\read1
-)) (./latin1.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+))
+("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
+latin1.sty") ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00BB (decimal 187)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C0 (decimal 192)
@@ -151,94 +157,50 @@ File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+00FD (decimal 253)
    defining Unicode char U+00FE (decimal 254)
    defining Unicode char U+00FF (decimal 255)
-   defining Unicode char U+0100 (decimal 256)
-   defining Unicode char U+0101 (decimal 257)
    defining Unicode char U+0102 (decimal 258)
    defining Unicode char U+0103 (decimal 259)
    defining Unicode char U+0104 (decimal 260)
    defining Unicode char U+0105 (decimal 261)
    defining Unicode char U+0106 (decimal 262)
    defining Unicode char U+0107 (decimal 263)
-   defining Unicode char U+0108 (decimal 264)
-   defining Unicode char U+0109 (decimal 265)
-   defining Unicode char U+010A (decimal 266)
-   defining Unicode char U+010B (decimal 267)
    defining Unicode char U+010C (decimal 268)
    defining Unicode char U+010D (decimal 269)
    defining Unicode char U+010E (decimal 270)
    defining Unicode char U+010F (decimal 271)
    defining Unicode char U+0110 (decimal 272)
    defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0112 (decimal 274)
-   defining Unicode char U+0113 (decimal 275)
-   defining Unicode char U+0114 (decimal 276)
-   defining Unicode char U+0115 (decimal 277)
-   defining Unicode char U+0116 (decimal 278)
-   defining Unicode char U+0117 (decimal 279)
    defining Unicode char U+0118 (decimal 280)
    defining Unicode char U+0119 (decimal 281)
    defining Unicode char U+011A (decimal 282)
    defining Unicode char U+011B (decimal 283)
-   defining Unicode char U+011C (decimal 284)
-   defining Unicode char U+011D (decimal 285)
    defining Unicode char U+011E (decimal 286)
    defining Unicode char U+011F (decimal 287)
-   defining Unicode char U+0120 (decimal 288)
-   defining Unicode char U+0121 (decimal 289)
-   defining Unicode char U+0122 (decimal 290)
-   defining Unicode char U+0123 (decimal 291)
-   defining Unicode char U+0124 (decimal 292)
-   defining Unicode char U+0125 (decimal 293)
-   defining Unicode char U+0128 (decimal 296)
-   defining Unicode char U+0129 (decimal 297)
-   defining Unicode char U+012A (decimal 298)
-   defining Unicode char U+012B (decimal 299)
-   defining Unicode char U+012C (decimal 300)
-   defining Unicode char U+012D (decimal 301)
-   defining Unicode char U+012E (decimal 302)
-   defining Unicode char U+012F (decimal 303)
    defining Unicode char U+0130 (decimal 304)
    defining Unicode char U+0131 (decimal 305)
    defining Unicode char U+0132 (decimal 306)
    defining Unicode char U+0133 (decimal 307)
-   defining Unicode char U+0134 (decimal 308)
-   defining Unicode char U+0135 (decimal 309)
-   defining Unicode char U+0136 (decimal 310)
-   defining Unicode char U+0137 (decimal 311)
    defining Unicode char U+0139 (decimal 313)
    defining Unicode char U+013A (decimal 314)
-   defining Unicode char U+013B (decimal 315)
-   defining Unicode char U+013C (decimal 316)
    defining Unicode char U+013D (decimal 317)
    defining Unicode char U+013E (decimal 318)
    defining Unicode char U+0141 (decimal 321)
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0143 (decimal 323)
    defining Unicode char U+0144 (decimal 324)
-   defining Unicode char U+0145 (decimal 325)
-   defining Unicode char U+0146 (decimal 326)
    defining Unicode char U+0147 (decimal 327)
    defining Unicode char U+0148 (decimal 328)
    defining Unicode char U+014A (decimal 330)
    defining Unicode char U+014B (decimal 331)
-   defining Unicode char U+014C (decimal 332)
-   defining Unicode char U+014D (decimal 333)
-   defining Unicode char U+014E (decimal 334)
-   defining Unicode char U+014F (decimal 335)
    defining Unicode char U+0150 (decimal 336)
    defining Unicode char U+0151 (decimal 337)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
    defining Unicode char U+0154 (decimal 340)
    defining Unicode char U+0155 (decimal 341)
-   defining Unicode char U+0156 (decimal 342)
-   defining Unicode char U+0157 (decimal 343)
    defining Unicode char U+0158 (decimal 344)
    defining Unicode char U+0159 (decimal 345)
    defining Unicode char U+015A (decimal 346)
    defining Unicode char U+015B (decimal 347)
-   defining Unicode char U+015C (decimal 348)
-   defining Unicode char U+015D (decimal 349)
    defining Unicode char U+015E (decimal 350)
    defining Unicode char U+015F (decimal 351)
    defining Unicode char U+0160 (decimal 352)
@@ -247,22 +209,10 @@ File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+0163 (decimal 355)
    defining Unicode char U+0164 (decimal 356)
    defining Unicode char U+0165 (decimal 357)
-   defining Unicode char U+0168 (decimal 360)
-   defining Unicode char U+0169 (decimal 361)
-   defining Unicode char U+016A (decimal 362)
-   defining Unicode char U+016B (decimal 363)
-   defining Unicode char U+016C (decimal 364)
-   defining Unicode char U+016D (decimal 365)
    defining Unicode char U+016E (decimal 366)
    defining Unicode char U+016F (decimal 367)
    defining Unicode char U+0170 (decimal 368)
    defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0172 (decimal 370)
-   defining Unicode char U+0173 (decimal 371)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
    defining Unicode char U+0178 (decimal 376)
    defining Unicode char U+0179 (decimal 377)
    defining Unicode char U+017A (decimal 378)
@@ -270,31 +220,6 @@ File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+017C (decimal 380)
    defining Unicode char U+017D (decimal 381)
    defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+01CD (decimal 461)
-   defining Unicode char U+01CE (decimal 462)
-   defining Unicode char U+01CF (decimal 463)
-   defining Unicode char U+01D0 (decimal 464)
-   defining Unicode char U+01D1 (decimal 465)
-   defining Unicode char U+01D2 (decimal 466)
-   defining Unicode char U+01D3 (decimal 467)
-   defining Unicode char U+01D4 (decimal 468)
-   defining Unicode char U+01E2 (decimal 482)
-   defining Unicode char U+01E3 (decimal 483)
-   defining Unicode char U+01E6 (decimal 486)
-   defining Unicode char U+01E7 (decimal 487)
-   defining Unicode char U+01E8 (decimal 488)
-   defining Unicode char U+01E9 (decimal 489)
-   defining Unicode char U+01EA (decimal 490)
-   defining Unicode char U+01EB (decimal 491)
-   defining Unicode char U+01F0 (decimal 496)
-   defining Unicode char U+01F4 (decimal 500)
-   defining Unicode char U+01F5 (decimal 501)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+01E02 (decimal 7682)
-   defining Unicode char U+01E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
@@ -313,12 +238,10 @@ File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00B8 (decimal 184)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C5 (decimal 197)
@@ -336,14 +259,6 @@ File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
    defining Unicode char U+2018 (decimal 8216)
@@ -354,8 +269,8 @@ File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -378,31 +293,31 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks18
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -410,11 +325,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen105
 \Gin@req@width=\dimen106
 )
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count89
 \lst@gtempboxa=\box26
 \lst@token=\toks19
@@ -428,36 +343,36 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \lst@lineno=\count94
 \lst@maxwidth=\dimen110
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count95
 \lst@skipnumbers=\count96
 \lst@framebox=\box27
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/refcount.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\refcount.sty"
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -470,9 +385,8 @@ Package etexcmds Info: Could not find \expanded.
 LaTeX Info: Redefining \ref on input line 353.
 LaTeX Info: Redefining \pageref on input line 353.
 )
-(./lniguide.aux)
-\openout1 = `lniguide.aux'.
-
+("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
+lniguide.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
@@ -486,10 +400,10 @@ LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 20.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count98
 \scratchdimen=\dimen111
@@ -502,127 +416,106 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \MPnumerator=\count102
 \makeMPintoPDFobject=\count103
 \everyMPtoPDFconversion=\toks21
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-
-
-! Package ifpdf Error: Name clash, \ifpdf is already defined.
-
-See the ifpdf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.173     }
-           %
-? 
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 \c@lstlisting=\count104
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 21.
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 21.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lniguide.toc
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
+lniguide.toc"
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 )
 \tf@toc=\write3
-\openout3 = `lniguide.toc'.
-
  [2]
-(./Kapitel/einleitung.tex
+("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
+Kapitel/einleitung.tex"
 Overfull \hbox (65.10988pt too wide) in paragraph at lines 2--3
 []\OT1/ptm/m/n/10 , []] Sie ba-siert auf Knoten- (z.B. Xen) und Link-vir-tua-li
 -sie-rung $[]$
  []
 
-[3]
-Overfull \hbox (874.3112pt too wide) in paragraph at lines 18--19
-[]$[]$ 
- []
-
-) <pix/physical_structure2.pdf, id=17, 546.04pt x 283.0575pt>
+[3]) <pix/physical_structure2.pdf, id=16, 546.04pt x 283.0575pt>
 File: pix/physical_structure2.pdf Graphic file (type pdf)
 
 <use pix/physical_structure2.pdf>
-Package pdftex.def Info: pix/physical_structure2.pdf used on input line 60.
+Package pdftex.def Info: pix/physical_structure2.pdf used on input line 63.
 (pdftex.def)             Requested size: 250.9522pt x 130.08708pt.
  [4]
-<pix/VNR1.pdf, id=21, 323.2075pt x 242.9075pt>
+<pix/VNR1.pdf, id=20, 323.2075pt x 242.9075pt>
 File: pix/VNR1.pdf Graphic file (type pdf)
  <use pix/VNR1.pdf>
-Package pdftex.def Info: pix/VNR1.pdf used on input line 86.
+Package pdftex.def Info: pix/VNR1.pdf used on input line 89.
 (pdftex.def)             Requested size: 143.39969pt x 107.77287pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-[5 <./pix/physical_structure2.pdf> <./pix/VNR1.pdf>]
-(./Kapitel/sicherheitsanforderungen.tex) [6]
-<pix/gefahren_dreiEbenenDerVirtualisierung.png, id=34, 394.47375pt x 220.825pt>
+[5 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/te
+x/pix/physical_structure2.pdf> <C:/Users/Miran Mizani/Studium/Informatik/6. Sem
+ester/TimS/git-Repo/timvs/tex/pix/VNR1.pdf>]
+("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
+Kapitel/sicherheitsanforderungen.tex" [6]
+Overfull \hbox (28.54138pt too wide) in paragraph at lines 9--10
+[]\OT1/ptm/m/n/10 Substratnetz soll-te nicht VN-Verkehr mo-ni-to-ren, snif-fen,
+ ma-ni-pu-lie-ren, st[]oren/unterbrechen
+ []
+
+
+Overfull \hbox (1.472pt too wide) in paragraph at lines 24--25
+\OT1/ptm/m/n/10 trennt. Kein un-ge-woll-ter di-rek-ter In-for-ma-ti-ons-fluss.[
+Funote: Ausf[]uhrliche Be-
+ []
+
+
+Overfull \hbox (11.03278pt too wide) in paragraph at lines 32--33
+\OT1/ptm/m/n/10 )Daten An-de-rer zu ma-ni-pu-lie-ren und die ei-ge-ne Ur-he-ber
+-schaft der Ver[]anderungen
+ []
+
+[7])
+<pix/gefahren_dreiEbenenDerVirtualisierung.png, id=37, 394.47375pt x 220.825pt>
 File: pix/gefahren_dreiEbenenDerVirtualisierung.png Graphic file (type png)
 <use pix/gefahren_dreiEbenenDerVirtualisierung.png>
 Package pdftex.def Info: pix/gefahren_dreiEbenenDerVirtualisierung.png used on 
-input line 132.
+input line 135.
 (pdftex.def)             Requested size: 284.52756pt x 159.2769pt.
 
-(./Kapitel/gefahren_virt.tex
+("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
+Kapitel/gefahren_virt.tex"
 Overfull \hbox (0.13197pt too wide) in paragraph at lines 1--2
 \OT1/ptm/m/n/10 sen wie z.B. nach ISO/OSI-Schicht, nach Ver-let-zung der klas-s
 i-schen C.I.A.-Aspekte, [nach
  []
 
-<pix/gefahren_klassifizierung.png, id=35, 394.47375pt x 220.825pt>
+<pix/gefahren_klassifizierung.png, id=38, 394.47375pt x 220.825pt>
 File: pix/gefahren_klassifizierung.png Graphic file (type png)
 
 <use pix/gefahren_klassifizierung.png>
 Package pdftex.def Info: pix/gefahren_klassifizierung.png used on input line 9.
 
 (pdftex.def)             Requested size: 284.52756pt x 159.2769pt.
- [7 <./pix/gefahren_dreiEbenenDerVirtualisierung.png>]
+ [8]
 Overfull \hbox (5.54181pt too wide) in paragraph at lines 27--33
 \OT1/ptm/m/n/10 In-ten-sit[]at si-cher-lich []uber Ver-wal-tungs-be-lan-ge hin-
 aus-ge-hen und Pri-vatsph[]arenanforderungen
  []
 
-[8 <./pix/gefahren_klassifizierung.png>]
+[9 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/te
+x/pix/gefahren_dreiEbenenDerVirtualisierung.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -633,233 +526,250 @@ Underfull \hbox (badness 2237) in paragraph at lines 47--47
 n phy-si-schen Hosts ver-gleich-bar mit
  []
 
-
+[10 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/gefahren_klassifizierung.png>]
 Overfull \hbox (21.09154pt too wide) in paragraph at lines 53--55
 []\OT1/ptm/b/n/10 Von VM aus-ge-hend ge-gen User.   \OT1/ptm/m/n/10 Auch ein vi
 r-tu-el-les Netz-werk kann mit herk[]ommlichen
  []
 
-[9]
+
 Overfull \hbox (32.31145pt too wide) in paragraph at lines 67--70
-\OT1/ptm/m/n/10 gu-rie-ren zu k[]onnen, er-schlie^^Yt wei-te-re An-griffs-zie-l
-e: At-ta-cken auf die VN-Managementtools
+\OT1/ptm/m/n/10 gu-rie-ren zu k[]onnen, er-schliet wei-te-re An-griffs-zie-le:
+ At-ta-cken auf die VN-Managementtools
  []
 
-) [10]
-Overfull \hbox (2.54152pt too wide) in paragraph at lines 150--152
+[11])
+Overfull \hbox (2.54152pt too wide) in paragraph at lines 155--157
 \OT1/ptm/m/n/10 Se-pa-rie-rung von VMs un-ter-schied-li-cher Trust-Levels. Mitt
 els[]Se-cu-ri-ty plan de-sign\werden
  []
 
 
-Overfull \hbox (41.65184pt too wide) in paragraph at lines 153--155
-\OT1/ptm/m/n/10 Hosts im sel-ben Netz wird durch die-se Ma^^Y-ah-me ver-hin-der
-t. W[]ahrend "high\Resourcenteilung
+Overfull \hbox (41.65184pt too wide) in paragraph at lines 158--160
+\OT1/ptm/m/n/10 Hosts im sel-ben Netz wird durch die-se Ma-ah-me ver-hin-dert.
+ W[]ahrend "high\Resourcenteilung
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-[11] <pix/SVNR.pdf, id=52, 731.73375pt x 398.48875pt>
+<pix/SVNR.pdf, id=54, 731.73375pt x 398.48875pt>
 File: pix/SVNR.pdf Graphic file (type pdf)
  <use pix/SVNR.pdf>
-Package pdftex.def Info: pix/SVNR.pdf used on input line 164.
+Package pdftex.def Info: pix/SVNR.pdf used on input line 169.
 (pdftex.def)             Requested size: 286.80486pt x 156.18828pt.
 
-Overfull \hbox (32.66127pt too wide) in paragraph at lines 166--167
+Overfull \hbox (32.66127pt too wide) in paragraph at lines 171--172
 \OT1/ptm/m/n/10 wer-den sie aus der Be-re-chung aus-ge-schlos-sen. Der zwei-te 
 Schritt ist dem[]Net-work plan\gewidmet.
  []
 
 
-Overfull \hbox (2.12166pt too wide) in paragraph at lines 166--167
+Overfull \hbox (2.12166pt too wide) in paragraph at lines 171--172
 \OT1/ptm/m/n/10 aus-ge-schlos-sen. Im drit-ten Schritt wer-den die Si-cher-heit
 s-an-for-de-run-gen der ein-zel-nen Kno-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
-<pix/pre-processing.pdf, id=53, 1415.2875pt x 466.74374pt>
+[13 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/SVNR.pdf>] <pix/pre-processing.pdf, id=66, 1415.2875pt x 466.74374pt>
 File: pix/pre-processing.pdf Graphic file (type pdf)
 
 <use pix/pre-processing.pdf>
-Package pdftex.def Info: pix/pre-processing.pdf used on input line 168.
+Package pdftex.def Info: pix/pre-processing.pdf used on input line 173.
 (pdftex.def)             Requested size: 358.50471pt x 118.22398pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
-[12 <./pix/SVNR.pdf> <./pix/pre-processing.pdf
-
-pdfTeX warning: latex (file ./pix/pre-processing.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
->] <pix/auxgraph.pdf, id=70, 634.37pt x 357.335pt>
+<pix/auxgraph.pdf, id=67, 634.37pt x 357.335pt>
 File: pix/auxgraph.pdf Graphic file (type pdf)
  <use pix/auxgraph.pdf>
-Package pdftex.def Info: pix/auxgraph.pdf used on input line 172.
+Package pdftex.def Info: pix/auxgraph.pdf used on input line 177.
 (pdftex.def)             Requested size: 215.10501pt x 121.16513pt.
 
-Overfull \hbox (12.47119pt too wide) in paragraph at lines 174--177
+Overfull \hbox (12.47119pt too wide) in paragraph at lines 179--182
 \OT1/ptm/m/n/10 Dieses Pre-Processing re-du-ziert das SVNE-Problem auf ein[]mul
 ti-commodity-flow\Problem.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--177
+Underfull \hbox (badness 10000) in paragraph at lines 179--182
 
  []
 
-<pix/algo.pdf, id=71, 737.75626pt x 1136.245pt>
+<pix/algo.pdf, id=68, 737.75626pt x 1136.245pt>
 File: pix/algo.pdf Graphic file (type pdf)
  <use pix/algo.pdf>
-Package pdftex.def Info: pix/algo.pdf used on input line 178.
+Package pdftex.def Info: pix/algo.pdf used on input line 183.
 (pdftex.def)             Requested size: 358.50471pt x 552.13576pt.
- [13 <./pix/auxgraph.pdf>]
-Overfull \vbox (5.84285pt too high) has occurred while \output is active []
+ [14 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+tex/pix/pre-processing.pdf> <C:/Users/Miran Mizani/Studium/Informatik/6. Semest
+er/TimS/git-Repo/timvs/tex/pix/auxgraph.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Miran Mizani/Studium/Informatik/6. 
+Semester/TimS/git-Repo/timvs/tex/pix/auxgraph.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+>]
+Overfull \vbox (17.84285pt too high) has occurred while \output is active []
 
 
-[14 <./pix/algo.pdf>] <pix/notations.pdf, id=93, 673.51625pt x 548.0475pt>
+[15 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/algo.pdf>] <pix/notations.pdf, id=95, 673.51625pt x 548.0475pt>
 File: pix/notations.pdf Graphic file (type pdf)
 
 <use pix/notations.pdf>
-Package pdftex.def Info: pix/notations.pdf used on input line 181.
+Package pdftex.def Info: pix/notations.pdf used on input line 186.
 (pdftex.def)             Requested size: 358.50471pt x 291.71817pt.
- <pix/variables.pdf, id=94, 706.64pt x 83.31125pt>
+ <pix/variables.pdf, id=96, 706.64pt x 83.31125pt>
 File: pix/variables.pdf Graphic file (type pdf)
 
 <use pix/variables.pdf>
-Package pdftex.def Info: pix/variables.pdf used on input line 183.
+Package pdftex.def Info: pix/variables.pdf used on input line 188.
 (pdftex.def)             Requested size: 358.50471pt x 42.26697pt.
 
-Overfull \hbox (11.04128pt too wide) in paragraph at lines 189--190
+Overfull \hbox (11.04128pt too wide) in paragraph at lines 194--195
 \OT1/ptm/m/n/10 schl[]usselungskapazit[]aten der Kno-ten wur-de []uber die ge-s
-am-te Testrei-he eben-falls gleichm[]a^^Yig
+am-te Testrei-he eben-falls gleichm[]aig
  []
 
 
-Overfull \hbox (17.62134pt too wide) in paragraph at lines 191--192
+Overfull \hbox (17.62134pt too wide) in paragraph at lines 196--197
 []\OT1/ptm/m/n/10 Die fol-gen-de Sta-tisk zeigt einen Durch-schnitts-ver-gleich
  zwi-schen dem, als Stan-dard gew[]ahlten,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-[15 <./pix/notations.pdf> <./pix/variables.pdf
+[16 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/notations.pdf> <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/Tim
+S/git-Repo/timvs/tex/pix/variables.pdf
 
-pdfTeX warning: latex (file ./pix/variables.pdf): PDF inclusion: multiple pdfs 
-with page group included in a single page
->] <pix/statistic.pdf, id=111, 726.715pt x 391.4625pt>
+pdfTeX warning: pdflatex.exe (file C:/Users/Miran Mizani/Studium/Informatik/6. 
+Semester/TimS/git-Repo/timvs/tex/pix/variables.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+>] <pix/statistic.pdf, id=113, 726.715pt x 391.4625pt>
 File: pix/statistic.pdf Graphic file (type pdf)
  <use pix/statistic.pdf>
-Package pdftex.def Info: pix/statistic.pdf used on input line 193.
+Package pdftex.def Info: pix/statistic.pdf used on input line 198.
 (pdftex.def)             Requested size: 286.80486pt x 154.49756pt.
 
-Overfull \hbox (15.27144pt too wide) in paragraph at lines 195--197
-\OT1/ptm/m/n/10 Standard-Algorithmus oh-ne Pre-Processing ar-bei-ten lie-^^Ye, 
-an-schau-li-cher und aus-sa-ge-kr[]aftiger.
+Overfull \hbox (15.27144pt too wide) in paragraph at lines 200--202
+\OT1/ptm/m/n/10 Standard-Algorithmus oh-ne Pre-Processing ar-bei-ten lie-e, an
+-schau-li-cher und aus-sa-ge-kr[]aftiger.
  []
 
 
-Overfull \hbox (12.3121pt too wide) in paragraph at lines 195--197
+Overfull \hbox (12.3121pt too wide) in paragraph at lines 200--202
 \OT1/ptm/m/n/10 Den-noch ist ein Punkt durch-aus []uberraschend und be-mer-kens
 -wert: Der Standard-Algorithmus
  []
 
-[16 <./pix/statistic.pdf>]
-<pix/algo2graph.pdf, id=122, 1065.9825pt x 683.55376pt>
+[17 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/statistic.pdf>] <pix/algo2graph.pdf, id=124, 1065.9825pt x 683.55376pt>
 File: pix/algo2graph.pdf Graphic file (type pdf)
 
 <use pix/algo2graph.pdf>
-Package pdftex.def Info: pix/algo2graph.pdf used on input line 221.
+Package pdftex.def Info: pix/algo2graph.pdf used on input line 226.
 (pdftex.def)             Requested size: 286.80486pt x 183.90488pt.
 
-Overfull \hbox (25.04152pt too wide) in paragraph at lines 223--224
+Overfull \hbox (25.04152pt too wide) in paragraph at lines 228--229
 \OT1/ptm/m/n/10 dung ber[]ucksichtigt nicht nur die Si-cher-heits-an-for-de-run
 -gen al-ler Par-tei-en un-ter Ber[]ucksichtigung
  []
 
-<pix/algo2.pdf, id=123, 309.55649pt x 569.96942pt>
+<pix/algo2.pdf, id=125, 309.55649pt x 569.96942pt>
 File: pix/algo2.pdf Graphic file (type pdf)
  <use pix/algo2.pdf>
-Package pdftex.def Info: pix/algo2.pdf used on input line 225.
+Package pdftex.def Info: pix/algo2.pdf used on input line 230.
 (pdftex.def)             Requested size: 286.80486pt x 528.11795pt.
- [17 <./pix/algo2graph.pdf>] [18 <./pix/algo2.pdf>]
-<pix/usav.pdf, id=146, 272.93971pt x 243.30899pt>
+ [18 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+tex/pix/algo2graph.pdf>] [19 <C:/Users/Miran Mizani/Studium/Informatik/6. Semes
+ter/TimS/git-Repo/timvs/tex/pix/algo2.pdf>]
+<pix/usav.pdf, id=149, 272.93971pt x 243.30899pt>
 File: pix/usav.pdf Graphic file (type pdf)
  <use pix/usav.pdf>
-Package pdftex.def Info: pix/usav.pdf used on input line 242.
+Package pdftex.def Info: pix/usav.pdf used on input line 247.
 (pdftex.def)             Requested size: 286.80486pt x 255.6676pt.
- [19 <./pix/usav.pdf>] <pix/csav.pdf, id=160, 269.80798pt x 307.3884pt>
+ [20 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+tex/pix/usav.pdf>] <pix/csav.pdf, id=162, 269.80798pt x 307.3884pt>
 File: pix/csav.pdf Graphic file (type pdf)
-
-<use pix/csav.pdf>
-Package pdftex.def Info: pix/csav.pdf used on input line 247.
+ <use pix/csav.pdf>
+Package pdftex.def Info: pix/csav.pdf used on input line 252.
 (pdftex.def)             Requested size: 286.80486pt x 326.78227pt.
- [20 <./pix/csav.pdf>]
-<pix/nodemapping.pdf, id=172, 258.2448pt x 211.2693pt>
+
+[21 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/csav.pdf>] <pix/nodemapping.pdf, id=173, 258.2448pt x 211.2693pt>
 File: pix/nodemapping.pdf Graphic file (type pdf)
 
 <use pix/nodemapping.pdf>
-Package pdftex.def Info: pix/nodemapping.pdf used on input line 252.
+Package pdftex.def Info: pix/nodemapping.pdf used on input line 257.
 (pdftex.def)             Requested size: 286.80486pt x 234.65677pt.
- [21 <./pix/nodemapping.pdf>]
-<pix/linkmapping.pdf, id=185, 239.4546pt x 260.17201pt>
+ [22 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+tex/pix/nodemapping.pdf>]
+<pix/linkmapping.pdf, id=186, 239.4546pt x 260.17201pt>
 File: pix/linkmapping.pdf Graphic file (type pdf)
 
 <use pix/linkmapping.pdf>
-Package pdftex.def Info: pix/linkmapping.pdf used on input line 257.
+Package pdftex.def Info: pix/linkmapping.pdf used on input line 262.
 (pdftex.def)             Requested size: 286.80486pt x 311.63713pt.
 
-Overfull \hbox (0.79245pt too wide) in paragraph at lines 264--266
+Overfull \hbox (0.79245pt too wide) in paragraph at lines 269--271
 \OT1/ptm/m/n/10 chen-ka-pa-zit[]ats-Forderungen wur-den zwi-schen 0 und 50 gew[
-]ahlt und eben-falls gleichm[]a^^Yig
+]ahlt und eben-falls gleichm[]aig
  []
 
-[22 <./pix/linkmapping.pdf>]
-<pix/perf_algo2.pdf, id=196, 422.53859pt x 212.2329pt>
+[23 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/linkmapping.pdf>]
+<pix/perf_algo2.pdf, id=197, 422.53859pt x 212.2329pt>
 File: pix/perf_algo2.pdf Graphic file (type pdf)
 
 <use pix/perf_algo2.pdf>
-Package pdftex.def Info: pix/perf_algo2.pdf used on input line 273.
+Package pdftex.def Info: pix/perf_algo2.pdf used on input line 278.
 (pdftex.def)             Requested size: 358.50471pt x 180.07172pt.
- [23 <./pix/perf_algo2.pdf>]
-Overfull \hbox (9.95244pt too wide) in paragraph at lines 285--286
+ [24 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+tex/pix/perf_algo2.pdf>]
+Overfull \hbox (9.95244pt too wide) in paragraph at lines 290--291
 \OT1/ptm/m/n/10 wer-den und ben[]otigt bei kom-ple-xe-ren VNRs ver-mut-lich auc
 h ei-ne nicht zu ver-nachl[]assigende
  []
 
-(./lniguide.bbl
+
+("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
+lniguide.bbl"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 9.
- [24]) [25] (./lniguide.aux) ) 
+ [25]) [26]
+("C:\Users\Miran Mizani\Studium\Informatik\6. Semester\TimS\git-Repo\timvs\tex\
+lniguide.aux") ) 
 Here is how much of TeX's memory you used:
- 4147 strings out of 493030
- 57971 string characters out of 6136259
- 126794 words of memory out of 5000000
- 7567 multiletter control sequences out of 15000+600000
- 24172 words of font info for 45 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 42i,8n,32p,1300b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ba
-se/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmri8a.pfb>
-Output written on lniguide.pdf (25 pages, 1420750 bytes).
+ 3770 strings out of 493921
+ 53718 string characters out of 3147261
+ 112877 words of memory out of 3000000
+ 6966 multiletter control sequences out of 15000+200000
+ 24172 words of font info for 45 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 42i,8n,32p,1300b,260s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
+mes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on lniguide.pdf (26 pages, 1443568 bytes).
 PDF statistics:
  237 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
