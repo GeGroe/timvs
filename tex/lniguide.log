@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.12.21)  19 JAN 2017 14:08
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.7.22)  19 JAN 2017 17:24
+>>>>>>> 29ca6d07756d03aa8efa2c7f694af8ab61aea32b
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -573,7 +577,7 @@ Overfull \hbox (65.10988pt too wide) in paragraph at lines 2--3
  []
 
 
-Overfull \hbox (2.92157pt too wide) in paragraph at lines 12--16
+Overfull \hbox (2.92157pt too wide) in paragraph at lines 12--14
 \OT1/ptm/m/n/10 ments und IT-Sicherheitstechnische Ar-bei-ten zur Er-hal-tung d
 er klas-si-schen C.I.A.-Aspekte.
  []
@@ -646,71 +650,80 @@ File: pix/gefahren_klassifizierung.pdf Graphic file (type pdf)
 Package pdftex.def Info: pix/gefahren_klassifizierung.pdf used on input line 9.
 
 (pdftex.def)             Requested size: 358.50471pt x 283.6984pt.
+<<<<<<< HEAD
  [9 <./pix/gefahren_klassifizierung.pdf>]
+=======
+ [9 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/t
+ex/pix/gefahren_klassifizierung.pdf>]
+[10]
+>>>>>>> 29ca6d07756d03aa8efa2c7f694af8ab61aea32b
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 47.
+(Font)              <8> on input line 49.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 47.
+(Font)              <6> on input line 49.
 
-Underfull \hbox (badness 2237) in paragraph at lines 47--47
+Underfull \hbox (badness 2237) in paragraph at lines 49--49
 [][]\OT1/ptm/m/n/8 Da die An-griffs-tech-ni-ken von VMs ge-gen VMs auf an-de-re
 n phy-si-schen Hosts ver-gleich-bar mit
  []
 
-[10]
-Overfull \hbox (0.28203pt too wide) in paragraph at lines 53--55
+
+Overfull \hbox (0.28203pt too wide) in paragraph at lines 55--57
 \OT1/ptm/m/n/10 herk[]ommlichen Me-tho-den wie Mo-ni-to-ring der Nu-terak-ti-vi
 t[]aten oder dem Ein-schleu-
  []
 
+<<<<<<< HEAD
 
 Overfull \hbox (32.31145pt too wide) in paragraph at lines 67--70
 \OT1/ptm/m/n/10 gu-rie-ren zu k[]onnen, er-schlie^^Yt wei-te-re An-griffs-zie-l
 e: At-ta-cken auf die VN-Managementtools
  []
 
+=======
+>>>>>>> 29ca6d07756d03aa8efa2c7f694af8ab61aea32b
 [11]
-Overfull \hbox (17.63118pt too wide) in paragraph at lines 85--86
+Overfull \hbox (17.63118pt too wide) in paragraph at lines 87--88
 []\OT1/ptm/m/n/10 Substratnetzprovider ist auch ein Un-ter-neh-men/-Dienst-leis
 -ter, der sich or-ga-ni-sa-to-risch ver[]andert
  []
 
 
-Overfull \hbox (1.83089pt too wide) in paragraph at lines 97--98
+Overfull \hbox (1.83089pt too wide) in paragraph at lines 99--100
 []\OT1/ptm/m/n/10 R[]ucksetzen/rollback ei-ner VM kann zwi-schen-zeit-lich ge-p
 atch-te Schwach-stel-len wie-
  []
 
 ) [12]
-Overfull \hbox (2.54152pt too wide) in paragraph at lines 151--153
+Overfull \hbox (2.54152pt too wide) in paragraph at lines 152--154
 \OT1/ptm/m/n/10 Se-pa-rie-rung von VMs un-ter-schied-li-cher Trust-Levels. Mitt
 els[]Se-cu-ri-ty plan de-sign\werden
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 <pix/SVNR.pdf, id=162, 731.73375pt x 398.48875pt>
 File: pix/SVNR.pdf Graphic file (type pdf)
  <use pix/SVNR.pdf>
-Package pdftex.def Info: pix/SVNR.pdf used on input line 165.
+Package pdftex.def Info: pix/SVNR.pdf used on input line 166.
 (pdftex.def)             Requested size: 286.80486pt x 156.18828pt.
 
-Overfull \hbox (32.66127pt too wide) in paragraph at lines 167--168
+Overfull \hbox (32.66127pt too wide) in paragraph at lines 168--169
 \OT1/ptm/m/n/10 wer-den sie aus der Be-re-chung aus-ge-schlos-sen. Der zwei-te 
 Schritt ist dem[]Net-work plan\gewidmet.
  []
 
 
-Overfull \hbox (2.12166pt too wide) in paragraph at lines 167--168
+Overfull \hbox (2.12166pt too wide) in paragraph at lines 168--169
 \OT1/ptm/m/n/10 aus-ge-schlos-sen. Im drit-ten Schritt wer-den die Si-cher-heit
 s-an-for-de-run-gen der ein-zel-nen Kno-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
@@ -718,33 +731,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 File: pix/pre-processing.pdf Graphic file (type pdf)
 
 <use pix/pre-processing.pdf>
-Package pdftex.def Info: pix/pre-processing.pdf used on input line 169.
+Package pdftex.def Info: pix/pre-processing.pdf used on input line 170.
 (pdftex.def)             Requested size: 358.50471pt x 118.22398pt.
+<<<<<<< HEAD
  [14 <./pix/SVNR.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 171--172
+=======
+ [14 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+tex/pix/SVNR.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+>>>>>>> 29ca6d07756d03aa8efa2c7f694af8ab61aea32b
 
  []
 
 <pix/auxgraph.pdf, id=174, 634.37pt x 357.335pt>
 File: pix/auxgraph.pdf Graphic file (type pdf)
  <use pix/auxgraph.pdf>
-Package pdftex.def Info: pix/auxgraph.pdf used on input line 173.
+Package pdftex.def Info: pix/auxgraph.pdf used on input line 174.
 (pdftex.def)             Requested size: 215.10501pt x 121.16513pt.
 
-Overfull \hbox (12.47119pt too wide) in paragraph at lines 175--178
+Overfull \hbox (12.47119pt too wide) in paragraph at lines 176--179
 \OT1/ptm/m/n/10 Dieses Pre-Processing re-du-ziert das SVNE-Problem auf ein[]mul
 ti-commodity-flow\Problem.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
 
  []
 
 <pix/algo.pdf, id=175, 737.75626pt x 1136.245pt>
 File: pix/algo.pdf Graphic file (type pdf)
  <use pix/algo.pdf>
-Package pdftex.def Info: pix/algo.pdf used on input line 179.
+Package pdftex.def Info: pix/algo.pdf used on input line 180.
 (pdftex.def)             Requested size: 358.50471pt x 552.13576pt.
  [15 <./pix/pre-processing.pdf> <./pix/auxgraph.pdf
 
@@ -758,28 +777,28 @@ Overfull \vbox (5.84285pt too high) has occurred while \output is active []
 File: pix/notations.pdf Graphic file (type pdf)
 
 <use pix/notations.pdf>
-Package pdftex.def Info: pix/notations.pdf used on input line 182.
+Package pdftex.def Info: pix/notations.pdf used on input line 183.
 (pdftex.def)             Requested size: 358.50471pt x 291.71817pt.
  <pix/variables.pdf, id=204, 706.64pt x 83.31125pt>
 File: pix/variables.pdf Graphic file (type pdf)
 
 <use pix/variables.pdf>
-Package pdftex.def Info: pix/variables.pdf used on input line 184.
+Package pdftex.def Info: pix/variables.pdf used on input line 185.
 (pdftex.def)             Requested size: 358.50471pt x 42.26697pt.
 
-Overfull \hbox (11.04128pt too wide) in paragraph at lines 190--191
+Overfull \hbox (11.04128pt too wide) in paragraph at lines 191--192
 \OT1/ptm/m/n/10 schl[]usselungskapazit[]aten der Kno-ten wur-de []uber die ge-s
 am-te Testrei-he eben-falls gleichm[]a^^Yig
  []
 
 
-Overfull \hbox (17.62134pt too wide) in paragraph at lines 192--193
+Overfull \hbox (17.62134pt too wide) in paragraph at lines 193--194
 []\OT1/ptm/m/n/10 Die fol-gen-de Sta-tisk zeigt einen Durch-schnitts-ver-gleich
  zwi-schen dem, als Stan-dard gew[]ahlten,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
@@ -790,16 +809,22 @@ with page group included in a single page
 >] <pix/statistic.pdf, id=221, 726.715pt x 391.4625pt>
 File: pix/statistic.pdf Graphic file (type pdf)
  <use pix/statistic.pdf>
-Package pdftex.def Info: pix/statistic.pdf used on input line 194.
+Package pdftex.def Info: pix/statistic.pdf used on input line 195.
 (pdftex.def)             Requested size: 286.80486pt x 154.49756pt.
 
+<<<<<<< HEAD
 Overfull \hbox (15.27144pt too wide) in paragraph at lines 196--198
 \OT1/ptm/m/n/10 Standard-Algorithmus oh-ne Pre-Processing ar-bei-ten lie-^^Ye, 
 an-schau-li-cher und aus-sa-ge-kr[]aftiger.
+=======
+Overfull \hbox (15.27144pt too wide) in paragraph at lines 197--199
+\OT1/ptm/m/n/10 Standard-Algorithmus oh-ne Pre-Processing ar-bei-ten lie-e, an
+-schau-li-cher und aus-sa-ge-kr[]aftiger.
+>>>>>>> 29ca6d07756d03aa8efa2c7f694af8ab61aea32b
  []
 
 
-Overfull \hbox (12.3121pt too wide) in paragraph at lines 196--198
+Overfull \hbox (12.3121pt too wide) in paragraph at lines 197--199
 \OT1/ptm/m/n/10 Den-noch ist ein Punkt durch-aus []uberraschend und be-mer-kens
 -wert: Der Standard-Algorithmus
  []
@@ -809,10 +834,10 @@ Overfull \hbox (12.3121pt too wide) in paragraph at lines 196--198
 File: pix/algo2graph.pdf Graphic file (type pdf)
 
 <use pix/algo2graph.pdf>
-Package pdftex.def Info: pix/algo2graph.pdf used on input line 222.
+Package pdftex.def Info: pix/algo2graph.pdf used on input line 223.
 (pdftex.def)             Requested size: 286.80486pt x 183.90488pt.
 
-Overfull \hbox (25.04152pt too wide) in paragraph at lines 224--225
+Overfull \hbox (25.04152pt too wide) in paragraph at lines 225--226
 \OT1/ptm/m/n/10 dung ber[]ucksichtigt nicht nur die Si-cher-heits-an-for-de-run
 -gen al-ler Par-tei-en un-ter Ber[]ucksichtigung
  []
@@ -820,36 +845,41 @@ Overfull \hbox (25.04152pt too wide) in paragraph at lines 224--225
 <pix/algo2.pdf, id=233, 309.55649pt x 569.96942pt>
 File: pix/algo2.pdf Graphic file (type pdf)
  <use pix/algo2.pdf>
-Package pdftex.def Info: pix/algo2.pdf used on input line 226.
+Package pdftex.def Info: pix/algo2.pdf used on input line 227.
 (pdftex.def)             Requested size: 286.80486pt x 528.11795pt.
  [19 <./pix/algo2graph.pdf>] [20 <./pix/algo2.pdf>]
 <pix/usav.pdf, id=257, 272.93971pt x 243.30899pt>
 File: pix/usav.pdf Graphic file (type pdf)
  <use pix/usav.pdf>
-Package pdftex.def Info: pix/usav.pdf used on input line 243.
+Package pdftex.def Info: pix/usav.pdf used on input line 244.
 (pdftex.def)             Requested size: 286.80486pt x 255.6676pt.
  [21 <./pix/usav.pdf>] <pix/csav.pdf, id=270, 269.80798pt x 307.3884pt>
 File: pix/csav.pdf Graphic file (type pdf)
+<<<<<<< HEAD
 
 <use pix/csav.pdf>
 Package pdftex.def Info: pix/csav.pdf used on input line 248.
+=======
+ <use pix/csav.pdf>
+Package pdftex.def Info: pix/csav.pdf used on input line 249.
+>>>>>>> 29ca6d07756d03aa8efa2c7f694af8ab61aea32b
 (pdftex.def)             Requested size: 286.80486pt x 326.78227pt.
  [22 <./pix/csav.pdf>]
 <pix/nodemapping.pdf, id=281, 258.2448pt x 211.2693pt>
 File: pix/nodemapping.pdf Graphic file (type pdf)
 
 <use pix/nodemapping.pdf>
-Package pdftex.def Info: pix/nodemapping.pdf used on input line 253.
+Package pdftex.def Info: pix/nodemapping.pdf used on input line 254.
 (pdftex.def)             Requested size: 286.80486pt x 234.65677pt.
  [23 <./pix/nodemapping.pdf>]
 <pix/linkmapping.pdf, id=294, 239.4546pt x 260.17201pt>
 File: pix/linkmapping.pdf Graphic file (type pdf)
 
 <use pix/linkmapping.pdf>
-Package pdftex.def Info: pix/linkmapping.pdf used on input line 258.
+Package pdftex.def Info: pix/linkmapping.pdf used on input line 259.
 (pdftex.def)             Requested size: 286.80486pt x 311.63713pt.
 
-Overfull \hbox (0.79245pt too wide) in paragraph at lines 265--267
+Overfull \hbox (0.79245pt too wide) in paragraph at lines 266--268
 \OT1/ptm/m/n/10 chen-ka-pa-zit[]ats-Forderungen wur-den zwi-schen 0 und 50 gew[
 ]ahlt und eben-falls gleichm[]a^^Yig
  []
@@ -859,10 +889,16 @@ Overfull \hbox (0.79245pt too wide) in paragraph at lines 265--267
 File: pix/perf_algo2.pdf Graphic file (type pdf)
 
 <use pix/perf_algo2.pdf>
-Package pdftex.def Info: pix/perf_algo2.pdf used on input line 274.
+Package pdftex.def Info: pix/perf_algo2.pdf used on input line 275.
 (pdftex.def)             Requested size: 358.50471pt x 180.07172pt.
+<<<<<<< HEAD
  [25 <./pix/perf_algo2.pdf>]
 Overfull \hbox (9.95244pt too wide) in paragraph at lines 286--287
+=======
+ [25 <C:/Users/Miran Mizani/Studium/Informatik/6. Semester/TimS/git-Repo/timvs/
+tex/pix/perf_algo2.pdf>]
+Overfull \hbox (9.95244pt too wide) in paragraph at lines 287--288
+>>>>>>> 29ca6d07756d03aa8efa2c7f694af8ab61aea32b
 \OT1/ptm/m/n/10 wer-den und ben[]otigt bei kom-ple-xe-ren VNRs ver-mut-lich auc
 h ei-ne nicht zu ver-nachl[]assigende
  []
@@ -872,6 +908,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 9.
  [26]) [27] (./lniguide.aux) ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  4143 strings out of 493030
  57913 string characters out of 6136259
  127736 words of memory out of 5000000
@@ -891,6 +928,27 @@ pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on lniguide.pdf (27 pages, 1666624 bytes).
+=======
+ 3765 strings out of 493921
+ 53644 string characters out of 3147261
+ 113882 words of memory out of 3000000
+ 6962 multiletter control sequences out of 15000+200000
+ 24172 words of font info for 45 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 42i,8n,32p,1300b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on lniguide.pdf (27 pages, 1704790 bytes).
+>>>>>>> 29ca6d07756d03aa8efa2c7f694af8ab61aea32b
 PDF statistics:
  351 PDF objects out of 1000 (max. 8388607)
  213 compressed objects within 3 object streams
