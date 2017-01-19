@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.12.21)  19 JAN 2017 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.12.21)  19 JAN 2017 20:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -555,7 +555,7 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lniguide.toc
@@ -582,13 +582,13 @@ er klas-si-schen C.I.A.-Aspekte.
 File: pix/physical_structure2.pdf Graphic file (type pdf)
 
 <use pix/physical_structure2.pdf>
-Package pdftex.def Info: pix/physical_structure2.pdf used on input line 62.
+Package pdftex.def Info: pix/physical_structure2.pdf used on input line 61.
 (pdftex.def)             Requested size: 250.9522pt x 130.08708pt.
 
 <pix/VNR1.pdf, id=21, 323.2075pt x 242.9075pt>
 File: pix/VNR1.pdf Graphic file (type pdf)
  <use pix/VNR1.pdf>
-Package pdftex.def Info: pix/VNR1.pdf used on input line 89.
+Package pdftex.def Info: pix/VNR1.pdf used on input line 88.
 (pdftex.def)             Requested size: 143.39969pt x 107.77287pt.
  [5 <./pix/physical_structure2.pdf> <./pix/VNR1.pdf>] (./Kapitel/sicherheitsanf
 orderungen.tex
@@ -612,7 +612,7 @@ Overfull \hbox (11.03278pt too wide) in paragraph at lines 32--33
 ) [7]
 
 LaTeX Warning: File `gefahren_dreiEbenenDerVirtualisierung.png' not found on in
-put line 137.
+put line 136.
 
 
 ! Package pdftex.def Error: File `gefahren_dreiEbenenDerVirtualisierung.png' no
@@ -622,10 +622,10 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 ...efahren_dreiEbenenDerVirtualisierung.png}
+l.136 ...efahren_dreiEbenenDerVirtualisierung.png}
                                                   
 ? 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 137.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 136.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -677,23 +677,23 @@ atch-te Schwach-stel-len wie-
  []
 
 ) [12]
-Overfull \hbox (41.65184pt too wide) in paragraph at lines 159--161
+Overfull \hbox (41.65184pt too wide) in paragraph at lines 158--160
 \OT1/ptm/m/n/10 Hosts im sel-ben Netz wird durch die-se Ma^^Y-ah-me ver-hin-der
 t. W[]ahrend "high\Resourcenteilung
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
 <pix/SVNR.pdf, id=104, 731.73375pt x 398.48875pt>
 File: pix/SVNR.pdf Graphic file (type pdf)
  <use pix/SVNR.pdf>
-Package pdftex.def Info: pix/SVNR.pdf used on input line 170.
+Package pdftex.def Info: pix/SVNR.pdf used on input line 169.
 (pdftex.def)             Requested size: 286.80486pt x 156.18828pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
@@ -701,31 +701,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--174
 File: pix/pre-processing.pdf Graphic file (type pdf)
 
 <use pix/pre-processing.pdf>
-Package pdftex.def Info: pix/pre-processing.pdf used on input line 175.
+Package pdftex.def Info: pix/pre-processing.pdf used on input line 174.
 (pdftex.def)             Requested size: 358.50471pt x 118.22398pt.
  [14 <./pix/SVNR.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
 <pix/auxgraph.pdf, id=116, 634.37pt x 357.335pt>
 File: pix/auxgraph.pdf Graphic file (type pdf)
  <use pix/auxgraph.pdf>
-Package pdftex.def Info: pix/auxgraph.pdf used on input line 180.
+Package pdftex.def Info: pix/auxgraph.pdf used on input line 179.
 (pdftex.def)             Requested size: 215.10501pt x 121.16513pt.
 
-Overfull \hbox (12.47119pt too wide) in paragraph at lines 183--186
+Overfull \hbox (12.47119pt too wide) in paragraph at lines 182--185
 \OT1/ptm/m/n/10 Dieses Pre-Processing re-du-ziert das SVNE-Problem auf ein[]mul
 ti-commodity-flow\Problem.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--186
+Underfull \hbox (badness 10000) in paragraph at lines 182--185
 
  []
 
 
-Overfull \hbox (11.04128pt too wide) in paragraph at lines 190--191
+Overfull \hbox (11.04128pt too wide) in paragraph at lines 189--190
 \OT1/ptm/m/n/10 schl[]usselungskapazit[]aten der Kno-ten wur-de []uber die ge-s
 am-te Testrei-he eben-falls gleichm[]a^^Yig
  []
@@ -735,35 +735,35 @@ am-te Testrei-he eben-falls gleichm[]a^^Yig
 pdfTeX warning: latex (file ./pix/auxgraph.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
 >]
-Overfull \hbox (17.62134pt too wide) in paragraph at lines 192--193
+Overfull \hbox (17.62134pt too wide) in paragraph at lines 191--192
 []\OT1/ptm/m/n/10 Die fol-gen-de Sta-tisk zeigt einen Durch-schnitts-ver-gleich
  zwi-schen dem, als Stan-dard gew[]ahlten,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 <pix/statistic.pdf, id=133, 726.715pt x 391.4625pt>
 File: pix/statistic.pdf Graphic file (type pdf)
  <use pix/statistic.pdf>
-Package pdftex.def Info: pix/statistic.pdf used on input line 194.
+Package pdftex.def Info: pix/statistic.pdf used on input line 193.
 (pdftex.def)             Requested size: 286.80486pt x 154.49756pt.
 
-Overfull \hbox (0.85185pt too wide) in paragraph at lines 197--199
+Overfull \hbox (0.85185pt too wide) in paragraph at lines 196--198
 \OT1/ptm/m/n/10 Algorithmus, was auf ei-ne Op-ti-mie-rung der Al-go-rith-men au
 f den In-put des Pre-Processings
  []
 
 
-Overfull \hbox (15.27144pt too wide) in paragraph at lines 197--199
+Overfull \hbox (15.27144pt too wide) in paragraph at lines 196--198
 \OT1/ptm/m/n/10 Standard-Algorithmus oh-ne Pre-Processing ar-bei-ten lie-^^Ye, 
 an-schau-li-cher und aus-sa-ge-kr[]aftiger.
  []
 
 
-Overfull \hbox (12.3121pt too wide) in paragraph at lines 197--199
+Overfull \hbox (12.3121pt too wide) in paragraph at lines 196--198
 \OT1/ptm/m/n/10 Den-noch ist ein Punkt durch-aus []uberraschend und be-mer-kens
 -wert: Der Standard-Algorithmus
  []
@@ -773,16 +773,16 @@ Overfull \hbox (12.3121pt too wide) in paragraph at lines 197--199
 File: pix/algo2graph.pdf Graphic file (type pdf)
 
 <use pix/algo2graph.pdf>
-Package pdftex.def Info: pix/algo2graph.pdf used on input line 226.
+Package pdftex.def Info: pix/algo2graph.pdf used on input line 225.
 (pdftex.def)             Requested size: 286.80486pt x 183.90488pt.
 
-Overfull \hbox (25.04152pt too wide) in paragraph at lines 229--230
+Overfull \hbox (25.04152pt too wide) in paragraph at lines 228--229
 \OT1/ptm/m/n/10 dung ber[]ucksichtigt nicht nur die Si-cher-heits-an-for-de-run
 -gen al-ler Par-tei-en un-ter Ber[]ucksichtigung
  []
 
 [17 <./pix/algo2graph.pdf>]
-Overfull \hbox (0.79245pt too wide) in paragraph at lines 247--249
+Overfull \hbox (0.79245pt too wide) in paragraph at lines 246--248
 \OT1/ptm/m/n/10 chen-ka-pa-zit[]ats-Forderungen wur-den zwi-schen 0 und 50 gew[
 ]ahlt und eben-falls gleichm[]a^^Yig
  []
@@ -791,10 +791,10 @@ Overfull \hbox (0.79245pt too wide) in paragraph at lines 247--249
 File: pix/perf_algo2.pdf Graphic file (type pdf)
 
 <use pix/perf_algo2.pdf>
-Package pdftex.def Info: pix/perf_algo2.pdf used on input line 258.
+Package pdftex.def Info: pix/perf_algo2.pdf used on input line 257.
 (pdftex.def)             Requested size: 358.50471pt x 180.07172pt.
  [19 <./pix/perf_algo2.pdf>]
-Overfull \hbox (9.95244pt too wide) in paragraph at lines 276--277
+Overfull \hbox (9.95244pt too wide) in paragraph at lines 272--273
 \OT1/ptm/m/n/10 wer-den und ben[]otigt bei kom-ple-xe-ren VNRs ver-mut-lich auc
 h ei-ne nicht zu ver-nachl[]assigende
  []
@@ -802,27 +802,24 @@ h ei-ne nicht zu ver-nachl[]assigende
 (./lniguide.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 9.
- [20]) [21] (./lniguide.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ [20]) [21] (./lniguide.aux) ) 
 Here is how much of TeX's memory you used:
  4136 strings out of 493030
  57510 string characters out of 6136259
- 127836 words of memory out of 5000000
+ 127876 words of memory out of 5000000
  7559 multiletter control sequences out of 15000+600000
  24687 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,32p,1262b,312s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on lniguide.pdf (21 pages, 784363 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ba
+se/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on lniguide.pdf (21 pages, 784329 bytes).
 PDF statistics:
  203 PDF objects out of 1000 (max. 8388607)
  118 compressed objects within 2 object streams
