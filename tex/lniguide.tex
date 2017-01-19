@@ -54,6 +54,7 @@ Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung stei
 Um den Anforderungen der heutigen Gefahren zu genügen, ist es unumgänglich sämtliche Grundsätze der IT-Sicherheit bereits in die Infrastrukturplanung miteinzubeziehen. Nicht nur, weil das nachträgliche Schließen von Sicherheitslücken und Hinzufügen von Sicherheitskomponenten in finanzieller und zeitlicher Hinsicht zehnmal so teuer ist wie die initiale Beachtung dieser Aspekte, sondern weil die vollständige Sicherheit eines nachgerüsteten Systems kaum gewährleistet werden kann \cite{Cole}."`Security-by-Design"' ist einer der wichtigsten Begriffe bei der Planung öffentlich zugänglicher Netzwerkstrukturen. Dementsprechend groß ist die Nachfrage nach VNE-Algorithmen, die bereits beim Prozess des Mappings viele Sicherheitsaspekte beachten und abdecken. Die vorausgehende Klassifizierung der bekannten Gefahren in "`VNE-relevant"' und "`nicht-VNE-relevant"' bildet die Grundlage für unsere weiteren Untersuchungen. Um zuvor noch einen genaueren Einblick in die Problematik von VNE zu gewähren, beginnen wir zunächst mit der Erläuterung des VNE-Problems sowie einem Überblick über die verschiedenen erfolgreichen Strategien bestehender VNE-Algorithmen, welche die Sicherheitsaspekte noch nicht beachten. 
 
 Betrachtet man das zugrundeliegende physische System als einen ungerichteten Graphen und extrahiert die vorhandenen Elemente sowie deren Werte, erhält man die Basismenge in welche die virtuellen Strukturen eingebettet werden sollen. Siehe Abbildungen ~\ref{graph1}, ~\ref{graph2} und ~\ref{graph3}.
+
 \vspace{1cm}
 \begin{figure}[htb]
 \begin{center}
@@ -81,7 +82,8 @@ G\textsuperscript{S} =
 \caption{\label{graph3} Netz aus Abbildung 1 in vereinfachter Mengennotation}
 \end{center}
 \end{figure}
-An dieser Stelle muss darauf verwiesen werden, dass die Mengen in der Realität um einiges komplexer sind. Beispielsweise kann aus der Menge aus Abb. 3 nicht mehr rekonstruirt werden, welcher Link mit welchen Knoten verbunden ist.
+
+An dieser Stelle muss darauf verwiesen werden, dass die Mengen in der Realität um einiges komplexer sind. Beispielsweise kann aus der Menge aus Abb. 3 nicht mehr rekonstruiert werden, welcher Link mit welchen Knoten verbunden ist.
 \newpage
 
 
@@ -179,7 +181,7 @@ VNRs werden nun, wie in Kapitel 2 bereits gezeigt, in ungerichtete Graphen mit S
 \begin{figure}[htb]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{SVNR.pdf}\newline
-\caption{\label{graph7}VNR und physisches System mit Sicherheitsmerkmalen}
+\caption{\label{graph7}VNR und physisches System mit Sicherheitsmerkmalen \cite{wang2016towards}}
 \end{center}
 \end{figure}
 
@@ -188,7 +190,7 @@ Nun wird ein vier-stufiges Pre-Processing durchgeführt, um die Berechnung der o
 \begin{figure}[htb]
 \begin{center}
 \includegraphics[width=0.75\textwidth]{pre-processing.pdf}\newline
-\caption{\label{graph8}4-stufiges Pre-Processing}
+\caption{\label{graph8}4-stufiges Pre-Processing\cite{wang2016towards}}
 \end{center}
 \end{figure}
 
@@ -197,7 +199,7 @@ Mit den aus dem Pre-Processing gewonnen Information bildet man nun einen Hilsgra
 \begin{figure}[htb]
 \begin{center}
 	\includegraphics[width=0.6\textwidth]{auxgraph.pdf}\newline 
-	\caption{\label{graph9}Hilfsgraph}
+	\caption{\label{graph9}Hilfsgraph\cite{wang2016towards}}
 \end{center}
 \end{figure}
 
@@ -215,7 +217,7 @@ Die folgende Statisk zeigt einen Durchschnittsvergleich zwischen dem, als Standa
 \begin{figure}[htb]
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{statistic.pdf}\newline
-	\caption{\label{graph10} Evaluationsergebnis [Ansatz1]}
+	\caption{\label{graph10} Evaluationsergebnis \cite{wang2016towards}}
 \end{center}
 \end{figure}
 
@@ -249,7 +251,7 @@ Der erste und zweite Punkt dienen der Risikominimierung zwischen physischen und 
 \begin{figure}[htb]
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{algo2graph.pdf}\newline
-	\caption{\label{graph11} VNR und physisches System mit Sicherheitsmerkmalen}
+	\caption{\label{graph11} VNR und physisches System mit Sicherheitsmerkmalen\cite{algo2}}
 \end{center}
 \end{figure}
 
@@ -267,23 +269,21 @@ Das außergewöhnliche bei diesem Ansatz ist die Verwendung zweier unterschiedli
 
 Beide Varianten nutzen die selben Heuristiken. Der Author schlägt für ideale Ergebnisse eine kombinierte Benutzung der beiden Varianten vor.
 
-Die Testumgebung dieses Ansatzes wurde mittels GT-ITM-Tool cite-missing! erstellt. 
+Die Testumgebung dieses Ansatzes wurde mittels GT-ITM-Tool erstellt \cite{GT-ITM-Tool}. 
 
 Die physischen Netze wurden in der Größenordnung eines mittleres ISP angesetzt, und betrugen 100 Knoten und 500 Links. Die Bandbreite und Rechenkapazität wurden, wie auch im vorherigen Ansatz, gleichmäßig verteilt und betrugen Werte zwischen 50 und 100. Die abstrakten Sicherheitslevels der physischen Elemente wurden zwischen 0 und 4 gleichmäßig verteilt. Die Anforderungslevels wurden ebenfalls aus dem Bereich 0-4 gewählt, und so verteilt, dass kein physisches Element ein höheres Anforderungslevel als Sicherheitslevel besitzt.
 
 Die VNRs beinhalteten 2 bis 20 Knoten sowie halbsoviele Links. Die Bandbreite- und Rechenkapazitäts-Forderungen wurden zwischen 0 und 50 gewählt und ebenfalls gleichmäßig verteilt.
 Die zeitlichen Parameter wurden auf durchschnittlich (Poisson-Verteilung) 5 Anforderungen pro 100 Zeiteinheiten begrenzt. Die Verwendungszeit eines VNRs folgt einer Exponential-Verteilung und betrugt im Durchschnitt 500 Zeiteinheiten. Eine einzelne Simulation erhielt 1500 VNRs und dauerte 30000 Zeiteinheiten. 
 
-Als Vergleichswert wurde der Algorithmus aus cite-6-missing verwendet. Die Tests wurden für drei, anhand der Link-Split-Ratio unterschiedenen Szenarien ausgelegt: 
+Als Vergleichswert wurde der Algorithmus aus \cite{comp} verwendet. Die Tests wurden für drei, anhand der Link-Split-Ratio unterschiedenen Szenarien ausgelegt: 
 High-LSR(mehr als 80\% der Links dürfen gesplittet werden),
 Low-LSR(weniger als 20\%) und VLSR(varied LSR). Da letzteres Testszenario am meisten Bezug zur Realität hat, werden wir hier nur diese Ergebnisse vorstellen. 
-
-[UNTERSCHIEDE ZU VORHERIGER TESTUMGEBUNG?]
 
 \begin{figure}[htb]
 \begin{center}
 	\includegraphics[width=1\textwidth]{perf_algo2.pdf}\newline
-	\caption{\label{graph12} VNR und physisches System mit Sicherheitsmerkmalen}
+	\caption{\label{graph12} VNR und physisches System mit Sicherheitsmerkmalen\cite{algo2}}
 \end{center}
 \end{figure}
 
@@ -295,6 +295,8 @@ Man sieht in Abbildung~\ref{graph12} die drei, am schwersten gewichteten Aspekte
 \label{subsec:svne_vergleich}
 
 Um nun die beiden vorgestellten Ansätze in einen Vergleich zu bringen, möchten wir uns hier nicht auf die Ergebnisse der Testszenarien konzentrieren, sondern auf die unterschiedlichen Herangehensweisen.
+
+[unterschiedliche Testumgebungen... offline vs online]
 
 Der - für uns wichtigste - Unterschied zwischen den beiden Ansätzen bezieht sich auf Granularität der Sicherheitsanforderungen. Ansatz 1 versucht hier mittels drei, auf Teilelemente bezogene, Sicherheitspläne einen größtmöglichen Schutz zu bieten. Ein Vorteil dieses Vorgehens liegt klar in der Einfachheit der Umsetzungsmöglichkeit und der Limitierung zusätzlicher Parameter, durch welche die Rechenzeit der Algorithmen im Zaum gehalten wird. Nachteile könnten sich aus der Starrheit des Sicherheitssystems und dem Kostenfaktor ergeben. Ansatz 2 bietet hier etwas mehr Flexibilität sowie Präzision. Die entsprechenden Vektoren müssten hierfür zwar erst definiert werden, bieten dafür aber Erweiterbarkeit, was ein Vorteil bezüglich Flexibilität und Nachteil bezüglich Rechen- sowie Zeit-Aufwand darstellen kann. [detailliertere Ausführungen für diesen Punkt folgen]
 

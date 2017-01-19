@@ -17,49 +17,55 @@ Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for ent
 while executing---line 2517 of file lnig.bst
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
 while executing---line 2517 of file lnig.bst
+Too many commas in name 1 of "M. Yu, Y. Yi, J. Rexford, M. Chiang" for entry comp
+while executing---line 2517 of file lnig.bst
+Too many commas in name 1 of "M. Yu, Y. Yi, J. Rexford, M. Chiang" for entry comp
+while executing---line 2517 of file lnig.bst
+Too many commas in name 1 of "M. Yu, Y. Yi, J. Rexford, M. Chiang" for entry comp
+while executing---line 2651 of file lnig.bst
 Warning--empty journal in natarajansecurity
 Warning--empty year in natarajansecurity
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
 while executing---line 2651 of file lnig.bst
-You've used 20 entries,
+You've used 22 entries,
             2539 wiz_defined-function locations,
-            667 strings with 7812 characters,
-and the built_in function-call counts, 8015 in all, are:
-= -- 790
-> -- 417
-< -- 12
-+ -- 148
-- -- 146
-* -- 526
-:= -- 1306
-add.period$ -- 59
-call.type$ -- 20
-change.case$ -- 113
-chr.to.int$ -- 20
-cite$ -- 22
-duplicate$ -- 319
-empty$ -- 588
-format.name$ -- 165
-if$ -- 1664
+            674 strings with 8035 characters,
+and the built_in function-call counts, 8517 in all, are:
+= -- 835
+> -- 433
+< -- 14
++ -- 152
+- -- 150
+* -- 547
+:= -- 1383
+add.period$ -- 63
+call.type$ -- 22
+change.case$ -- 121
+chr.to.int$ -- 22
+cite$ -- 24
+duplicate$ -- 341
+empty$ -- 638
+format.name$ -- 171
+if$ -- 1771
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 14
-newline$ -- 97
-num.names$ -- 60
-pop$ -- 168
+newline$ -- 105
+num.names$ -- 66
+pop$ -- 187
 preamble$ -- 1
-purify$ -- 153
+purify$ -- 165
 quote$ -- 0
-skip$ -- 295
+skip$ -- 321
 stack$ -- 0
-substring$ -- 335
-swap$ -- 65
-text.length$ -- 12
+substring$ -- 349
+swap$ -- 67
+text.length$ -- 14
 text.prefix$ -- 2
 top$ -- 0
-type$ -- 160
+type$ -- 176
 warning$ -- 2
-while$ -- 72
-width$ -- 21
-write$ -- 242
-(There were 5 error messages)
+while$ -- 76
+width$ -- 23
+write$ -- 261
+(There were 8 error messages)
