@@ -4,15 +4,15 @@
 \contentsline {section}{\numberline {3}Sicherheitsaspekte virtueller Netzinfrastrukturen}{6}
 \contentsline {subsection}{\numberline {3.1}(Sicherheits-)Anforderungen an virtualisierte Umgebungen}{6}
 \contentsline {subsection}{\numberline {3.2}Verwundbarkeiten in virtualisierten Umgebungen}{8}
-\contentsline {subsubsection}{\numberline {3.2.1}Technischer Art}{9}
+\contentsline {subsubsection}{\numberline {3.2.1}Technischer Art}{10}
 \contentsline {paragraph}{I.2 \& I.3 Von NI ausgehend gegen VN und User.}{10}
 \contentsline {paragraph}{Von VN/VM ausgehend}{10}
 \contentsline {paragraph}{Vom User ausgehend}{11}
 \contentsline {subsubsection}{\numberline {3.2.2}Organisatorischer Art}{12}
-\contentsline {subsubsection}{\numberline {3.2.3}Rechtlicher Art}{12}
+\contentsline {subsubsection}{\numberline {3.2.3}Rechtlicher Art}{13}
 \contentsline {subsection}{\numberline {3.3}VNE-Relevante Gefahren}{13}
 \contentsline {section}{\numberline {4}Vermeidung von Gefahren via Secure VNE (SVNE)}{13}
 \contentsline {subsection}{\numberline {4.1}Ansatz 1}{13}
 \contentsline {subsection}{\numberline {4.2}Ansatz 2}{18}
-\contentsline {subsection}{\numberline {4.3}Vergleich}{25}
+\contentsline {subsection}{\numberline {4.3}Vergleich der beiden Ans\IeC {\"a}tze}{25}
 \contentsline {section}{\numberline {5}Schlussfolgerung und Ausblick}{26}
