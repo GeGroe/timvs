@@ -168,13 +168,13 @@ Hierbei beschäftigen wir uns mit dem Lösungsansatz aus \cite{wang2016towards}.
 Das Hauptaugenmerk bezüglich der Sicherheitsaspekte legen Wang et. al. auf Traffic-Verschlüsselung und die Separierung von VMs unterschiedlicher Trust-Levels. Die drei folgenden strukturellen Aspekte werden betrachtet und in dementsprechende Levels eingeteilt.
 \begin{itemize}
 \item Netze:\newline
-Ein VNR wird als Netzwerk betrachtet und seinem Level entsprechend isoliert. "`High"'fordert und beansprucht ein gesamtes Netz bzw. Subnetz der physischen Infrastruktur für sich. Hiermit soll die Wahrscheinlichkeit für DOS-Angriffe oder ähnliche vermindert werden, da"`Mehr-Parteien-Netzwerke"'die Hauptschwachstellen für solche Angriffe darstellen \cite{DOS}. Auch Sniffing durch kompromittierte Hosts im selben Netz wird durch diese Maßahme verhindert. Während "high"'Resourcenteilung somit komplett verweigert, lässt der Level"`medium"'zumindest ein gemeinsam genutztes Netz für VNRs vom selben Eigentümer zu.
+Ein VNR wird als Netzwerk betrachtet und seinem Level entsprechend isoliert. "`High"' fordert und beansprucht ein gesamtes Netz bzw. Subnetz der physischen Infrastruktur für sich. Hiermit soll die Wahrscheinlichkeit für DOS-Angriffe oder ähnliche vermindert werden, da "`Mehr-Parteien-Netzwerke"' die Hauptschwachstellen für solche Angriffe darstellen \cite{DOS}. Auch Sniffing durch kompromittierte Hosts im selben Netz wird durch diese Maßahme verhindert. Während "`high"' Resourcenteilung somit komplett verweigert, lässt der Level "`medium"' zumindest ein gemeinsam genutztes Netz für VNRs vom selben Eigentümer zu.
 
 \item Knoten:\newline
-Die einzelnen virtuellen Knoten eines VNR stellen Isolierungsanforderungen an die physischen Knoten. Wie auch beim"`network plan", werden die Levels"`high","`medium"'und"`none"'definiert und umgesetzt."`high"'fordert die alleinige Existenz eines VNR-Knotens,"`medium"'lässt VNR-Knoten vom selben Eigentümer auf ein und demselben physischen Knoten zu. Durch diesen Plan sollen Angriffe von VM zu VM über gemeinsam genutzte Resourcen unterbunden werden. Zusätzlich wird das Risiko eines Angriffs vom physischen Host verringert, da der Angriffsvektor"`VM zu physischem Host"'eliminiert wird.
+Die einzelnen virtuellen Knoten eines VNR stellen Isolierungsanforderungen an die physischen Knoten. Wie auch beim Netzaspekt, werden die Levels "`high", "`medium"' und "`none"' definiert und umgesetzt."`high"' fordert die alleinige Existenz eines VNR-Knotens, "`medium"' lässt VNR-Knoten vom selben Eigentümer auf ein und demselben physischen Knoten zu. Durch diesen Plan sollen Angriffe von VM zu VM über gemeinsam genutzte Resourcen unterbunden werden. Zusätzlich wird das Risiko eines Angriffs vom physischen Host verringert, da der Angriffsvektor "`VM zu physischem Host"' eliminiert wird.
 
 \item Links:\newline
-End-to-End(E2E), Point-to-Point(P2P) und"`none"'sind die hier wählbaren Levels. Während E2E nur an den Endpunkten Verschlüsselungskapazitäten zu Verfügung stellen muss, benötigt P2P diese Kapazitäten an allen Hops des abgebildeten Links. Die heutzutage sehr gängigen man-in-the-middle Angriffe sollen dadurch wesentlich erschwert werden. 
+End-to-End(E2E), Point-to-Point(P2P) und "`none"' sind die hier wählbaren Levels. Während E2E nur an den Endpunkten Verschlüsselungskapazitäten zu Verfügung stellen muss, benötigt P2P diese Kapazitäten an allen Hops des abgebildeten Links. Die heutzutage sehr gängigen man-in-the-middle Angriffe sollen dadurch wesentlich erschwert werden. 
 \end{itemize}
 VNRs werden nun, wie in Kapitel 2 bereits gezeigt, in ungerichtete Graphen mit Standardanforderungen transformiert. Zusätzlich werden hier auch noch Sicherheitsanforderungen integriert. Siehe Abbildung ~\ref{graph7}.\newline
 
@@ -203,8 +203,8 @@ Mit den aus dem Pre-Processing gewonnen Information bildet man nun einen Hilsgra
 \end{center}
 \end{figure}
 
-Dieses Pre-Processing reduziert das SVNE-Problem auf ein"`multi-commodity-flow"'Problem. \cite{MCF}
-Im weiteren Vorgehen werden nun zwei Fälle unterschieden."`Path-splitting", im weiteren SVNE-PS und"`no-path-splitting", im weitern SVNE-NPS, sind zusätzliche Sicherheitsvorgaben, welche im Vorfeld definiert werden müssen, um die Wahl des Algorithmus zu ermöglichen. Sollte SVNE-PS gewählt werden, beziehen sich die Gleichungen nur auf die Erfüllung der geforderten Attribute.
+Dieses Pre-Processing reduziert das SVNE-Problem auf ein "`multi-commodity-flow"' Problem. \cite{MCF}
+Im weiteren Vorgehen werden nun zwei Fälle unterschieden."`Path-splitting", im weiteren SVNE-PS und "`no-path-splitting"', im weitern SVNE-NPS, sind zusätzliche Sicherheitsvorgaben, welche im Vorfeld definiert werden müssen, um die Wahl des Algorithmus zu ermöglichen. Sollte SVNE-PS gewählt werden, beziehen sich die Gleichungen nur auf die Erfüllung der geforderten Attribute.
 Sollte SVNE-NPS gewählt werden, werden die für Link-Abbildungen verantwortlichen Gleichungen ersetzt.\newline
 
 Die Berechnungen wurden unter Verwendung von CPLEX und durch k-shortest-path anhand aller abzubildenden Elemente limitiert\cite{CPLEX}.
