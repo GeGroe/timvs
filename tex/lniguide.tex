@@ -21,13 +21,10 @@ Betreuer: Michael T. Beck\\\textit{eingereicht am \today}}
 \maketitle
 
 \vfill
-FEHLT [GG]: Optimierung der Grafiken, farbliches Herausheben der Sicherheitskriterien in mathematischen Modellen\\
-TODO [MM]: Übergänge zwischen den Texten beider Autoren\\
-TODO [MM]: Unterstrichene Passagen überarbeiten oder löschen. Kommentare entfernen\\
-TODO [MM]: Graphiken erstellen / überarbeiten.
+FEHLT [GG]: Optimierung der Grafiken, farbliches Herausheben der Sicherheitskriterien in mathematischen Modellen
 
 \begin{abstract}
-Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt die Nachfrage nach virtualisierten Infrastrukturen enorm. Serviceprovider müssen die Hardwarebasis für ihre Dienste nicht mehr selbst unterhalten und geben ihre dahingehende Verantwortung an Infrastrukturanbieter weiter. Um die Sicherheit dieser Strukturen nicht zu vernachlässigen, arbeiten viele Forscher in diesem Bereich und versuchen effiziente Algorithmen mit integrierter Beachtung der Sicherheitsaspekte zu finden. Diese Arbeit soll einen Überblick und eine Klassifizierung der Gefahren, die solche Konstrukte betreffen, sowie eine Analyse zweier unterschiedlicher Ansätze zur Vermeidung möglichst vieler Risiken zum Zeitpunkt der Planung übermitteln.
+Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt die Nachfrage nach virtualisierten Infrastrukturen enorm. Serviceprovider müssen die Hardwarebasis für ihre Dienste nicht mehr selbst unterhalten und geben ihre dahingehende Verantwortung an Infrastrukturanbieter weiter. Um die Sicherheit dieser Strukturen nicht zu vernachlässigen, arbeiten viele Forscher in diesem Bereich und versuchen effiziente Algorithmen mit integrierter Beachtung der Sicherheitsaspekte zu finden. Diese Arbeit gibt einen Überblick und eine Klassifizierung der Gefahren, die solche Konstrukte betreffen, sowie eine Analyse zweier unterschiedlicher Ansätze zur Vermeidung möglichst vieler Risiken zum Zeitpunkt der Planung.
 %Hier folgt eine kurze Zusammenfassung des Themas sowie der wichtigsten Erkenntnisse und Ergebnisse. L?ge: ca. 200 W?rter.
 \end{abstract}
 
@@ -56,20 +53,19 @@ Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung stei
 
 \section{Das Virtual Network Embedding Problem}
 \label{sec:VNE-Problem}
-Um den Anforderungen der heutigen Gefahren zu genügen, ist es unumgänglich sämtliche Grundsätze der IT-Sicherheit möglichst früh in die Planung der gewünschten Infrastruktur miteinzubeziehen. Nicht nur, weil das nachträgliche Schließen von Sicherheitslücken und Hinzufügen von Sicherheitskomponenten in finanzieller und zeitlicher Hinsicht zehnmal so teuer ist wie die initiale Beachtung dieser Aspekte, sondern weil die vollständige Sicherheit eines nachgerüsteten Systems kaum gewährleistet werden kann \cite{Cole}."`Security-by-Design"' ist einer der wichtigsten Begriffe bei der Planung öffentlich zugänglicher Netzwerkstrukturen. Dementsprechend groß ist die Nachfrage nach VNE-Algorithmen, die bereits beim Prozess des Mappings möglichst viele Sicherheitsaspekte beachten und abdecken. Die vorausgehende Klassifizierung der bekannten Gefahren in "`VNE-relevant"' und "`nicht-VNE-relevant"' bildet die Grundlage für unsere weiteren Untersuchungen. Um zuvor noch einen genaueren Einblick in die Problematik von VNE zu gewähren, beginnen wir zunächst mit der Erläuterung des VNE-Problems sowie einem Überblick über die verschiedenen erfolgreichen Strategien bestehender VNE-Algorithmen, welche die Sicherheitsaspekte noch nicht beachten. 
+Um den Anforderungen der heutigen Gefahren zu genügen, ist es unumgänglich sämtliche Grundsätze der IT-Sicherheit bereits in die Infrastrukturplanung miteinzubeziehen. Nicht nur, weil das nachträgliche Schließen von Sicherheitslücken und Hinzufügen von Sicherheitskomponenten in finanzieller und zeitlicher Hinsicht zehnmal so teuer ist wie die initiale Beachtung dieser Aspekte, sondern weil die vollständige Sicherheit eines nachgerüsteten Systems kaum gewährleistet werden kann \cite{Cole}."`Security-by-Design"' ist einer der wichtigsten Begriffe bei der Planung öffentlich zugänglicher Netzwerkstrukturen. Dementsprechend groß ist die Nachfrage nach VNE-Algorithmen, die bereits beim Prozess des Mappings viele Sicherheitsaspekte beachten und abdecken. Die vorausgehende Klassifizierung der bekannten Gefahren in "`VNE-relevant"' und "`nicht-VNE-relevant"' bildet die Grundlage für unsere weiteren Untersuchungen. Um zuvor noch einen genaueren Einblick in die Problematik von VNE zu gewähren, beginnen wir zunächst mit der Erläuterung des VNE-Problems sowie einem Überblick über die verschiedenen erfolgreichen Strategien bestehender VNE-Algorithmen, welche die Sicherheitsaspekte noch nicht beachten. 
 
-Betrachtet man das zugrundeliegende physische System als einen ungerichteten Graphen
+Betrachtet man das zugrundeliegende physische System als einen ungerichteten Graphen und extrahiert die vorhandenen Elemente sowie deren Werte, erhält man die Basismenge in welche die virtuellen Strukturen eingebettet werden sollen. [REFS 1,2,3]
+
+
 \begin{center}
 	\includegraphics[width=0.7\textwidth]{physical_structure2.pdf}\newline
-	  % \caption{\label{logo}(A bis E benennt die Knoten, L1 bis L6 benennt die Links, die Zahlen darunter stehen f?r die jeweiligeverf?gbare Resourcenmenge(abstrakt))}
+	  % REF1
 \end{center}
-\vspace*{1cm}
 
-%Grafik
-und extrahiert die vorhandenen Elemente sowie deren Werte, erhält man die Basismenge
 \begin{center}
 G\textsuperscript{S} = \{N\textsuperscript{S}, L\textsuperscript{S}\}\newline
-
+	  % REF2
 (N steht für die Menge der physischen Knoten, L für die Menge der physischen Links)
 \end{center}
 
@@ -81,54 +77,64 @@ G\textsuperscript{S} =
 \newline\{
 (L1\textsuperscript{S},3),(L2\textsuperscript{S},9),(L3\textsuperscript{S},8),
 (L4\textsuperscript{S},10),(L5\textsuperscript{S},4),(L6\textsuperscript{S},7)\}\}
+	  % REF3
 \end{center}
-in welche die virtuellen Strukturen eingebettet werden sollen.
 
-Ein "`virtual network request"' (in Folge "`VNR"' genannt) kann hierbei ebenfalls als ein ungerichteter Graph gesehen
+
+
+
+Ein "`virtual network request"' (in Folge "`VNR"' genannt) kann hierbei ebenfalls als ein ungerichteter Graph gesehen und genauso in eine Menge übersetzt werden. [REFS 4,5,6]
+
 \begin{center}
 	\includegraphics[width=0.4\textwidth]{VNR1.pdf}\newline
-	  % \caption{\label{logo}(A bis E benennt die Knoten, L1 bis L6 benennt die Links, die Zahlen darunter stehen f?r die jeweiligeverf?gbare Resourcenmenge(abstrakt))}
+	  % REF 4
 \end{center}
-%Grafik
-und genauso in eine Menge übersetzt werden.\newline
+
 \begin{center}
 G\textsuperscript{V} = \{N\textsuperscript{V}, L\textsuperscript{V}\}\newline
 (N steht für die Menge der virtuellen Knoten, L für die Menge der virtuellen Links)
+% REF5
 \end{center}
 
 \begin{center}
 G\textsuperscript{V} = \{\{
 (A\textsuperscript{V},20),(B\textsuperscript{V},10),(C\textsuperscript{V},25)\} , \{
 (L1\textsuperscript{V},5),(L2\textsuperscript{V},3),(L3\textsuperscript{V},4)\}\}
+% REF6
 \end{center}
 
 \begin{center}
 Gesucht ist nun eine Abbildungsfunktion f : G\textsuperscript{V} $\rightarrow$ G\textsuperscript{S}
 \end{center}
 
-In der Regel ist es üblich, nicht nur eine einzelne VNRs auf ein physisches System abzubilden, sondern gleich mehrere auf einmal. Ebenso wäre es theoretisch möglich, dass ein Infrastruktur-Provider gleich mehrere getrennte unabhängige physische Strukturen betreibt, und somit mittels VNE das beste System für die Abbildung der Menge von VNRs eroiren möchte. Dies könnte beispielsweise der Fall sein, wenn ein Serviceprovider ein VNR mit der Bedingung "`alle Elemente mögen sich am selben Standort befinden, egal an welchem"' in Auftrag gibt, und der Infrastruktur-Provider über mehrere Hardware-Standorte verfügt.
+
+In der Regel ist es üblich, nicht nur eine einzelne Requests auf ein physisches System abzubilden, sondern gleich mehrere auf einmal. Ebenso wäre es theoretisch möglich, dass ein Infrastruktur-Provider gleich mehrere getrennte unabhängige physische Strukturen betreibt, und somit mittels VNE das beste System für die Abbildung der Menge von VNRs eroiren möchte. Dies könnte beispielsweise der Fall sein, wenn ein Serviceprovider ein VNR mit der Bedingung "`alle Elemente mögen sich am selben Standort befinden, egal an welchem"' in Auftrag gibt, und der Infrastruktur-Provider über mehrere Hardware-Standorte verfügt.
 \newline
 % Gv=...
-Die Attributmenge bei den grundlegenden VNE-Algorithmen beschränkt  sich zumeist auf Rechnerleistung und Bandbreite. 
-Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Attribute. Ein großes Problem bei der Berechnung des optimalen Mappings findet sich bei der Berechnungszeit. Die endliche Beschränkung der Knoten- sowie Link-Resourcen und die "`on-line nature"' von VNRs stellen zusätzliche Hindernisse dar. Da selbst Lösungen für einfache Anfragen (geringe Anzahl von Knoten und Links), welche wenige Attribute beinhalten, exponentiellen Rechenaufwand benötigen, steigt der Aufwand sowohl mit der Anzahl der abzubildenden Knoten und Links, als auch mit steigender Attributanzahl dementsprechend. Teilweise gilt das Problem als rechnerisch unlösbar, grundsätzlich aber befinden wir uns im Komplexitätsbereich der NP-Vollständigkeit \cite{SVNE2}. Da die Erhöhung der Attributmenge - wie bereits genannt - grundsätzlich nicht positiv zur Laufzeit der existierenden Algorithmen beiträgt, werden wir den Komplexitätsbereich beim Hinzufügen von Sicherheitsanforderungen nicht verlassen. Dennoch gibt es Möglichkeiten, die den Rechenaufwand reduzieren können. Im Folgenden widmen wir uns allerdings zuerst einer Übersicht über die Gefahren, welche bei VNE eine Rolle spielen.
+Die Attributmenge bei den grundlegenden VNE-Algorithmen beschränkt  sich zumeist auf CPU- und Netzwerk-Leistung. 
+Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Attribute. Ein großes Problem bei der Berechnung des optimalen Mappings findet sich bei der Berechnungszeit. Die endliche Beschränkung der Knoten- sowie Link-Resourcen und die "`on-line nature"' von VNRs stellen zusätzliche Hindernisse dar. Da selbst Lösungen für einfache Anfragen (geringe Anzahl von Knoten und Links), welche wenige Attribute beinhalten, exponentiellen Rechenaufwand benötigen, steigt der Aufwand sowohl mit der Anzahl der abzubildenden Knoten und Links, als auch mit steigender Attributanzahl dementsprechend. Teilweise gilt das Problem als rechnerisch unlösbar, grundsätzlich aber befinden wir uns im Komplexitätsbereich der NP-Vollständigkeit \cite{SVNE2}. Da die Erhöhung der Attributmenge - wie bereits genannt - grundsätzlich nicht positiv zur Laufzeit der existierenden Algorithmen beiträgt, werden wir den Komplexitätsbereich beim Hinzufügen von Sicherheitsanforderungen nicht verlassen. Dennoch gibt es Möglichkeiten, die den Rechenaufwand reduzieren können. Zunächst folgt jedoch eine Übersicht über die Gefahren, welche bei VNE eine Rolle spielen.
 
 
 
 \section{Sicherheitsaspekte virtueller Netzinfrastrukturen}
 \label{sec:gefahren}
 
-\subsection{(Sicherheits-)Anforderungen an virtualisierte Umgebungen}
+\subsection{Sicherheitsanforderungen}
 \label{subsec:gefahren_anforderungen}
 \input{Kapitel/sicherheitsanforderungen}
 
+\subsection{\underline{Herkömmliche Gefahren in Netzinfrastrukturen}}
+\label{subsec:gefahren_allg}
+[ENTFÄLLT GGFS.]
 
-\subsection{Verwundbarkeiten in virtualisierten Umgebungen}
+
+\subsection{\underline{Neue} Verwundbarkeiten in virtualisierten Umgebungen}
 \label{subsec:gefahren_virt}
-Wie in der Einleitung angedeutet bietet Netzwerkvirtualisierung einige Vorteile gegenüber bisherigen Netzarchitekturen. Durch die Einführung einer weiteren Schicht zwischen Hardware und Anwendungssoftware (Abbildung \ref{fig:gefahren_dreiEbenenDerVirtualisierung}) und dem gemeinsamen Hosten verschiedener virtueller Netzwerke auf gemeinsamen Substratnetz tun sich aber auch verschiedene neue Verwundbarkeiten auf. \cite{gong2016virtual, natarajansecurity, wu2010network, garfinkel2005virtual, dahbur2011survey} haben bereits einige Sicherheitsrisiken analysiert, welche im Folgenden klassifiziert und ergänzt werden.
+Wie in der Einleitung[KAPITELNUMMER?] angedeutet bietet Netzwerkvirtualisierung einige Vorteile gegenüber bisherigen Netzarchitekturen. Durch die Einführung einer weiteren Schicht zwischen Hardware und Anwendungssoftware (Abbildung \ref{fig:gefahren_dreiEbenenDerVirtualisierung}) und dem gemeinsamen Hosten verschiedener virtueller Netzwerke auf gemeinsamen Substratnetz tun sich aber auch verschiedene neue Verwundbarkeiten auf. \cite{gong2016virtual, natarajansecurity, wu2010network, garfinkel2005virtual, dahbur2011survey} haben bereits einige Sicherheitsrisiken analysiert, welche im Folgenden klassifiziert und ergänzt werden.
 
 \begin{figure}[htb]
   \begin{center}
-    \includegraphics[width=\textwidth]{gefahren_dreiEbenenDerVirtualisierung.pdf}
+    \includegraphics[width=10cm]{gefahren_dreiEbenenDerVirtualisierung.png}
     \caption{\label{fig:gefahren_dreiEbenenDerVirtualisierung} Drei-Schichtenarchitektur der Netzwerkvirtualisierung. \newline Substratnetz hostet zwei virtuelle Netze}
   \end{center}
 \end{figure}
@@ -138,8 +144,6 @@ Wie in der Einleitung angedeutet bietet Netzwerkvirtualisierung einige Vorteile 
 
 \subsection{VNE-Relevante Gefahren}
 \label{subsec:gefahren_vnerelevant}	
-[TODO] Benennung von (Kategorien an) Gefahren aus dem vorherigen Kapitel, denen mit dem VNE-Prozess begegnet werden kann.
-
 
 
 \section{Vermeidung von Gefahren via Secure VNE (SVNE)}
@@ -149,51 +153,47 @@ Da wir nun einen Überblick zu VNE sowie den bestehenden Gefahren gegeben haben,
 \subsection{Ansatz 1}
 
 Hierbei beschäftigen wir uns mit dem Lösungsansatz aus \cite{wang2016towards}. 
-Das Hauptaugenmerk bezüglich der Sicherheitsaspekte legen Wang et. al. auf Traffic-Verschlüsselung und die Separierung von VMs unterschiedlicher Trust-Levels. Mittels"`Security plan design"'werden die drei folgenden strukturellen Aspekte betrachtet und in dementsprechende Levels eingeteilt.
+Das Hauptaugenmerk bezüglich der Sicherheitsaspekte legen Wang et. al. auf Traffic-Verschlüsselung und die Separierung von VMs unterschiedlicher Trust-Levels. Die drei folgenden strukturellen Aspekte werden betrachtet und in dementsprechende Levels eingeteilt.
 \begin{itemize}
-\item The Network plan:\newline
-Ein VNR wird als Netzwerk betrachtet und seinem Level entsprechend isoliert. "`High"' fordert und beansprucht ein gesamtes Netz bzw. Subnetz der physischen Infrastruktur für sich. Hiermit soll die Wahrscheinlichkeit für DOS-Angriffe oder ähnliche vermindert werden, da"`Mehr-Parteien-Netzwerke"'die Hauptschwachstellen für solche Angriffe darstellen \cite{DOS}. Auch Sniffing durch kompromittierte Hosts im selben Netz wird durch diese Maßahme verhindert. Während "high"' Resourcenteilung somit komplett verweigert, lässt der Level"`medium"'zumindest ein gemeinsam genutztes Netz für VNRs vom selben Eigentümer zu.
+\item Netze:\newline
+Ein VNR wird als Netzwerk betrachtet und seinem Level entsprechend isoliert. "`High"'fordert und beansprucht ein gesamtes Netz bzw. Subnetz der physischen Infrastruktur für sich. Hiermit soll die Wahrscheinlichkeit für DOS-Angriffe oder ähnliche vermindert werden, da"`Mehr-Parteien-Netzwerke"'die Hauptschwachstellen für solche Angriffe darstellen \cite{DOS}. Auch Sniffing durch kompromittierte Hosts im selben Netz wird durch diese Maßahme verhindert. Während "high"'Resourcenteilung somit komplett verweigert, lässt der Level"`medium"'zumindest ein gemeinsam genutztes Netz für VNRs vom selben Eigentümer zu.
 
-\item The Node plan:\newline
+\item Knoten:\newline
 Die einzelnen virtuellen Knoten eines VNR stellen Isolierungsanforderungen an die physischen Knoten. Wie auch beim"`network plan", werden die Levels"`high","`medium"'und"`none"'definiert und umgesetzt."`high"'fordert die alleinige Existenz eines VNR-Knotens,"`medium"'lässt VNR-Knoten vom selben Eigentümer auf ein und demselben physischen Knoten zu. Durch diesen Plan sollen Angriffe von VM zu VM über gemeinsam genutzte Resourcen unterbunden werden. Zusätzlich wird das Risiko eines Angriffs vom physischen Host verringert, da der Angriffsvektor"`VM zu physischem Host"'eliminiert wird.
 
-\item The Link plan:\newline
+\item Links:\newline
 End-to-End(E2E), Point-to-Point(P2P) und"`none"'sind die hier wählbaren Levels. Während E2E nur an den Endpunkten Verschlüsselungskapazitäten zu Verfügung stellen muss, benötigt P2P diese Kapazitäten an allen Hops des abgebildeten Links. Die heutzutage sehr gängigen man-in-the-middle Angriffe sollen dadurch wesentlich erschwert werden. 
 \end{itemize}
-VNRs werden nun, wie in Kapitel 2 bereits gezeigt, in ungerichtete Graphen mit Standardanforderungentransformiert. Zusätzlich werden hier auch noch Sicherheitsanforderungen integriert.\newline
+VNRs werden nun, wie in Kapitel 2 bereits gezeigt, in ungerichtete Graphen mit Standardanforderungen transformiert. Zusätzlich werden hier auch noch Sicherheitsanforderungen integriert. [REF7]\newline
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{SVNR.pdf}\newline
+	%REF7
 \end{center}
-Nun wird ein vier-stufiges Pre-Processing durchgeführt, um die Berechnung der optimalen Abbildung der VNRs zu vereinfachen. Hierbei werden als ersten die Standardanforderungen der virtuellen Knoten mit den zu Verfügung stehenden Kapazitäten der physischen Knoten verglichen. Sollten physische Knoten bestimmte Anforderungen nicht erfüllen, werden sie aus der Berechung ausgeschlossen. Der zweite Schritt ist dem"`Network plan"'gewidmet. Sollte ein physischer Knoten, welcher den Anforderungen des"`Network plan"'nicht genügt sich in einem Kandidaten-Netzwerk befinden, wird das Subnetz aus den Berechnungen ausgeschlossen. Im dritten Schritt werden die Sicherheitsanforderungen der einzelnen Knoten betrachtet und nicht entsprechende physischen Knoten werden abermals entfernt. Der letzte Schritt widmet sich den Sicherheitsanforderungen aus dem"`Link plan"'und streicht Links aus den weiteren Berrechnungen, welche den Verschlüsselungsanforderungen der virtuellen Links nicht genüge tun.\newline
+Nun wird ein vier-stufiges Pre-Processing durchgeführt, um die Berechnung der optimalen Abbildung der VNRs zu vereinfachen. Hierbei werden als ersten die Standardanforderungen der virtuellen Knoten mit den zu Verfügung stehenden Kapazitäten der physischen Knoten verglichen. Sollten physische Knoten bestimmte Anforderungen nicht erfüllen, werden sie aus der Berechung ausgeschlossen. Der zweite Schritt ist den Netzen gewidmet. Sollte ein physischer Knoten, welcher den Anforderungen des Netzes nicht genügt sich in einem Kandidaten-Netzwerk befinden, wird das Subnetz aus den Berechnungen ausgeschlossen. Im dritten Schritt werden die Sicherheitsanforderungen der einzelnen Knoten betrachtet und nicht entsprechende physischen Knoten werden abermals entfernt. Der letzte Schritt widmet sich den Sicherheitsanforderungen aus der Links und streicht Links aus den weiteren Berrechnungen, welche den Verschlüsselungsanforderungen der virtuellen Links nicht genüge tun. [REF8]\newline
 \begin{center}
 	\includegraphics[width=1\textwidth]{pre-processing.pdf}\newline
+	%REF8
 \end{center}
-Mit den aus dem Pre-Processing gewonnen Information bildet man nun einen Hilsgraphen, welcher die übrig gebliebenen Möglichkeiten der Einbettung zeigt.\newline
+Mit den aus dem Pre-Processing gewonnen Information bildet man nun einen Hilsgraphen, welcher die übrig gebliebenen Möglichkeiten der Einbettung zeigt.[REF9]\newline
 \begin{center}
 	\includegraphics[width=0.6\textwidth]{auxgraph.pdf}\newline 
+	%REF9
 \end{center}
 Dieses Pre-Processing reduziert das SVNE-Problem auf ein"`multi-commodity-flow"'Problem. \cite{MCF}
 Im weiteren Vorgehen werden nun zwei Fälle unterschieden."`Path-splitting", im weiteren SVNE-PS und"`no-path-splitting", im weitern SVNE-NPS, sind zusätzliche Sicherheitsvorgaben, welche im Vorfeld definiert werden müssen, um die Wahl des Algorithmus zu ermöglichen. Sollte SVNE-PS gewählt werden, beziehen sich die Gleichungen nur auf die Erfüllung der geforderten Attribute.
 Sollte SVNE-NPS gewählt werden, werden die für Link-Abbildungen verantwortlichen Gleichungen ersetzt.\newline
-\begin{center}
-	\includegraphics[width=1\textwidth]{algo.pdf}\newline
-\end{center}
-\begin{center}
-	\includegraphics[width=1\textwidth]{notations.pdf}\newline
-	\newline
-	\includegraphics[width=1\textwidth]{variables.pdf}\newline
-\end{center}
 
-Die Berechnungen wurden mittels induktiver logischer Programmierung unter Verwendung von CPLE \cite{CPLEX} und durch k-shortest-path anhand aller abzubildenden Elemente limitiert.
+Die Berechnungen wurden unter Verwendung von CPLEX und durch k-shortest-path anhand aller abzubildenden Elemente limitiert\cite{CPLEX}.
 Für die Testumgebungen wurden zufällig erzeugte VNRs mit 2 bis 10 Knoten und halbsovielen Links erzeugt. Auch die Rechenkapazität wie Bandbreite wurden durch Zufallsgeneratoren mit Werten im Bereich von 1 bis 10 gewählt und verteilt. Die Anzahl der VNRs beträgt einer Poisson-Verteilung nach einen Durchschnitt von 4 VNR pro 100 Zeiteinheiten, mit einer jeweiligen durchschnittlichen Einsatzzeit von 1000 Zeiteinheiten.
 
 Die zugrundeliegenden physischen Netze wurden ebenfalls zufällig erzeugt und beinhalteten 10 bis 50 Knoten, sowie halbsoviele Links. Die Rechen- sowie Bandbreiten-Kapazitäten wurden gleichmäßig verteilt und enthielten Werte zwischen 1 und 50. Die Verschlüsselungskapazitäten der Knoten  wurde über die gesamte Testreihe ebenfalls gleichmäßig verteilt.
 
-Die folgende Statisk zeigt einen Durchschnittsvergleich zwischen dem, als Standard gewählten, VNE-Algorithmu \cite{Std} und den beiden SVNE-Varianten PS und NPS. Dazu sei gesagt dass sämtliche Algorithmen ihre Berechnungen anhand des Hilfsgraphen durchgeführt haben und durch k=3 bzw. k=4 limitiert wurden.\newline
+Die folgende Statisk zeigt einen Durchschnittsvergleich zwischen dem, als Standard gewählten, VNE-Algorithmus und den beiden SVNE-Varianten PS und NPS\cite{Std}. Dazu sei gesagt dass sämtliche Algorithmen ihre Berechnungen anhand des Hilfsgraphen durchgeführt haben und durch k=3 bzw. k=4 limitiert wurden.[REF10]\newline
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{statistic.pdf}\newline
+	%REF10
 \end{center}
-Man sieht  hier einen deutlichen Zeitvorsprung von PS und NPS gegenüber dem Standard-Algorithmus. Da hier jedoch auch der Standard-Algorithmus vom Pre-Processing profitiert, wäre ein Vergleich, welcher die Dauer des Pre-Processings mit aufnimmt und den Standard-Algorithmus ohne Pre-Processing arbeiten ließe, anschaulicher und aussagekräftiger.
+Man sieht  hier einen deutlichen Zeitvorsprung von PS und NPS gegenüber dem Standard-Algorithmus, was auf eine Optimierung der Algorithmen auf den Input des Pre-Processings schließen lässt. Da hier jedoch auch der Standard-Algorithmus vom Pre-Processing profitiert, wäre ein Vergleich, welcher die Dauer des Pre-Processings mit aufnimmt und den Standard-Algorithmus ohne Pre-Processing arbeiten ließe, anschaulicher und aussagekräftiger.
 Dennoch ist ein Punkt durchaus überraschend und bemerkenswert: Der Standard-Algorithmus benötigt deutlich länger, obwohl er keine Sicherheitsaspekte mitbeurteilt, im Gegenzug zu seinen Kontrahenten.
 
 In welchem Komplexitätsbereich sich das Pre-Processing befindet wird hier leider nicht erwähnt.
@@ -212,22 +212,23 @@ Im zweiten Ansatz widmen wir uns dem Modell aus \cite{algo2}. Dieser Ansatz arbe
 
 \item Alle virtuellen Knoten, welche auf den selben physischen Knoten
    abgebildet werden, sollten über einen ausreichenden Sicherheitslevel
-   verfügen.
+   verfügen. 
 
 \item Der Anforderungslevel des virtuellen Links sollte stets niedriger
    sein, als das Sicherheitslevel des physischen Links.
 \end{itemize}%\end{listing}
 
+Der erste und zweite Punkt dienen der Risikominimierung zwischen physischen und virtuellen Hosts in beide Richtungen. Der dritte Punkt stellt sicher, dass keine zu schwach gesicherten VMs zusammen mit stark gesicherten VMs abgebildet werden und somit keine offentsichtlichen Schwachstellen den physichen Knoten samt seiner vituellen Hosts gefährden. Punkt 4 sorgt für ausreichende Sicherheitmechanismen der physischen Links.
+
+
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{algo2graph.pdf}\newline
+	%REF10
 \end{center}
-Wie man in Abbildung X sieht, werden auch bei diesem Modell VNRs und physische Netze in ungerichtete Graphen transformiert. Die in Klammern gestellten Parameter beschreiben Anforderungslevel(D) und Sicherheitslevel(L). Die hier durchgeführte Abbildung berücksichtigt nicht nur die Sicherheitsanforderungen aller Parteien unter Berücksichtigung der Basisanforderungen, sondern achtet zusätzlich noch auf Kostenminimierung. Insgesamt existieren drei Abbildungsmöglichkeiten, die gewählte ist jedoch die günstigste, unter dem Aspekt keine Sicherheitsresourcen zu verschwenden. Dieser VNR hätte auch auf EDGH abgebildet werden können, wobei der Link ED über einen Sicherheitslevel verfügt, welcher höher als nötig ist. Würde dies nicht beachtet werden, könnte es zu unnötigen Engpässen bei der Behandlung von VNRs mit höheren Anforderungslevels kommen. Um ein solches Verhalten zu erreichen, wurden zusätzlich Kosten- und Nutzen-Funktionen in die Berechnung integriert.
-\begin{center}
-	\includegraphics[width=0.8\textwidth]{algo2.pdf}\newline
-\end{center}
+Wie man in Abbildung [REF10] sieht, werden auch bei diesem Modell VNRs und physische Netze in ungerichtete Graphen transformiert. Die in Klammern gestellten Parameter beschreiben Anforderungslevel(D) und Sicherheitslevel(L). Die hier durchgeführte Abbildung berücksichtigt nicht nur die Sicherheitsanforderungen aller Parteien unter Berücksichtigung der Basisanforderungen, sondern achtet zusätzlich noch auf Kostenminimierung. Insgesamt existieren drei Abbildungsmöglichkeiten, die gewählte ist jedoch die günstigste, unter dem Aspekt keine Sicherheitsresourcen zu verschwenden. Dieser VNR hätte auch auf EDGH abgebildet werden können, wobei der Link ED über einen Sicherheitslevel verfügt, welcher höher als nötig ist. Würde dies nicht beachtet werden, könnte es zu unnötigen Engpässen bei der Behandlung von VNRs mit höheren Anforderungslevels kommen. Um ein solches Verhalten zu erreichen, wurden zusätzlich Kosten- und Nutzen-Funktionen in die Berechnung integriert.
 
 Das außergewöhnliche bei diesem Ansatz ist die Verwendung zweier unterschiedlicher Algorithmen, welche sich gegenseitig ergänzen: uSAV und cSAV.
-\begin{itemize}
+\begin{itemize} %MEEEEEHR!!!
 	\item uSAV \newline
 	uSAV, der unkooridinierte zwei-Phasen-Algorithmus, behandelt Knoten- und Link-Abbildungen getrennt voneinander. Dementsprechend liegt die Schwäche von uSAV in der Abbildung von non-splittable-links. uSAV ist ein terminierender Algorithmus, welcher die Abbildung der Knoten priorisiert und dahingehend ein sehr gutes Ergebnis mit wenig Aufwand erzielt. Jedoch kann es, durch die Priorisierung der Knoten, zu hohen Kosten bei der Link-Abbildung kommen.
 
@@ -237,26 +238,6 @@ Das außergewöhnliche bei diesem Ansatz ist die Verwendung zweier unterschiedli
 \end{itemize} 
 
 Beide Varianten nutzen die selben Heuristiken. Der Author schlägt für ideale Ergebnisse eine kombinierte Benutzung der beiden Varianten vor.
-
-\begin{center}
-uSAV\newline
-	\includegraphics[width=0.8\textwidth]{usav.pdf}\newline
-\end{center}
-\newpage
-\begin{center}
-cSAV\newline
-	\includegraphics[width=0.8\textwidth]{csav.pdf}\newline
-\end{center}
-\newpage
-\begin{center}
-Sub-Algorithmus 1: Knoten-Abbildungen\newline
-	\includegraphics[width=0.8\textwidth]{nodemapping.pdf}\newline
-\end{center}
-\newpage
-\begin{center}
-Sub-Algorithmus 2: Link-Abbildungen\newline
-	\includegraphics[width=0.8\textwidth]{linkmapping.pdf}\newline
-\end{center}
 
 Die Testumgebung dieses Ansatzes wurde mittels GT-ITM-Tool cite-missing! erstellt. 
 
@@ -269,14 +250,19 @@ Als Vergleichswert wurde der Algorithmus aus cite-6-missing verwendet. Die Tests
 High-LSR(mehr als 80\% der Links dürfen gesplittet werden),
 Low-LSR(weniger als 20\%) und VLSR(varied LSR). Da letzteres Testszenario am meisten Bezug zur Realität hat, werden wir hier nur diese Ergebnisse vorstellen. 
 
+[UNTERSCHIEDE ZU VORHERIGER TESTUMGEBUNG?]
+
 \begin{center}
 Testergebnisse für VLSR
 	\includegraphics[width=1\textwidth]{perf_algo2.pdf}\newline
+	%REF11
 \end{center}
 
 Man sieht hier die drei, am schwersten gewichteten Aspekte dieses Ansatzes. Der Kosten-/Nutzen-Wert sinkt mit zunehmender LSR, während die Akzeptanz und der Nutzen gegenteiliges Verhalten zeigen. Die vorhandenen Laufzeitanalysen der Algorithmen bestätigen die Aussagen der Authoren. uSAV führt hier mit Werten zwischen 6 und 10 Minuten, während cSAV erst nach 14 bis 25 Minuten brauchbare Ergebnisse für einzelne VNRs liefert. Hinzuzufügen sei hier, dass für alle Simulationen der einfachste Sicherheitsvektor verwendet wurde und bei Verwendung eines ausgeprägten Vektors die Rechenzeit mit Sicherheit andere Maße annimmt.
 
-\subsection{Vergleich}
+[GENAUERE ERGEBNISBESCHREIBUNG]
+
+\subsection{Vergleich der beiden Ansätze}
 \label{subsec:svne_vergleich}
 
 Um nun die beiden vorgestellten Ansätze in einen Vergleich zu bringen, möchten wir uns hier nicht auf die Ergebnisse der Testszenarien konzentrieren, sondern auf die unterschiedlichen Herangehensweisen.
