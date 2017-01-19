@@ -130,11 +130,11 @@ INPUT pix/physical_structure2.pdf
 INPUT ./pix/physical_structure2.pdf
 INPUT ./pix/physical_structure2.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT pix/VNR1.pdf
 INPUT ./pix/VNR1.pdf
 INPUT ./pix/VNR1.pdf
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT Kapitel/sicherheitsanforderungen.tex
 INPUT Kapitel/sicherheitsanforderungen.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
