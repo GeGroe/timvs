@@ -121,14 +121,10 @@ Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-
 \label{subsec:gefahren_anforderungen}
 \input{Kapitel/sicherheitsanforderungen}
 
-\subsection{\underline{Herkömmliche Gefahren in Netzinfrastrukturen}}
-\label{subsec:gefahren_allg}
-[ENTFÄLLT VERMUTLICH. KONZENTRATION AUF 'NEU HINZUKOMMENDE' GEFAHREN (SIEHE KAPITEL \textit{\nameref{subsec:gefahren_virt}})]
 
-
-\subsection{\underline{Neue} Verwundbarkeiten in virtualisierten Umgebungen}
+\subsection{Verwundbarkeiten in virtualisierten Umgebungen}
 \label{subsec:gefahren_virt}
-Wie in der Einleitung[KAPITELNUMMER?] angedeutet bietet Netzwerkvirtualisierung einige Vorteile gegenüber bisherigen Netzarchitekturen. Durch die Einführung einer weiteren Schicht zwischen Hardware und Anwendungssoftware (Abbildung \ref{fig:gefahren_dreiEbenenDerVirtualisierung}) und dem gemeinsamen Hosten verschiedener virtueller Netzwerke auf gemeinsamen Substratnetz tun sich aber auch verschiedene neue Verwundbarkeiten auf. \cite{gong2016virtual, natarajansecurity, wu2010network, garfinkel2005virtual, dahbur2011survey} haben bereits einige Sicherheitsrisiken analysiert, welche im Folgenden klassifiziert und ergänzt werden.
+Wie in der Einleitung angedeutet bietet Netzwerkvirtualisierung einige Vorteile gegenüber bisherigen Netzarchitekturen. Durch die Einführung einer weiteren Schicht zwischen Hardware und Anwendungssoftware (Abbildung \ref{fig:gefahren_dreiEbenenDerVirtualisierung}) und dem gemeinsamen Hosten verschiedener virtueller Netzwerke auf gemeinsamen Substratnetz tun sich aber auch verschiedene neue Verwundbarkeiten auf. \cite{gong2016virtual, natarajansecurity, wu2010network, garfinkel2005virtual, dahbur2011survey} haben bereits einige Sicherheitsrisiken analysiert, welche im Folgenden klassifiziert und ergänzt werden.
 
 \begin{figure}[htb]
   \begin{center}
@@ -188,12 +184,12 @@ Sollte SVNE-NPS gewählt werden, werden die für Link-Abbildungen verantwortlich
 	\includegraphics[width=1\textwidth]{variables.pdf}\newline
 \end{center}
 
-Die Berechnungen wurden mittels induktiver logischer Programmierung unter Verwendung von CPLEX\cite{CPLEX} und durch k-shortest-path anhand aller abzubildenden Elemente limitiert.
+Die Berechnungen wurden mittels induktiver logischer Programmierung unter Verwendung von CPLE \cite{CPLEX} und durch k-shortest-path anhand aller abzubildenden Elemente limitiert.
 Für die Testumgebungen wurden zufällig erzeugte VNRs mit 2 bis 10 Knoten und halbsovielen Links erzeugt. Auch die Rechenkapazität wie Bandbreite wurden durch Zufallsgeneratoren mit Werten im Bereich von 1 bis 10 gewählt und verteilt. Die Anzahl der VNRs beträgt einer Poisson-Verteilung nach einen Durchschnitt von 4 VNR pro 100 Zeiteinheiten, mit einer jeweiligen durchschnittlichen Einsatzzeit von 1000 Zeiteinheiten.
 
 Die zugrundeliegenden physischen Netze wurden ebenfalls zufällig erzeugt und beinhalteten 10 bis 50 Knoten, sowie halbsoviele Links. Die Rechen- sowie Bandbreiten-Kapazitäten wurden gleichmäßig verteilt und enthielten Werte zwischen 1 und 50. Die Verschlüsselungskapazitäten der Knoten  wurde über die gesamte Testreihe ebenfalls gleichmäßig verteilt.
 
-Die folgende Statisk zeigt einen Durchschnittsvergleich zwischen dem, als Standard gewählten, VNE-Algorithmus\cite{Std} und den beiden SVNE-Varianten PS und NPS. Dazu sei gesagt dass sämtliche Algorithmen ihre Berechnungen anhand des Hilfsgraphen durchgeführt haben und durch k=3 bzw. k=4 limitiert wurden.\newline
+Die folgende Statisk zeigt einen Durchschnittsvergleich zwischen dem, als Standard gewählten, VNE-Algorithmu \cite{Std} und den beiden SVNE-Varianten PS und NPS. Dazu sei gesagt dass sämtliche Algorithmen ihre Berechnungen anhand des Hilfsgraphen durchgeführt haben und durch k=3 bzw. k=4 limitiert wurden.\newline
 \begin{center}
 	\includegraphics[width=0.8\textwidth]{statistic.pdf}\newline
 \end{center}
