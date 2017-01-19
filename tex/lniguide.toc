@@ -15,5 +15,4 @@
 \contentsline {subsection}{\numberline {4.1}Ansatz 1}{13}
 \contentsline {subsection}{\numberline {4.2}Ansatz 2}{18}
 \contentsline {subsection}{\numberline {4.3}Vergleich}{25}
-\contentsline {section}{\numberline {5}Ungel\IeC {\"o}ste Probleme}{26}
-\contentsline {section}{\numberline {6}Schlussfolgerung und Ausblick}{26}
+\contentsline {section}{\numberline {5}Schlussfolgerung und Ausblick}{26}
