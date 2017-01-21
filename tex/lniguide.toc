@@ -2,16 +2,15 @@
 \contentsline {section}{\numberline {1}Einleitung}{3}
 \contentsline {section}{\numberline {2}Das Virtual Network Embedding Problem}{4}
 \contentsline {section}{\numberline {3}Sicherheitsaspekte virtueller Netzinfrastrukturen}{7}
-\contentsline {subsection}{\numberline {3.1}Sicherheitsanforderungen}{7}
-\contentsline {subsection}{\numberline {3.2}\relax $\@@underline {\hbox {Herk\IeC {\"o}mmliche Gefahren in Netzinfrastrukturen}}\mathsurround \z@ $\relax }{9}
-\contentsline {subsection}{\numberline {3.3}\relax $\@@underline {\hbox {Neue}}\mathsurround \z@ $\relax Verwundbarkeiten in virtualisierten Umgebungen}{9}
-\contentsline {subsubsection}{\numberline {3.3.1}Technischer Art}{11}
-\contentsline {paragraph}{I.2 \& I.3 Von NI ausgehend gegen VN und User.}{11}
+\contentsline {subsection}{\numberline {3.1}(Sicherheits-)Anforderungen an virtualisierte Umgebungen}{7}
+\contentsline {subsection}{\numberline {3.2}Verwundbarkeiten in virtualisierten Umgebungen}{9}
+\contentsline {subsubsection}{\numberline {3.2.1}Technischer Art}{10}
+\contentsline {paragraph}{I.2 \& I.3 Von NI ausgehend gegen VN und User.}{10}
 \contentsline {paragraph}{Von VN/VM ausgehend}{11}
 \contentsline {paragraph}{Vom User ausgehend}{12}
-\contentsline {subsubsection}{\numberline {3.3.2}Organisatorischer Art}{13}
-\contentsline {subsubsection}{\numberline {3.3.3}Rechtlicher Art}{14}
-\contentsline {subsection}{\numberline {3.4}VNE-Relevante Gefahren}{14}
+\contentsline {subsubsection}{\numberline {3.2.2}Organisatorischer Art}{13}
+\contentsline {subsubsection}{\numberline {3.2.3}Rechtlicher Art}{13}
+\contentsline {subsection}{\numberline {3.3}VNE-Relevante Gefahren}{14}
 \contentsline {section}{\numberline {4}Vermeidung von Gefahren via Secure VNE (SVNE)}{14}
 \contentsline {subsection}{\numberline {4.1}Ansatz 1}{14}
 \contentsline {subsection}{\numberline {4.2}Ansatz 2}{18}

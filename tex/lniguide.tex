@@ -130,24 +130,20 @@ Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-
 \section{Sicherheitsaspekte virtueller Netzinfrastrukturen}
 \label{sec:gefahren}
 
-\subsection{Sicherheitsanforderungen}
+\subsection{(Sicherheits-)Anforderungen an virtualisierte Umgebungen}
 \label{subsec:gefahren_anforderungen}
 \input{Kapitel/sicherheitsanforderungen}
 
-\subsection{\underline{Herkömmliche Gefahren in Netzinfrastrukturen}}
-\label{subsec:gefahren_allg}
-[ENTFÄLLT GGFS.]
 
-
-\subsection{\underline{Neue} Verwundbarkeiten in virtualisierten Umgebungen}
+\subsection{Verwundbarkeiten in virtualisierten Umgebungen}
 \label{subsec:gefahren_virt}
-Wie in der Einleitung[KAPITELNUMMER?] angedeutet bietet Netzwerkvirtualisierung einige Vorteile gegenüber bisherigen Netzarchitekturen. Durch die Einführung einer weiteren Schicht zwischen Hardware und Anwendungssoftware (Abbildung \ref{fig:gefahren_dreiEbenenDerVirtualisierung}) und dem gemeinsamen Hosten verschiedener virtueller Netzwerke auf gemeinsamen Substratnetz tun sich aber auch verschiedene neue Verwundbarkeiten auf. \cite{gong2016virtual, natarajansecurity, wu2010network, garfinkel2005virtual, dahbur2011survey} haben bereits einige Sicherheitsrisiken analysiert, welche im Folgenden klassifiziert und ergänzt werden.
+Wie in der Einleitung angedeutet bietet Netzwerkvirtualisierung einige Vorteile gegenüber bisherigen Netzarchitekturen. Durch die Einführung einer weiteren Schicht zwischen Hardware und Anwendungssoftware (Abbildung \ref{fig:gefahren_dreiEbenenDerVirtualisierung}) und dem gemeinsamen Hosten verschiedener virtueller Netzwerke auf gemeinsamen Substratnetz tun sich aber auch verschiedene neue Verwundbarkeiten auf. \cite{gong2016virtual, natarajansecurity, wu2010network, garfinkel2005virtual, dahbur2011survey} haben bereits einige Sicherheitsrisiken analysiert, welche im Folgenden klassifiziert und ergänzt werden.
 
 \begin{figure}[htb]
-  \begin{center}
-    \includegraphics[width=10cm]{gefahren_dreiEbenenDerVirtualisierung.png}
-    \caption{\label{fig:gefahren_dreiEbenenDerVirtualisierung} Drei-Schichtenarchitektur der Netzwerkvirtualisierung. \newline Substratnetz hostet zwei virtuelle Netze}
-  \end{center}
+	\begin{center}
+		\includegraphics[width=\textwidth]{gefahren_dreiEbenenDerVirtualisierung.pdf}
+		\caption{\label{fig:gefahren_dreiEbenenDerVirtualisierung} Drei-Schichtenarchitektur der Netzwerkvirtualisierung. \newline Substratnetz hostet zwei virtuelle Netze}
+	\end{center}
 \end{figure}
 
 \input{Kapitel/gefahren_virt}
@@ -156,6 +152,7 @@ Wie in der Einleitung[KAPITELNUMMER?] angedeutet bietet Netzwerkvirtualisierung 
 
 \subsection{VNE-Relevante Gefahren}
 \label{subsec:gefahren_vnerelevant}	
+[TODO] Benennung von (Kategorien an) Gefahren aus dem vorherigen Kapitel, denen mit dem VNE-Prozess begegnet werden kann.
 
 
 \section{Vermeidung von Gefahren via Secure VNE (SVNE)}
