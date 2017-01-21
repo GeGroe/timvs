@@ -78,26 +78,15 @@ Einem Benutzer oder schadhaften Anwendungsprogramm stehen auch in virtualisierte
 
 \subsubsection{Organisatorischer Art}
 \label{subsubsec:gefahren_virt_organisatorisch}
-[TODO / AUSFORMULIEREN]
+Unter ‚organisatorischen‘ Risiken werden hier Risiken für Unternehmen betrachtet, die im Zusammenhang mit Virtualisierung stehen.
 
-Unter ‚organisatorischen‘ Risiken werden hier Risiken für Unternehmen oder im menschlichen Umgang betrachtet, die im Zusammenhang mit Virtualisierung stehen.
+Wie im Kapitel \nameref{subsubsec:gefahren_virt_technisch} dargestellt, eröffnet Netzvirtualisierung eine Reihe neuer Verwundbarkeiten für gehostete Systeme. Gerade für Unternehmen dürfte die teils deutliche Gefährdung der Vertraulichkeit und Integrität von Firmen- oder Kundendaten ein ernstzunehmendes Problem darstellen. Da Netzvirtualisierung oftmals via Cloudcomputing abgewickelt wird, erhöht sich das Risiko eines Datenlecks nochmals durch den Up- und Downloadprozess von Daten.\\
+Mögliche Richtlinien zur Beschränkung von Anzahl, Art oder Eigentümer gemeinsam gehosteter VNs/VMs schränken Flexibilität der Netzarchitektur und Kostenvorteil der NV zwar ein, \underline{können aber … [WAS SCHREIBT GERHARD DAZU???]}
 
-Wie im Kapitel \nameref{subsubsec:gefahren_virt_technisch} dargestellt, eröffnet Netzvirtualisierung eine Reihe neuer Verwundbarkeiten für gehostete Systeme. Gerade für Unternehmen dürfte die teils deutliche Gefährdung der Vertraulichkeit und Integrität von Firmen- oder Kundendaten ein ernstzunehmendes Problem darstellen. Da Netzvirtualisierung oftmals via Cloudcomputing abgewickelt wird, erhöht sich das Risiko eines Datenlecks nochmals durch den Up- und Downloadprozess von Daten.
-
-Substratnetzprovider ist auch ein Unternehmen/Dienstleister, der sich organisatorisch verändert oder z.B. Insolvenz anmelden kann.
-
-Snapshot-Problem. Momentanaufnahme der virt. Maschine für Backup- oder Migrationszwecke. 
-\begin{itemize}
-\item Einfachheit dessen ist großer Vorteil von VMs. 
-\item Nachteil: Nach dem Wiedereinspielen werden ggfs. zwischenzeitlich deaktivierte Accounts oder veraltete Sicherheitsrichtlinien wieder produktiv gesetzt.
-\item Virtuelle Maschinen entstehen schnell. Probleme bei Patchmanagement 
-\item VMs zeitweise/Häufig deaktiviert/offline
-\begin{itemize}
-	\item Erhalten keine Patches am Patchday.
-	\item Würmer infizieren meist relativ schnell alle verwundbaren Systeme. Geht die VM danach offline wird Malware darin nicht entfernt und die Wurminfektionwelle startet beim erneuten Onlinegehen der VM.
-\end{itemize}
-\item Rücksetzen/rollback einer VM kann zwischenzeitlich gepatchte Schwachstellen wieder offenbaren (Snapshot-Problem)
-\end{itemize}
+Ein großer Vorteil virtueller Maschinen besteht in der Leichtigkeit Momentaufnahmen (Snapshots) für Backup- oder Migrationszwecke zu erstellen. Beim Wiedereinspielen dieser werden jedoch ggfs. zwischenzeitlich deaktivierte Accounts, veraltete Sicherheitsrichtlinien oder mittlerweile gepatchte Schwachstellen wieder produktiv gesetzt.
+%Dass VMs, die z.B. als Testumgebungen eingesetzt werden, häufig deaktiviert bzw. offline sind, erschwert das systemweite Patchmanagement. 
+%Würmer infizieren meist relativ schnell alle verwundbaren Systeme. Geht die VM danach offline wird Malware darin nicht entfernt und die Wurminfektionselle startet erneut beim Onlinegehen der VM.
+\cite{garfinkel2005virtual}
 
 
 
@@ -105,6 +94,5 @@ Snapshot-Problem. Momentanaufnahme der virt. Maschine für Backup- oder Migratio
 
 \subsubsection{Rechtlicher Art}
 \label{subsubsec:gefahren_virt_rechtlich}
-[TODO]
-Da Substratnetze nicht zwingend räumlich eng beschränkt sein müssen, könnte es passieren, dass gewisse Teile des virtuellen Netzes dynamisch auf Knoten in einem anderen Land abgebildet werden, welches mit den Auflagen des Unternehmens zu Datenschutz, Privatsphäre oder IT-Securitystandards nicht vereinbar ist. \\
-Aus technischen Gefahren resultierende Risiken (Sniffing vs. Datenschutz, Leaks, …)
+Da Substratnetze nicht zwingend räumlich eng beschränkt sein müssen, könnte es passieren, dass gewisse Teile des virtuellen Netzes (dynamisch / lastbedingt) auf Knoten oder in ein Land gemappt werden, welches mit den Auflagen des Unternehmens zu Datenschutz, Privatsphäre oder IT-Securitystandards nicht vereinbar ist. 
+Hinzu kommen eventuelle aus technischen Risiken wie Sniffing resultierende Konflikte mit rechtlichen Vorschriften zu bspw. Datenschutz.
