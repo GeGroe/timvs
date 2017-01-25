@@ -42,6 +42,12 @@ Andreas Fischer, Juan~Felipe Botero, Michael~Till Beck, Hermann De~Meer und
 \newblock {\em IEEE Communications Surveys \& Tutorials}, 15(4):1888--1906,
   2013.
 
+\bibitem[FDM11]{fischer2011position}
+Andreas Fischer und Hermann De~Meer.
+\newblock Position paper: Secure virtual network embedding.
+\newblock {\em PIK-Praxis der Informationsverarbeitung und Kommunikation},
+  34(4):190--193, 2011.
+
 \bibitem[GCH{\etalchar{+}}16]{gong2016virtual}
 Shuiqing Gong, Jing Chen, Conghui Huang, Qingchao Zhu und Siyi Zhao.
 \newblock Virtual Network Embedding through Security Risk Awareness and

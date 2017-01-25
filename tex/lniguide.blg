@@ -1,71 +1,28 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: lniguide.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: lniguide.aux
 The style file: lnig.bst
 Database file #1: literatur.bib
-I was expecting a `,' or a `}'---line 25 of file literatur.bib
+I was expecting a `,' or a `}'---line 13 of file literatur.bib
  :  
  :  pages = {211 ff}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 41 of file literatur.bib
+I was expecting a `,' or a `}'---line 21 of file literatur.bib
  :  
  :  journal = {IEEE}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 2517 of file lnig.bst
+while executing---line 1259 of file lnig.bst
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 2517 of file lnig.bst
+while executing---line 1259 of file lnig.bst
 Too many commas in name 1 of "M. Yu, Y. Yi, J. Rexford, M. Chiang" for entry comp
-while executing---line 2517 of file lnig.bst
+while executing---line 1259 of file lnig.bst
 Too many commas in name 1 of "M. Yu, Y. Yi, J. Rexford, M. Chiang" for entry comp
-while executing---line 2517 of file lnig.bst
+while executing---line 1259 of file lnig.bst
 Too many commas in name 1 of "M. Yu, Y. Yi, J. Rexford, M. Chiang" for entry comp
-while executing---line 2651 of file lnig.bst
+while executing---line 1326 of file lnig.bst
 Warning--empty journal in natarajansecurity
 Warning--empty year in natarajansecurity
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 2651 of file lnig.bst
-You've used 22 entries,
-            2539 wiz_defined-function locations,
-            674 strings with 8035 characters,
-and the built_in function-call counts, 8517 in all, are:
-= -- 835
-> -- 433
-< -- 14
-+ -- 152
-- -- 150
-* -- 547
-:= -- 1383
-add.period$ -- 63
-call.type$ -- 22
-change.case$ -- 121
-chr.to.int$ -- 22
-cite$ -- 24
-duplicate$ -- 341
-empty$ -- 638
-format.name$ -- 171
-if$ -- 1771
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 14
-newline$ -- 105
-num.names$ -- 66
-pop$ -- 187
-preamble$ -- 1
-purify$ -- 165
-quote$ -- 0
-skip$ -- 321
-stack$ -- 0
-substring$ -- 349
-swap$ -- 67
-text.length$ -- 14
-text.prefix$ -- 2
-top$ -- 0
-type$ -- 176
-warning$ -- 2
-while$ -- 76
-width$ -- 23
-write$ -- 261
+while executing---line 1326 of file lnig.bst
 (There were 8 error messages)

@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {1}Einleitung}{3}
 \contentsline {section}{\numberline {2}Das Virtual Network Embedding Problem}{4}
 \contentsline {section}{\numberline {3}Sicherheitsaspekte virtueller Netzinfrastrukturen}{7}
-\contentsline {subsection}{\numberline {3.1}Verwundbarkeiten in virtualisierten Umgebungen}{7}
+\contentsline {subsection}{\numberline {3.1}Neue Verwundbarkeiten in virtualisierten Umgebungen}{7}
 \contentsline {subsubsection}{\numberline {3.1.1}Technischer Art}{8}
 \contentsline {paragraph}{I.2 \& I.3 Von NI ausgehend gegen VN und User.}{8}
 \contentsline {paragraph}{Von VN/VM ausgehend}{9}

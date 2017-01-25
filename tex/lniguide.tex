@@ -135,14 +135,14 @@ Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-
 %\input{Kapitel/sicherheitsanforderungen}
 
 
-\subsection{Verwundbarkeiten in virtualisierten Umgebungen}
+\subsection{Neue Verwundbarkeiten in virtualisierten Umgebungen}
 \label{subsec:gefahren_virt}
-Wie in der Einleitung angedeutet bietet Netzwerkvirtualisierung einige Vorteile gegenüber bisherigen Netzarchitekturen. Durch die Einführung einer weiteren Schicht zwischen Hardware und Anwendungssoftware (Abbildung \ref{fig:gefahren_dreiEbenenDerVirtualisierung}) und dem gemeinsamen Hosten verschiedener virtueller Netzwerke auf gemeinsamen Substratnetz tun sich aber auch verschiedene neue Verwundbarkeiten auf. \cite{gong2016virtual, natarajansecurity, wu2010network, garfinkel2005virtual, dahbur2011survey} haben bereits einige Sicherheitsrisiken analysiert, welche im Folgenden klassifiziert und ergänzt werden.
+Wie in der Einleitung angedeutet bietet Netzwerkvirtualisierung einige Vorteile gegenüber bisherigen Netzarchitekturen. Durch die Einführung einer weiteren Schicht zwischen Hardware und Anwendungssoftware (,,Ebene virtueller Netze'' in Abbildung \ref{fig:gefahren_dreiEbenenDerVirtualisierung}) und dem Hosten verschiedener virtueller Netzwerke auf einem gemeinsamen Substratnetz tun sich aber auch verschiedene -- im Gegensatz zu herkömmlichen, nicht-virtualisierten Architekturen -- neue Verwundbarkeiten auf. \cite{gong2016virtual, natarajansecurity, wu2010network, garfinkel2005virtual, dahbur2011survey} haben bereits einige Sicherheitsrisiken analysiert, welche im Folgenden klassifiziert und ergänzt werden.
 
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=\textwidth]{gefahren_dreiEbenenDerVirtualisierung.pdf}
-		\caption{\label{fig:gefahren_dreiEbenenDerVirtualisierung} Drei-Schichtenarchitektur der Netzwerkvirtualisierung. \newline Das Substratnetz zweier InPs hostet zwei virtuelle Netze.}
+		\caption{\label{fig:gefahren_dreiEbenenDerVirtualisierung} Drei-Schichtenarchitektur der Netzwerkvirtualisierung. \newline Das Substratnetz zweier InP hostet zwei virtuelle Netze.}
 	\end{center}
 \end{figure}
 
@@ -306,6 +306,10 @@ Frage: Auf welcher Ebene wird virtualisiert? Auf IP-Ebene? Was ist dann aber mit
 
 Fragen aus den Herausforderungen, die sich aus Sicherheitsrisiken ergeben...
 
+
+
+%Werke ins Literaturverzeichnis eintragen, die wichtige Grundlage für diese Arbeit waren, aber nicht direkt zitiert wurden.
+\nocite{fischer2011position}
 
 
 \bibliography{literatur}{}
