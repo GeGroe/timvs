@@ -7,9 +7,9 @@ Da die Kategorien ‚\textit{I.1 von NI ausgehend gegen NI}‘ und ‚\textit{II
 \begin{figure}[htb]
 	\begin{center}
 	\includegraphics[width=\textwidth]{gefahren_klassifizierung.pdf}
-	\caption{\label{fig:gefahren_klassifizierung} Klassifizierung von Gefahren in virtualisierten Netzwerken. 
+	\caption{\label{fig:gefahren_klassifizierung} Klassifizierung von Gefahren in virtualisierten Netzwerken
 		\newline NI = Netzwerkinfrastruktur / Substratnetz. Der physische Host einer VM ist Teil der NI.
-		\newline User = Endsystem bzw. in VNs implementierter Service oder Nutzer.
+		\newline User = Endsystem bzw. in VNs implementierter Service oder Nutzer
 		\newline Kategorie I.1 und III.3 beinhalten keine durch NV neu hinzukommenden Risiken.}
 	\end{center}
 \end{figure}
@@ -20,18 +20,18 @@ Da die Kategorien ‚\textit{I.1 von NI ausgehend gegen NI}‘ und ‚\textit{II
 
 \subsubsection{Technischer Art}
 \label{subsubsec:gefahren_virt_technisch}
-Dieses Kapitel analysiert durch sich durch NV ergebende Sicherheitsrisiken technischer Art.
+Dieses Kapitel analysiert sich durch NV ergebende Sicherheitsrisiken technischer Art.
 Der Kapitelaufbau folgt der Klassifizierung in Abbildung \ref{fig:gefahren_klassifizierung}. 
 
 
 \paragraph{I.2 \& I.3 Von NI ausgehend gegen VN/VM und User.}
 \label{parag:vonNI}
-Physische Hosts bieten ihren VMs Ressourcen an. Alle Dienste und Anwendungen der VMs werden letztlich auf dem physischen Host ausgeführt und auch alle Daten auf ihm gespeichert. Dies eröffnet für den physischen Host prinzipiell die Möglichkeit eines Monitorings der VM-Aktivitäten, was ab einer gewissen Intensität über Verwaltungsbelange hinausgehen und Privats"-phären"-anforderungen widersprechen dürfte. Auf demselben Weg lassen sich auch vertraulichkeitsverletzende Sniffing- oder Spoofing-Attacken gegen VM bzw. VN starten. \\
+Physische Hosts bieten ihren VMs Ressourcen an. Alle Dienste und Anwendungen der VMs werden letztlich auf dem physischen Host ausgeführt und auch alle Daten auf ihm gespeichert. Dies eröffnet für den physischen Host prinzipiell die Möglichkeit eines Monitorings der VM-Aktivitäten, was ab einer gewissen Intensität über Verwaltungsbelange hinausgehen und Privats"-phären"-anforderungen widersprechen wird. Auf demselben Weg lassen sich auch vertraulichkeitsverletzende Sniffing- oder Spoofing-Attacken gegen VM bzw. VN starten. \\
 Da alle ihre Rechenoperationen letztlich auf dem physischen Host ausgeführt werden, ist es für eine VM nur schwer möglich, sich gegen solche Angriffe zu wehren. Eine Verschlüsselung der eigenen Daten kann einer VM nicht ohne Weiteres helfen, da auch die Schlüsseldatei innerhalb der VM und damit auf dem physischen Host gespeichert werden muss.\\
-Auch Manipulation des legitimen Datenverkehrs, (gezieltes) Verwerfen von empfangenen Paketen bzw. das Einschleusen schadhafter Nachrichten bieten eine weitere Möglichkeit der Kompromittierung, gegen die VNs und Endsysteme wohl schutzlos ausgeliefert ist.
-\underline{[AUSFÜHRLICHER?]}\\
+Auch Manipulation des legitimen Datenverkehrs, (gezieltes) Verwerfen von empfangenen Paketen bzw. das Einschleusen schadhafter Nachrichten bieten eine weitere Möglichkeit der Kompromittierung, gegen die VNs und Endsysteme wohl schutzlos ausgeliefert sind.
+%\underline{[AUSFÜHRLICHER?]}\\
 Durch derartige Aktionen oder auch unzureichende Sicherungsmaßnahmen gegen Datenabfluss kann der physische Host in den SLAs vereinbarte Bestimmungen verletzen, was gerade bei Drittanbietern als Hostingpartner eine Rolle spielt.
-%%%%% Angriffe von Komponenten der NI untereinander werden hier nicht beachtet.[Bereits weiter oben gesagt.]
+
 
 
 
