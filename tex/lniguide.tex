@@ -160,6 +160,7 @@ Wie in der Einleitung angedeutet bietet Netzwerkvirtualisierung einige Vorteile 
 Da wir nun einen Überblick zu VNE sowie den bestehenden Gefahren gegeben haben, widmen wir uns nun zwei verschiedenen SVNE-Lösungsansätzen. Der Detailgrad wurde so gewählt, dass man einen guten Einblick in die Arbeitsweise der Ansätze bekommt und die Problematik der zusätzlichen Last der Sicherheitsaspekte erkennt.
 
 \subsection{Ansatz 1}
+\label{subsec:ansatz1}
 
 Hierbei beschäftigen wir uns mit dem Lösungsansatz aus \cite{wang2016towards}. 
 Das Hauptaugenmerk bezüglich der Sicherheitsaspekte legen Wang et. al. auf Traffic-Verschlüsselung und die Separierung von VMs unterschiedlicher Trust-Levels. Die drei folgenden strukturellen Aspekte werden betrachtet und in dementsprechende Levels eingeteilt.
@@ -225,6 +226,7 @@ In welchem Komplexitätsbereich sich das Pre-Processing befindet wird hier leide
 
 
 \subsection{Ansatz 2}
+\label{subsec:ansatz2}
 
 Im zweiten Ansatz widmen wir uns dem Modell aus \cite{algo2}. Dieser Ansatz arbeitet mit abstrakten Sicherheitslevels. Im Folgenden werden zwar Skalare hierfür verwendet, was allerdings nicht zwingend so vorgesehen ist. Stattdessen wäre eine Verwendung komplexerer Sicherheitsvektoren möglich, welche bei weitem detailliertere Sicherheitsmerkmale  beschreiben könnten. Des weiteren verfügt jeder physische wie auch virtuelle Knoten über zwei Sicherheitswerte: Anforderungslevel und (eigenes) Sicherheitslevel. Der Anforderungslevel definiert das Minimum-Level des Gegenübers, der Sicherheitslevel definiert die eigenen gewünschten Sicherheitsmerkmale. Virtuelle Links verfügen über Anforderungslevels, physische Links nur über Sicherheitslevels. Die vorausgesetzten Basisanforderungen, welchen alle VNRs unterliegen, beschränken sich auf 4 Regeln, welche mittels der zuvor genannten Merkmale umgesetzt werden:
 \begin{itemize}

@@ -37,18 +37,18 @@ Durch derartige Aktionen oder auch unzureichende Sicherungsmaßnahmen gegen Date
 
 \paragraph{Von VN/VM ausgehend}
 \label{parag:vonVN}
-Die gemeinsame Nutzung von Ressourcen wie Speicher und Netzwerkkarten eröffnet VMs bzw. VNs neue Angriffsmöglichkeiten gegen ihr Substratnetz, gegen andere VNs/VMs und gegen User.
+Die gemeinsame Nutzung von Ressourcen wie Speicher und Netzwerkkarten eröffnet VMs neue Angriffsmöglichkeiten gegen ihr Substratnetz, gegen andere VNs/VMs und gegen User.
 
 
 \begin{itemize}
 \item \textbf{II.1 Von VN/VM ausgehend gegen NI/ihren physischen Host.~~}
-Das Bereitstellen von Ressourcen für VMs ist auch für den physischen Host nicht ohne Risiko. Schadhafte oder bösartige VMs können Verwundbarkeiten ihres physischen Host über zugeteilte Ressourcen angreifen. Ohne hinreichende Restriktionen kann eine VM über ihr zugeteiltes Kontingent hinaus bspw. wichtige Speicherbereiche manipulieren oder durch übermäßige Reservierung von CPU-Zeiten eine Denail of Service Attacke gegen den physischen Host bzw. das Substratnetz fahren. Da Host und virtuelle Netztopologie aus der Ferne konfigurierbar sind, stellt das Einschleusen von konstruierten Nachrichten des verwendeten Netzwerkmanagementprotokolls auf oder durch die Netzwerkkarte des physischen Hosts einen weiteren gefährlichen Angriffsvektor dar.\\
-Nach Eindringen in oder Übernahme des Hosts, einem „break of isolation“ im ersten Sinne \cite{wu2010network}, könnte eine schadhafte VM dann ihr Kontingent an Ressourcen beeinflussen, netztopologische Informationen sammeln, andere Netzwerkressourcen oder -infrastrukturkomponenten angreifen und so beispielsweise Dienste anderer VMs oder VNs behindern.
+Das Bereitstellen von Ressourcen für VMs ist auch für den physischen Host nicht ohne Risiko. Schadhafte oder bösartige VMs können Verwundbarkeiten ihres physischen Host über zugeteilte Ressourcen angreifen. Ohne hinreichende Restriktionen kann eine VM über ihr zugeteiltes Kontingent hinaus bspw. wichtige Speicherbereiche manipulieren oder z.B. durch übermäßige Reservierung von CPU-Zeiten eine Denail of Service Attacke gegen den physischen Host bzw. das Substratnetz fahren. Da Host und virtuelle Netztopologie aus der Ferne konfigurierbar sind, stellt das Einschleusen von konstruierten Nachrichten des verwendeten Netzwerkmanagementprotokolls auf oder durch die Netzwerkkarte des physischen Hosts einen weiteren gefährlichen Angriffsvektor dar.\\
+Nach Eindringen in oder Übernahme des Hosts -- einem „break of isolation“ im ersten Sinne \cite{wu2010network} -- könnte eine schadhafte VM dann ihr Kontingent an Ressourcen beeinflussen, netztopologische Informationen sammeln, andere Netzwerkressourcen oder -infrastrukturkomponenten angreifen und so beispielsweise Dienste anderer VMs oder VNs behindern.
 
-\item \textbf{II.2 Von VM/VN ausgehend gegen VM/VN.~~}
+\item \textbf{II.2 Von VN/VM ausgehend gegen VN/VM.~~}
 Neben den herkömmlichen Angriffsszenarien zwischen Maschinen im selben Netzwerk, ergeben sich v. a. aus der gemeinsamen Nutzung von Ressourcen neue Angriffsvarianten.\footnote{Da die Angriffstechniken von VMs gegen VMs auf anderen physischen Hosts vergleichbar mit herkömmlichen Angriffen in nicht-virtualisierten Netzinfrastrukturen sein dürften, werden hier hauptsächlich VMs auf demselben physischen Host betrachtet.} 
-Ein Angreifer kann sich nun gezielt Ressourcen auf denjenigen physischen Maschinen mieten, von denen auch sein Angriffsziel gehostet wird, um so erleichterten Zugang zu deren Verwundbarkeiten zu erlangen. Durch Eindringen oder Übernehmen gewisser Ressourcen des gemeinsamen physischen Hosts kann eine schadhafte VM ggfs. Verwundbarkeiten ausnutzen oder durch Cross-VN-side-channel-Attacken vertrauliche Informationen gewinnen und Daten manipulieren. Ein Beispiel einer Integritätsverletzung mittels einer solchen Attacke findet sich in \cite{ristenpart2009hey}. \\
-Da i.d.R. \underline{[ANGABE?]} nur virtuelle Netzwerkkarten zugeteilt werden, kann jede VM potentiell den gesamten Datenverkehr aller VMs bzw. VNs auf derselben physischen Netzwerkkarte lesen. Ein Monitoring anderer VMs auch aus anderen VNs, ein „break of Isolation“ im zweiten Sinne bedroht deren Vertraulichkeit. Durch Belauschen des Netzwerkverkehrs lassen sich ggfs. auch Dienste gemeinsam gehosteter VN reproduzieren und dadurch bspw. ein live Videostreaming breiter zugänglich machen. \cite{natarajansecurity}\\
+Ein Angreifer kann sich nun gezielt Ressourcen auf denjenigen physischen Maschinen mieten, auf denen auch sein Angriffsziel gehostet wird, um so erleichterten Zugang zu deren Verwundbarkeiten zu erlangen. Durch Eindringen oder Übernehmen gewisser Ressourcen des gemeinsamen physischen Hosts kann eine schadhafte VM ggfs. Verwundbarkeiten anderer VMs ausnutzen oder durch Cross-VN-side-channel-Attacken vertrauliche Informationen gewinnen und Daten manipulieren. Ein Beispiel einer Integritätsverletzung mittels einer solchen Attacke findet sich in \cite{ristenpart2009hey}. \\
+Da i.d.R. nur virtuelle Netzwerkkarten zugeteilt werden, kann jede VM potentiell den gesamten Datenverkehr aller VMs bzw. VNs auf derselben physischen Netzwerkkarte lesen. Ein Monitoring anderer VMs auch aus anderen VNs, ein „break of Isolation“ im zweiten Sinne bedroht deren Vertraulichkeit. Durch Belauschen des Netzwerkverkehrs lassen sich ggfs. auch Dienste gemeinsam gehosteter VN reproduzieren und dadurch bspw. ein live Videostreaming breiter zugänglich machen. \cite{natarajansecurity}\\
 Sollte es einer VM gelingen kritische Teile ihres physischen Hosts zu übernehmen, so stehen ihr zusätzlich die im Abschnitt \textit{\nameref{parag:vonNI}} aufgeführten Angriffsvektoren offen.
 
 
@@ -64,8 +64,8 @@ Einem Benutzer oder schadhaften Anwendungsprogramm stehen auch in virtualisierte
 
 \begin{itemize}
 	\item \textbf{III.1 Vom User ausgehend gegen NI.~~}
-	Da sich die virtuelle Netztopologie im VNE laufend ändert, müssen Netzwerkkomponenten wie Switches und Router dynamisch umprogrammierbar sein. Dies ermächtigt Angreifer aber solche ggfs. mit Codeexpliots wie Bufferoverflows o. Ä. zu kompromittieren und für ihre Zwecke zu nutzen oder einen Denail of Service herbeizuführen.\\
-	Daneben besteht die Chance auch Netzwerkknoten anzugreifen. Gelingt es z.B. mit einem Rootkit wie BluePill \cite{rutkowska2008bluepilling} (als Vorbereitung für weitere Angriffe) einen Hypervisor zu übernehmen, wird so gleichzeitig die Kontrolle über alle gehosteten VMs erlangt. Auch eine VM lässt sich als Rootkit instrumentalisieren. \cite{wu2010network}
+	Da sich die virtuelle Netztopologie im VNE-Prozess laufend ändert, müssen Netzwerkkomponenten wie Switches und Router dynamisch umprogrammierbar sein. Dies jedoch ermächtigt Angreifer solche ggfs. mit Codeexpliots wie Bufferoverflows o. Ä. zu kompromittieren und für ihre Zwecke zu nutzen oder einen Denail of Service herbeizuführen.\\
+	Daneben besteht die Chance auch Netzwerkknoten anzugreifen. Gelingt es z.B. mit einem Rootkit wie BluePill \cite{rutkowska2008bluepilling} -- als Vorbereitung für weitere Angriffe -- einen Hypervisor zu übernehmen, wird so gleichzeitig die Kontrolle über alle gehosteten VMs erlangt. Auch eine VM lässt sich als Rootkit instrumentalisieren. \cite{wu2010network}
 	\item \textbf{III.2 Vom User ausgehend gegen VN/VM.~~}
 	Aus der dynamischen Natur virtueller Netzwerktopologien ergeben sich neue Verwundbarkeiten: Während der Migration im Livebetrieb eines VNs ist eine Man-in-the-Middle-Attacke möglich, mit der Informationen über und Inhalte des migrierenden VNs erlangt werden können. \cite{natarajansecurity} Auch die Manipulation von Speicherbereichen der VMs ist während der Migration umsetzbar und lässt sich sogar automatisieren. \cite{oberheide2008empirical}\\
 	Die Notwendigkeit die gesamte virtuelle Netzwerkstruktur aus der Ferne umkonfigurieren zu können, erschließt weitere Angriffsziele: Attacken auf die VN-Ma"-nagement"-tools durch z.B. Cross-Site-Scripting, SQL-Injection etc. werden lohnend, da auf diese Weise effizient Kontrolle über das gesamte Netzwerk gewonnen werden kann.	
@@ -73,22 +73,19 @@ Einem Benutzer oder schadhaften Anwendungsprogramm stehen auch in virtualisierte
 
 
 
-[UNTERKAPITELZUSAMMENFASSUNG]
+Durch Virtualisierung eröffnen sich also eine Reihe neuer Verwundbarkeiten und Angriffsmöglichkeiten technischer Art, die hauptsächlich in der gemeinsamen Nutzung von Ressourcen begründet liegen.
+%Hinzu kommen Risiken ...
+
 
 
 \subsubsection{Organisatorischer Art}
 \label{subsubsec:gefahren_virt_organisatorisch}
-Unter ‚organisatorischen‘ Risiken werden hier Risiken für Unternehmen betrachtet, die im Zusammenhang mit Virtualisierung stehen.
+Unter ‚organisatorischen‘ Risiken werden hier Risiken für Unternehmen verstanden, die im Zusammenhang mit Virtualisierung stehen.
 
-Wie im Kapitel \nameref{subsubsec:gefahren_virt_technisch} dargestellt, eröffnet Netzvirtualisierung eine Reihe neuer Verwundbarkeiten für gehostete Systeme. Gerade für Unternehmen dürfte die teils deutliche Gefährdung der Vertraulichkeit und Integrität von Firmen- oder Kundendaten ein ernstzunehmendes Problem darstellen. Da Netzvirtualisierung oftmals via Cloudcomputing abgewickelt wird, erhöht sich das Risiko eines Datenlecks nochmals durch den Up- und Downloadprozess von Daten.\\
-Mögliche Richtlinien zur Beschränkung von Anzahl, Art oder Eigentümer gemeinsam gehosteter VNs/VMs schränken Flexibilität der Netzarchitektur und Kostenvorteil der NV zwar ein, \underline{können aber … [WAS SCHREIBT GERHARD DAZU???]}
+Wie im Kapitel \ref{subsubsec:gefahren_virt_technisch} dargestellt, eröffnet Netzvirtualisierung eine Reihe neuer Verwundbarkeiten für gehostete Systeme. Gerade für Unternehmen stellt die teils deutliche Gefähr"-dung der Vertraulichkeit und Integrität von Firmen- oder Kundendaten ein ernstzunehmendes Problem dar. Da Netzvirtualisierung oftmals via Cloudcomputing abgewickelt wird, erhöht sich das Risiko eines Datenlecks nochmals durch den Up- und Downloadprozess von Daten.\\
+Mögliche Richtlinien zur Beschränkung von Anzahl, Art oder Eigentümer gemeinsam gehosteter VNs/VMs, welche sich z.B. als komplexe Sicherheitsvektoren mit dem in Kapitel \ref{subsec:ansatz2} vorgestellten Algorithmus realisieren ließen, schränken Flexibilität der Netzarchitektur und Kostenvorteil der NV zwar ein, können jedoch bei ausreichendem Sicherheitslevel der physischen Hosts einen gewissen Schutz gewährleisten. Vor- und Nachteile eines solchen Ansatzes werden in Kapitel \ref{subsec:ansatz2} und \ref{subsec:svne_vergleich} diskutiert.
 
-Ein großer Vorteil virtueller Maschinen besteht in der Leichtigkeit Momentaufnahmen (Snapshots) für Backup- oder Migrationszwecke zu erstellen. Beim Wiedereinspielen dieser werden jedoch ggfs. zwischenzeitlich deaktivierte Accounts, veraltete Sicherheitsrichtlinien oder mittlerweile gepatchte Schwachstellen wieder produktiv gesetzt.
-%Dass VMs, die z.B. als Testumgebungen eingesetzt werden, häufig deaktiviert bzw. offline sind, erschwert das systemweite Patchmanagement. 
-%Würmer infizieren meist relativ schnell alle verwundbaren Systeme. Geht die VM danach offline wird Malware darin nicht entfernt und die Wurminfektionselle startet erneut beim Onlinegehen der VM.
-\cite{garfinkel2005virtual}
-
-
+Ein großer Vorteil virtueller Maschinen besteht in der Leichtigkeit Momentaufnahmen (Snapshots) für Backup- oder Migrationszwecke zu erstellen. Beim Wiedereinspielen dieser werden jedoch ggfs. zwischenzeitlich deaktivierte Accounts, veraltete Sicherheitsrichtlinien oder mittlerweile gepatchte Schwachstellen wieder produktiv gesetzt. Organisationen müssen hierfür einen geeigneten Prozess etablieren, der auch das Patchmanagement häufig offline gehender VMs regelt. Der Umgang mit solchen VMs ist schwierig, da Würmer meist relativ schnell alle verwundbaren Systeme infizieren. Geht die VM danach offline wird Malware darin ggfs. nicht entdeckt und die Wurminfektionselle startet erneut beim Onlinegehen der VM. \cite{garfinkel2005virtual} 
 
 
 
