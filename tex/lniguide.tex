@@ -23,7 +23,7 @@ Betreuer: Michael T. Beck\\\textit{eingereicht am \today}}
 \vfill
 
 \begin{abstract}
-Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt die Nachfrage nach virtualisierten Infrastrukturen enorm. Serviceprovider müssen die Hardwarebasis für ihre Dienste nicht mehr selbst unterhalten und geben ihre dahingehende Verantwortung an Infrastrukturanbieter weiter. Um die Sicherheit dieser Strukturen nicht zu vernachlässigen, arbeiten viele Forscher in diesem Bereich und versuchen effiziente Algorithmen mit integrierter Beachtung der Sicherheitsaspekte zu finden. Diese Arbeit gibt einen Überblick und eine Klassifizierung der Gefahren, die solche Konstrukte betreffen, sowie eine Analyse zweier unterschiedlicher Ansätze zur Vermeidung möglichst vieler Risiken zum Zeitpunkt der Planung.
+Durch die äußerst effiziente Nutzung von Hardware mittels Virtualisierung steigt die Nachfrage nach virtualisierten Infrastrukturen enorm. Serviceprovider müssen die Hardwarebasis für ihre Dienste nicht mehr selbst unterhalten und geben ihre dahingehende Verantwortung an Infrastrukturanbieter weiter, Mobilfunkanbieter sind nicht mehr an dedizierte Hardware gebunden und können die benötigten Funktionen virtualisieren. Um die Sicherheit dieser Strukturen nicht zu vernachlässigen, arbeiten viele Forscher in diesem Bereich und versuchen effiziente Algorithmen mit integrierter Beachtung der Sicherheitsaspekte zu finden. Diese Arbeit gibt einen Überblick und eine Klassifizierung der Gefahren, die solche Konstrukte betreffen, sowie eine sicherheitsspezifische Analyse zweier unterschiedlicher Ansätze zur Vermeidung vieler Risiken zum Zeitpunkt der Planung.
 \end{abstract}
 
 
@@ -197,7 +197,7 @@ VNRs werden nun, wie in Kapitel 2 bereits gezeigt, in ungerichtete Graphen mit S
 \end{center}
 \end{figure}
 
-Nun wird ein vier-stufiges Pre-Processing durchgeführt, um die Berechnung der optimalen Abbildung der VNRs zu vereinfachen. Hierbei werden als ersten die Standardanforderungen der virtuellen Knoten mit den zu Verfügung stehenden Kapazitäten der physischen Knoten verglichen. Sollten physische Knoten bestimmte Anforderungen nicht erfüllen, werden sie aus der Berechung ausgeschlossen. Der zweite Schritt ist den Netzen gewidmet. Sollte ein physischer Knoten, welcher den Anforderungen des Netzes nicht genügt sich in einem Kandidaten-Netzwerk befinden, wird das Subnetz aus den Berechnungen ausgeschlossen. Im dritten Schritt werden die Sicherheitsanforderungen der einzelnen Knoten betrachtet und nicht entsprechende physischen Knoten werden abermals entfernt. Der letzte Schritt widmet sich den Sicherheitsanforderungen aus der Links und streicht Links aus den weiteren Berrechnungen, welche den Verschlüsselungsanforderungen der virtuellen Links nicht genüge tun. Siehe Abbildung~\ref{graph8}. \newpage
+Nun wird ein vier-stufiges Pre-Processing durchgeführt, um die Berechnung der optimalen Abbildung der VNRs zu vereinfachen. Hierbei werden als ersten die Standardanforderungen der virtuellen Knoten mit den zu Verfügung stehenden Kapazitäten der physischen Knoten verglichen. Sollten physische Knoten bestimmte Anforderungen nicht erfüllen, werden sie aus der Berechung ausgeschlossen. Der zweite Schritt ist den Netzen gewidmet. Sollte ein physischer Knoten, welcher den Anforderungen des Netzes nicht genügt sich in einem Kandidaten-Netzwerk befinden, wird das Subnetz aus den Berechnungen ausgeschlossen. Im dritten Schritt werden die Sicherheitsanforderungen der einzelnen Knoten betrachtet und nicht entsprechende physischen Knoten werden abermals entfernt. Der letzte Schritt widmet sich den Sicherheitsanforderungen aus der Links und streicht Links aus den weiteren Berrechnungen, welche den Verschlüsselungsanforderungen der virtuellen Links nicht genüge tun. Siehe Abbildung~\ref{graph8}.
 
 \begin{figure}[htb]
 \begin{center}
@@ -206,7 +206,7 @@ Nun wird ein vier-stufiges Pre-Processing durchgeführt, um die Berechnung der o
 \end{center}
 \end{figure}
 
-Mit den aus dem Pre-Processing gewonnen Information bildet man nun einen Hilsgraphen, welcher die übrig gebliebenen Möglichkeiten der Einbettung zeigt. Siehe Abbildung~\ref{graph9}. \newline
+Mit den aus dem Pre-Processing gewonnen Information bildet man nun einen Hilsgraphen, welcher die übrig gebliebenen Möglichkeiten der Einbettung zeigt. Siehe Abbildung~\ref{graph9}.
 
 \begin{figure}[htb]
 \begin{center}
@@ -215,7 +215,7 @@ Mit den aus dem Pre-Processing gewonnen Information bildet man nun einen Hilsgra
 \end{center}
 \end{figure}
 
-Dieses Pre-Processing reduziert das SVNE-Problem auf ein "`multi-commodity-flow"' Problem. \cite{MCF}
+Dieses Pre-Processing reduziert das SVNE-Problem auf ein "`multi-commodity-flow"' Problem \cite{MCF}. 
 Im weiteren Vorgehen werden nun zwei Fälle unterschieden."`Path-splitting", im weiteren SVNE-PS und "`no-path-splitting"', im weitern SVNE-NPS, sind zusätzliche Sicherheitsvorgaben, welche im Vorfeld definiert werden müssen, um die Wahl des Algorithmus zu ermöglichen. Sollte SVNE-PS gewählt werden, beziehen sich die Gleichungen nur auf die Erfüllung der geforderten Attribute.
 Sollte SVNE-NPS gewählt werden, werden die für Link-Abbildungen verantwortlichen Gleichungen ersetzt.\newline
 
@@ -233,7 +233,7 @@ Die folgende Statisk zeigt einen Durchschnittsvergleich zwischen dem, als Standa
 \end{center}
 \end{figure}
 
-Man sieht  hier einen deutlichen Zeitvorsprung von PS und NPS gegenüber dem Standard-Algorithmus, was auf eine Optimierung der Algorithmen auf den Input des Pre-Processings schließen lässt. Da hier jedoch auch der Standard-Algorithmus vom Pre-Processing profitiert, wäre ein Vergleich, welcher die Dauer des Pre-Processings mit aufnimmt und den Standard-Algorithmus ohne Pre-Processing arbeiten ließe, anschaulicher und aussagekräftiger.
+Man sieht  hier einen deutlichen Zeitvorsprung von PS und NPS gegenüber dem Standard-Algorithmus, was auf eine Optimierung der Algorithmen auf den Outnput des Pre-Processings schließen lässt. Da hier jedoch auch der Standard-Algorithmus vom Pre-Processing profitiert, wäre ein Vergleich, welcher die Dauer des Pre-Processings mit aufnimmt und den Standard-Algorithmus ohne Pre-Processing arbeiten ließe, anschaulicher und aussagekräftiger.
 Dennoch ist ein Punkt durchaus überraschend und bemerkenswert: Der Standard-Algorithmus benötigt deutlich länger, obwohl er keine Sicherheitsaspekte mitbeurteilt, im Gegenzug zu seinen Kontrahenten.
 
 In welchem Komplexitätsbereich sich das Pre-Processing befindet wird hier leider nicht erwähnt.
@@ -242,7 +242,7 @@ In welchem Komplexitätsbereich sich das Pre-Processing befindet wird hier leide
 \subsection{Ansatz 2: Sicherheitsvektoren und doppelte Berechnung}
 \label{subsec:ansatz2}
 
-Im zweiten Ansatz widmen wir uns dem Modell aus \cite{algo2}. Dieser Ansatz arbeitet mit abstrakten Sicherheitslevels. Im Folgenden werden zwar Skalare hierfür verwendet, was allerdings nicht zwingend so vorgesehen ist. Stattdessen wäre eine Verwendung komplexerer Sicherheitsvektoren möglich, welche bei weitem detailliertere Sicherheitsmerkmale  beschreiben könnten. Des weiteren verfügt jeder physische wie auch virtuelle Knoten über zwei Sicherheitswerte: Anforderungslevel und (eigenes) Sicherheitslevel. Der Anforderungslevel definiert das Minimum-Level des Gegenübers, der Sicherheitslevel definiert die eigenen gewünschten Sicherheitsmerkmale. Virtuelle Links verfügen über Anforderungslevels, physische Links nur über Sicherheitslevels. Die vorausgesetzten Basisanforderungen, welchen alle VNRs unterliegen, beschränken sich auf 4 Regeln, welche mittels der zuvor genannten Merkmale umgesetzt werden:
+Im zweiten Ansatz widmen wir uns dem Modell aus \cite{algo2}. Dieser Ansatz arbeitet mit abstrakten Sicherheitslevels. Im Folgenden werden Skalare hierfür verwendet, was allerdings nicht zwingend so vorgesehen ist. Stattdessen wäre eine Verwendung komplexerer Sicherheitsvektoren möglich, welche bei weitem detailliertere Sicherheitsmerkmale  beschreiben könnten. Des weiteren verfügt jeder physische wie auch virtuelle Knoten über zwei Sicherheitswerte: Anforderungslevel und (eigenes) Sicherheitslevel. Der Anforderungslevel definiert das Minimum-Level des Gegenübers, der Sicherheitslevel definiert die eigenen gewünschten Sicherheitsmerkmale. Virtuelle Links verfügen über Anforderungslevels, physische Links nur über Sicherheitslevels. Die vorausgesetzten Basisanforderungen, welchen alle VNRs unterliegen, beschränken sich auf 4 Regeln, welche mittels der zuvor genannten Merkmale umgesetzt werden:
 \begin{itemize}
 \item Ein physischer Knoten sollte einen Sicherheitslevel garantieren, 
    der höher ist als die Anforderungen der darauf abzubildenden
@@ -271,16 +271,20 @@ Der erste und zweite Punkt dienen der Risikominimierung zwischen physischen und 
 Wie man in Abbildung~\ref{graph11} sieht, werden auch bei diesem Modell VNRs und physische Netze in ungerichtete Graphen transformiert. Die in Klammern gestellten Parameter beschreiben Anforderungslevel(D) und Sicherheitslevel(L). Die hier durchgeführte Abbildung berücksichtigt nicht nur die Sicherheitsanforderungen aller Parteien unter Berücksichtigung der Basisanforderungen, sondern achtet zusätzlich noch auf Kostenminimierung. Insgesamt existieren drei Abbildungsmöglichkeiten, die gewählte ist jedoch die günstigste, unter dem Aspekt keine Sicherheitsresourcen zu verschwenden. Dieser VNR hätte auch auf EDGH abgebildet werden können, wobei der Link ED über einen Sicherheitslevel verfügt, welcher höher als nötig ist. Würde dies nicht beachtet werden, könnte es zu unnötigen Engpässen bei der Behandlung von VNRs mit höheren Anforderungslevels kommen. Um ein solches Verhalten zu erreichen, wurden zusätzlich Kosten- und Nutzen-Funktionen in die Berechnung integriert.
 
 Das außergewöhnliche bei diesem Ansatz ist die Verwendung zweier unterschiedlicher Algorithmen, welche sich gegenseitig ergänzen: uSAV und cSAV.
-\begin{itemize} %MEEEEEHR!!!
+\begin{itemize}
 	\item uSAV \newline
-	uSAV, der unkooridinierte zwei-Phasen-Algorithmus, behandelt Knoten- und Link-Abbildungen getrennt voneinander. Dementsprechend liegt die Schwäche von uSAV in der Abbildung von non-splittable-links. uSAV ist ein terminierender Algorithmus, welcher die Abbildung der Knoten priorisiert und dahingehend ein sehr gutes Ergebnis mit wenig Aufwand erzielt. Jedoch kann es, durch die Priorisierung der Knoten, zu hohen Kosten bei der Link-Abbildung kommen.
+	uSAV, der unkooridinierte zwei-Phasen-Algorithmus, behandelt Knoten- und Link-Abbildungen getrennt voneinander. Zuerst werden die Knoten abgebildet, danach erst die Links. Dementsprechend liegt die Schwäche von uSAV in der Abbildung von non-splittable-links. uSAV ist ein terminierender Algorithmus, welcher die Abbildung der Knoten priorisiert und dahingehend ein sehr gutes Ergebnis mit wenig Aufwand erzielt. Jedoch kann es, durch die Priorisierung der Knoten, zu hohen Kosten bei der Link-Abbildung kommen.
 
 	\item cSAV \newline
-	cSAV, der koordinierte Algorithmus, behandelt Knoten und Links gemeinsam, und kann zur Optimierung, des bereits von uSAV gelieferten Ergebnisses verwendet werden. cSAV liefert zwar optimalere Ergebnisse als uSAV, benötigt aber auch mehr Zeit. Hier muss Zeitaufwand mit gelieferter Leistung abgewogen werden.
+	cSAV, der koordinierte Algorithmus, behandelt Knoten und Links gemeinsam, und kann zur Optimierung, des bereits von uSAV gelieferten Ergebnisses verwendet werden. cSAV liefert zwar bessere Ergebnisse als uSAV, benötigt aber auch mehr Zeit. Hier muss Zeitaufwand mit gelieferter Leistung abgewogen werden.
 
 \end{itemize} 
 
-Beide Varianten nutzen die selben Heuristiken. Der Author schlägt für ideale Ergebnisse eine kombinierte Benutzung der beiden Varianten vor.
+Der Author schlägt für ideale Ergebnisse eine kombinierte bzw. parallele Benutzung der beider Algorithmen vor. 
+
+cSAV als auch uSAV nutzen die selben Heuristiken. Diese Heuristiken erstellen, unter Berücksichtigung der einzelnen Request-Details, ein Ranking der physischen Knoten und helfen den Algorithmen bei der Wahl der besten Abbildung. Je mehr CPU- und Netz-Kapazitäten ein Knoten übrig hat, desto höher steigt er in der Rangliste. Die verfügbaren Sicherheitsmerkmale des Knotens erhöhen die Platzierung des Knotens nur bedingt, da auch hier keine Sicherheitsresourcen verschwendet werden sollen. Stimmt der Sicherheitslevel mit dem Anforderungslevel des VNR exakt überein, erhält der Knoten die maximalen Punkte seitens des Sicherheitskriteriums. Auch die vom Knoten ausgehenden Links werden analysiert und in die Berechnung miteinbezogen. Um die Rechenzeit der iterativen Heuristikberechnung im Zaum zu halten, wird die Anzahl der Durchläufe mittels der MaxIte-Variable begrenzt. 
+
+
 
 Die Testumgebung dieses Ansatzes wurde mittels GT-ITM-Tool erstellt \cite{GT-ITM-Tool}. 
 
@@ -296,24 +300,21 @@ Low-LSR(weniger als 20\%) und VLSR(varied LSR). Da letzteres Testszenario am mei
 \begin{figure}[htb]
 \begin{center}
 	\includegraphics[width=1\textwidth]{perf_algo2.pdf}\newline
-	\caption{\label{graph12} VNR und physisches System mit Sicherheitsmerkmalen\cite{algo2}}
+	\caption{\label{graph12} Testresultate mit variabler LSR für Kosten/Nutzen, Akzeptanz und Durchschnitts-Nutzen (beginnend links).\cite{algo2}}
 \end{center}
 \end{figure}
 
-Man sieht in Abbildung~\ref{graph12} die drei, am schwersten gewichteten Aspekte dieses Ansatzes. Der Kosten-/Nutzen-Wert sinkt mit zunehmender LSR, während die Akzeptanz und der Nutzen gegenteiliges Verhalten zeigen. Die vorhandenen Laufzeitanalysen der Algorithmen bestätigen die Aussagen der Authoren. uSAV führt hier mit Werten zwischen 6 und 10 Minuten, während cSAV erst nach 14 bis 25 Minuten brauchbare Ergebnisse für einzelne VNRs liefert. Hinzuzufügen sei hier, dass für alle Simulationen der einfachste Sicherheitsvektor verwendet wurde und bei Verwendung eines ausgeprägten Vektors die Rechenzeit mit Sicherheit andere Maße annimmt.
+Man sieht in Abbildung~\ref{graph12} die drei, am schwersten gewichteten Aspekte dieses Ansatzes. Der Kosten-/Nutzen-Wert sinkt mit zunehmender LSR, während die Akzeptanz und der Nutzen gegenteiliges Verhalten zeigen. Die vorhandenen Laufzeitanalysen der Algorithmen bestätigen die Aussagen der Authoren. uSAV führt hier mit Werten zwischen 6 und 10 Minuten, während cSAV erst nach 14 bis 25 Minuten brauchbare Ergebnisse liefert. Hinzuzufügen sei hier, dass für alle Simulationen der einfachste Sicherheitsvektor verwendet wurde und bei Verwendung eines ausgeprägten Vektors die Rechenzeit mit Sicherheit andere Maße annimmt.
 
-[GENAUERE ERGEBNISBESCHREIBUNG]
 
 \subsection{Vergleich der beiden Ansätze}
 \label{subsec:svne_vergleich}
 
 Um nun die beiden vorgestellten Ansätze in einen Vergleich zu bringen, möchten wir uns hier nicht auf die Ergebnisse der Testszenarien konzentrieren, sondern auf die unterschiedlichen Herangehensweisen.
 
-[unterschiedliche Testumgebungen... offline vs online]
+Der - bei dieser Arbeit wichtigste - Unterschied zwischen den beiden Ansätzen bezieht sich auf Granularität der Sicherheitsanforderungen. Ansatz 1 versucht hier mittels drei, auf Teilelemente bezogene, Sicherheitspläne einen größtmöglichen Schutz zu bieten. Ein Vorteil dieses Vorgehens liegt klar in der Einfachheit der Umsetzungsmöglichkeit und der Limitierung zusätzlicher Parameter, durch welche die Rechenzeit der Algorithmen im Zaum gehalten wird. Nachteile könnten sich aus der Starrheit des Sicherheitssystems und dem Kostenfaktor ergeben. Ansatz 2 bietet hier etwas mehr Flexibilität sowie Präzision. Die entsprechenden Vektoren müssten hierfür zwar erst definiert werden, bieten dafür aber Erweiterbarkeit, was ein Vorteil bezüglich Flexibilität und Nachteil bezüglich Rechen- sowie Zeit-Aufwand darstellen kann.
 
-Der - bei dieser Arbeit wichtigste - Unterschied zwischen den beiden Ansätzen bezieht sich auf Granularität der Sicherheitsanforderungen. Ansatz 1 versucht hier mittels drei, auf Teilelemente bezogene, Sicherheitspläne einen größtmöglichen Schutz zu bieten. Ein Vorteil dieses Vorgehens liegt klar in der Einfachheit der Umsetzungsmöglichkeit und der Limitierung zusätzlicher Parameter, durch welche die Rechenzeit der Algorithmen im Zaum gehalten wird. Nachteile könnten sich aus der Starrheit des Sicherheitssystems und dem Kostenfaktor ergeben. Ansatz 2 bietet hier etwas mehr Flexibilität sowie Präzision. Die entsprechenden Vektoren müssten hierfür zwar erst definiert werden, bieten dafür aber Erweiterbarkeit, was ein Vorteil bezüglich Flexibilität und Nachteil bezüglich Rechen- sowie Zeit-Aufwand darstellen kann. [detailliertere Ausführungen für diesen Punkt folgen]
-
-Ein weiterer Unterschied ist die Herangehensweise bei der Berechnung. Pre-Processing kann das Abbilden der VNRs deutlich verkürzen, muss jedoch sequenziell durchgeführt werden und benötigt bei komplexeren VNRs vermutlich auch eine nicht zu vernachlässigende Inanspruchnahme von Rechenzeit. Ansatz 2 versucht an dieser Stelle mittels Heuristiken und zweier unterschiedlicher Algorithmen das gewünschte Ziel zu erreichen.
+Ein weiterer Unterschied ist die Herangehensweise bei der Berechnung. Pre-Processing kann das Abbilden der VNR deutlich verkürzen, muss jedoch sequenziell durchgeführt werden und benötigt bei komplexeren VNR vermutlich auch eine nicht zu vernachlässigende Inanspruchnahme von Rechenzeit. Ansatz 2 versucht an dieser Stelle mittels Heuristiken und zweier unterschiedlicher, unter Umständen parallel laufender Algorithmen das gewünschte Ziel zu erreichen.
 
 
 \section{Schlussfolgerung und Ausblick}
