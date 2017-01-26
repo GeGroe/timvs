@@ -1,28 +1,71 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: lniguide.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: lniguide.aux
 The style file: lnig.bst
 Database file #1: literatur.bib
-I was expecting a `,' or a `}'---line 13 of file literatur.bib
+I was expecting a `,' or a `}'---line 25 of file literatur.bib
  :  
  :  pages = {211 ff}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 21 of file literatur.bib
+I was expecting a `,' or a `}'---line 41 of file literatur.bib
  :  
  :  journal = {IEEE}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 1259 of file lnig.bst
+while executing---line 2517 of file lnig.bst
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 1259 of file lnig.bst
+while executing---line 2517 of file lnig.bst
 Too many commas in name 1 of "M. Yu, Y. Yi, J. Rexford, M. Chiang" for entry comp
-while executing---line 1259 of file lnig.bst
+while executing---line 2517 of file lnig.bst
 Too many commas in name 1 of "M. Yu, Y. Yi, J. Rexford, M. Chiang" for entry comp
-while executing---line 1259 of file lnig.bst
+while executing---line 2517 of file lnig.bst
 Too many commas in name 1 of "M. Yu, Y. Yi, J. Rexford, M. Chiang" for entry comp
-while executing---line 1326 of file lnig.bst
+while executing---line 2651 of file lnig.bst
 Warning--empty journal in natarajansecurity
 Warning--empty year in natarajansecurity
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
-while executing---line 1326 of file lnig.bst
+while executing---line 2651 of file lnig.bst
+You've used 23 entries,
+            2539 wiz_defined-function locations,
+            680 strings with 8206 characters,
+and the built_in function-call counts, 8930 in all, are:
+= -- 879
+> -- 452
+< -- 14
++ -- 158
+- -- 156
+* -- 580
+:= -- 1451
+add.period$ -- 66
+call.type$ -- 23
+change.case$ -- 126
+chr.to.int$ -- 23
+cite$ -- 25
+duplicate$ -- 355
+empty$ -- 668
+format.name$ -- 178
+if$ -- 1854
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 15
+newline$ -- 110
+num.names$ -- 69
+pop$ -- 190
+preamble$ -- 1
+purify$ -- 172
+quote$ -- 0
+skip$ -- 334
+stack$ -- 0
+substring$ -- 381
+swap$ -- 68
+text.length$ -- 14
+text.prefix$ -- 2
+top$ -- 0
+type$ -- 184
+warning$ -- 2
+while$ -- 81
+width$ -- 24
+write$ -- 274
 (There were 8 error messages)
