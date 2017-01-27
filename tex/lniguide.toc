@@ -6,12 +6,12 @@
 \contentsline {subsubsection}{\numberline {3.1.1}Technischer Art}{8}
 \contentsline {paragraph}{I.2 \& I.3 Von NI ausgehend gegen VN/VM und User.}{8}
 \contentsline {paragraph}{Von VN/VM ausgehend}{9}
-\contentsline {paragraph}{Vom User ausgehend}{10}
+\contentsline {paragraph}{Vom User ausgehend}{11}
 \contentsline {subsubsection}{\numberline {3.1.2}Organisatorischer Art}{11}
 \contentsline {subsubsection}{\numberline {3.1.3}Rechtlicher Art}{12}
 \contentsline {subsection}{\numberline {3.2}VNE-relevante Gefahren}{12}
 \contentsline {section}{\numberline {4}Vermeidung von Gefahren via Secure VNE (SVNE)}{13}
 \contentsline {subsection}{\numberline {4.1}Ansatz 1: Strikte Trennung und Preprocessing}{13}
-\contentsline {subsection}{\numberline {4.2}Ansatz 2: Sicherheitsvektoren und doppelte Berechnung}{17}
-\contentsline {subsection}{\numberline {4.3}Vergleich der beiden Ans\IeC {\"a}tze}{20}
-\contentsline {section}{\numberline {5}Schlussfolgerung und Ausblick}{22}
+\contentsline {subsection}{\numberline {4.2}Ansatz 2: Sicherheitsvektoren und doppelte Berechnung}{16}
+\contentsline {subsection}{\numberline {4.3}Vergleich der beiden Ans\IeC {\"a}tze}{18}
+\contentsline {section}{\numberline {5}Schlussfolgerung und Ausblick}{19}
