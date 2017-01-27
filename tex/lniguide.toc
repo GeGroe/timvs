@@ -14,4 +14,4 @@
 \contentsline {subsection}{\numberline {4.1}Ansatz 1: Strikte Trennung und Preprocessing}{13}
 \contentsline {subsection}{\numberline {4.2}Ansatz 2: Sicherheitsvektoren und doppelte Berechnung}{17}
 \contentsline {subsection}{\numberline {4.3}Vergleich der beiden Ans\IeC {\"a}tze}{20}
-\contentsline {section}{\numberline {5}Schlussfolgerung und Ausblick}{21}
+\contentsline {section}{\numberline {5}Schlussfolgerung und Ausblick}{22}
