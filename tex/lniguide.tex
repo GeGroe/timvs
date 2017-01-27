@@ -186,7 +186,7 @@ Ein VNR wird als Netzwerk betrachtet und seinem Level entsprechend isoliert. "`H
 Die einzelnen virtuellen Knoten eines VNR stellen Isolierungsanforderungen an die physischen Knoten. Wie auch beim Netzaspekt, werden die Levels "`high", "`medium"' und "`none"' definiert und umgesetzt."`high"' fordert die alleinige Existenz eines VNR-Knotens, "`medium"' lässt VNR-Knoten vom selben Eigentümer auf ein und demselben physischen Knoten zu. Durch diesen Plan sollen Angriffe von VM zu VM über gemeinsam genutzte Resourcen unterbunden werden. Zusätzlich wird das Risiko eines Angriffs vom physischen Host verringert, da der Angriffsvektor "`VM zu physischem Host"' eliminiert wird.
 
 \item Links:\newline
-End-to-End(E2E), Point-to-Point(P2P) und "`none"' sind die hier wählbaren Levels. Während E2E nur an den Endpunkten Verschlüsselungskapazitäten zu Verfügung stellen muss, benötigt P2P diese Kapazitäten an allen Hops des abgebildeten Links. Die heutzutage sehr gängigen man-in-the-middle Angriffe sollen dadurch wesentlich erschwert werden. 
+End-to-End(E2E), Point-to-Point(P2P) und "`none"' sind die hier wählbaren Levels. Während E2E nur an den Endpunkten Verschlüsselungskapazitäten zu Verfügung stellen muss, benötigt P2P diese Kapazitäten an allen Hops des abgebildeten Links. man-in-the-middle Angriffe sollen dadurch wesentlich erschwert werden. 
 \end{itemize}
 VNRs werden nun, wie in Kapitel 2 bereits gezeigt, in ungerichtete Graphen mit Standardanforderungen transformiert. Zusätzlich werden hier auch noch Sicherheitsanforderungen integriert. Siehe Abbildung ~\ref{graph7}.\newline
 
