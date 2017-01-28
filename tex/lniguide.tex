@@ -49,7 +49,7 @@ Betreuer: Michael T. Beck\\\textit{eingereicht am \today}}
 % \end{figure}
 
 
-\section{Das Virtual-Network-Embedding Problem}
+\section{Das Virtual-Network-Embedding-Problem}
 \label{sec:VNE-Problem}
 Um den Anforderungen der heutigen Gefahren zu genügen, ist es unumgänglich sämtliche Grundsätze der IT-Sicherheit bereits in die Infrastrukturplanung miteinzubeziehen. Nicht nur, weil das nachträgliche Schließen von Sicherheitslücken und Hinzufügen von Sicherheitskomponenten in finanzieller und zeitlicher Hinsicht zehnmal so teuer ist, wie die initiale Beachtung dieser Aspekte, sondern weil die vollständige Sicherheit eines nachgerüsteten Systems kaum gewährleistet werden kann. \cite{Cole} "`Security-by-Design"' ist einer der wichtigsten Begriffe bei der Planung öffentlich zugänglicher Netzwerkstrukturen. Dementsprechend groß ist die Nachfrage nach VNE-Algorithmen, die bereits beim Prozess des Mappings viele Sicherheitsaspekte beachten und abdecken. 
 %Die Einteilung von bekannten Gefahren in "`VNE-relevant"' und "`nicht-VNE-relevant"' in Kapitel \ref{subsec:gefahren_vnerelevant} bildet die Grundlage für unsere weiteren Untersuchungen.
@@ -117,7 +117,7 @@ G\textsuperscript{V} = \{\{
 \end{figure}
 
 
-Gesucht ist nun eine Abbildungsfunktion    f : G\textsuperscript{V} $\rightarrow$ G\textsuperscript{S}
+Gesucht ist nun eine Abbildungsfunktion \hspace{0.2cm} f : G\textsuperscript{V} $\rightarrow$ G\textsuperscript{S}
 
 
 In der Regel ist es üblich, nicht nur einzelne Requests auf ein physisches System abzubilden, sondern gleich mehrere auf einmal. Ebenso wäre es theoretisch möglich, dass ein Infrastruktur-Provider gleich mehrere getrennte unabhängige physische Strukturen betreibt, und somit mittels VNE das beste System für die Abbildung der Menge von VNRs eruieren möchte. Dies könnte beispielsweise der Fall sein, wenn ein Serviceprovider einen VNR mit der Bedingung "`alle Elemente mögen sich am selben Standort befinden, egal an welchem"' in Auftrag gibt, und der Infrastruktur-Provider über mehrere Hardware-Standorte verfügt.
@@ -257,9 +257,9 @@ Im zweiten Ansatz widmen wir uns dem Modell aus \cite{algo2}. Dieser Ansatz arbe
 \begin{itemize}
 \item Physische Knoten sollten Sicherheitslevels garantieren, 
    die höher als, oder zumindest gleich hoch wie die Anforderungen der darauf abzubildenden
-   virtuellen Knoten.
+   virtuellen Knoten sind.
 
-\item Die Sicherheitslevels des virtuellen Knoten sollten höher als, oder zumindest gleich hoch wie die Anforderungslevels der entsprechenden physischen Knoten.
+\item Die Sicherheitslevels der virtuellen Knoten sollten höher als, oder zumindest gleich hoch wie die Anforderungslevels der entsprechenden physischen Knoten sein.
 
 \item Alle virtuellen Knoten, welche auf den selben physischen Knoten
    abgebildet werden, sollten über ein ausreichendes und gleichmäßiges Sicherheitslevel
@@ -284,37 +284,37 @@ Das Außergewöhnliche bei diesem Ansatz ist die Verwendung zweier unterschiedli
 \begin{itemize}
 	\item uSAV \newline
 	uSAV, der unkooridinierte Zwei-Phasen-Algorithmus, behandelt Knoten- und Link-Abbildungen getrennt voneinander. Zuerst werden die Knoten abgebildet, danach erst die Links. Dementsprechend liegt die Schwäche von uSAV in der Abbildung von "`non-splittable-Links"'. uSAV ist ein terminierender Algorithmus, welcher die Abbildung der Knoten priorisiert und dahingehend ein sehr gutes Ergebnis mit wenig Aufwand erzielt. Jedoch kann es, durch die Priorisierung der Knoten, zu hohen Kosten bei der Link-Abbildung kommen.
-	
+
 	\item cSAV \newline
-	cSAV, der koordinierte Algorithmus, behandelt Knoten und Links gemeinsam, und kann zur Optimierung, des bereits von uSAV gelieferten Ergebnisses verwendet werden. cSAV liefert zwar bessere Ergebnisse als uSAV, benötigt aber auch mehr Zeit. Hier muss Zeitaufwand mit gelieferter Leistung abgewogen werden.
+	cSAV, der koordinierte Algorithmus, behandelt Knoten und Links gemeinsam, und kann zur Optimierung des bereits von uSAV gelieferten Ergebnisses verwendet werden. cSAV liefert zwar bessere Ergebnisse als uSAV, benötigt aber auch mehr Zeit. Hier muss Zeitaufwand mit gelieferter Leistung abgewogen werden.
 
 \end{itemize} 
 
 Der Author schlägt für ideale Ergebnisse eine kombinierte bzw. parallele Benutzung der beider Algorithmen vor. 
 
-cSAV als auch uSAV nutzen die selben Heuristiken. Diese Heuristiken erstellen, unter Berücksichtigung der einzelnen Request-Details, ein Ranking der physischen Knoten und helfen den Algorithmen bei der Wahl der besten Abbildung. Je mehr CPU- und Netz-Kapazitäten ein Knoten übrig hat, desto höher steigt er in der Rangliste. Die verfügbaren Sicherheitsmerkmale des Knotens erhöhen die Platzierung des Knotens nur bedingt, da auch hier keine Sicherheitsresourcen verschwendet werden sollen. Stimmt der Sicherheitslevel mit dem Anforderungslevel des VNR exakt überein, erhält der Knoten die maximalen Punkte seitens des Sicherheitskriteriums. Auch die vom Knoten ausgehenden Links werden analysiert und in die Berechnung miteinbezogen. Um die Rechenzeit der iterativen Heuristikberechnung im Zaum zu halten, wird die Anzahl der Durchläufe mittels der MaxIte-Variable begrenzt. 
+cSAV als auch uSAV nutzen die selben Heuristiken. Diese Heuristiken erstellen, unter Berücksichtigung der einzelnen Request-Details, ein Ranking der physischen Knoten und helfen den Algorithmen bei der Wahl der besten Abbildung. Je mehr CPU- und Netz-Kapazitäten ein Knoten übrig hat, desto höher steigt er in der Rangliste. Die verfügbaren Sicherheitsmerkmale des Knotens erhöhen seine Platzierung nur bedingt, da auch hier keine Sicherheitsresourcen verschwendet werden sollen. Stimmt das Sicherheitslevel mit dem Anforderungslevel des VNR exakt überein, erhält der Knoten die maximalen Punkte seitens des Sicherheitskriteriums. Auch die vom Knoten ausgehenden Links werden analysiert und in die Berechnung miteinbezogen. Um die Rechenzeit der iterativen Heuristikberechnung im Zaum zu halten, wird die Anzahl der Durchläufe mittels der MaxIte-Variable begrenzt. 
 
 
 
 Die Testumgebung dieses Ansatzes wurde mittels GT-ITM-Tool erstellt. \cite{GT-ITM-Tool} 
 
-Die physischen Netze wurden in der Größenordnung eines mittleres ISP angesetzt, und betrugen 100 Knoten und 500 Links. Die Bandbreite und Rechenkapazität wurden, wie auch im vorherigen Ansatz, gleichmäßig verteilt und betrugen Werte zwischen 50 und 100. Die abstrakten Sicherheitslevels der physischen Elemente wurden zwischen 0 und 4 gleichmäßig verteilt. Die Anforderungslevels wurden ebenfalls aus dem Bereich 0-4 gewählt, und so verteilt, dass kein physisches Element ein höheres Anforderungslevel als Sicherheitslevel besitzt.
+Die physischen Netze wurden in der Größenordnung eines mittleren ISP angesetzt, und betrugen 100 Knoten und 500 Links. Die Bandbreite und Rechenkapazität wurden, wie auch im vorherigen Ansatz, gleichmäßig verteilt und betrugen Werte zwischen 50 und 100. Die abstrakten Sicherheitslevels der physischen Elemente wurden zwischen 0 und 4 gleichmäßig verteilt. Die Anforderungslevels wurden ebenfalls aus dem Bereich 0 bis 4 gewählt und so verteilt, dass kein physisches Element ein höheres Anforderungslevel als Sicherheitslevel besitzt.
 
-Die VNRs beinhalteten 2 bis 20 Knoten sowie halbsoviele Links. Die Bandbreite- und Rechenkapazitäts-Forderungen wurden zwischen 0 und 50 gewählt und ebenfalls gleichmäßig verteilt.
-Die zeitlichen Parameter wurden auf durchschnittlich (Poisson-Verteilung) 5 Anforderungen pro 100 Zeiteinheiten begrenzt. Die Verwendungszeit eines VNRs folgt einer Exponential-Verteilung und betrugt im Durchschnitt 500 Zeiteinheiten. Eine einzelne Simulation erhielt 1500 VNRs und dauerte 30000 Zeiteinheiten. 
+Die VNRs beinhalteten 2 bis 20 Knoten sowie halb so viele Links. Die Bandbreite- und Rechenkapazitätsforderungen wurden zwischen 0 und 50 gewählt und ebenfalls gleichmäßig verteilt.
+Die zeitlichen Parameter wurden auf durchschnittlich (Poisson-Verteilung) 5 Anforderungen pro 100 Zeiteinheiten begrenzt. Die Verwendungszeit eines VNRs folgte einer Exponential-Verteilung und betrugt im Durchschnitt 500 Zeiteinheiten. Eine einzelne Simulation erhielt 1.500 VNRs und dauerte 30.000 Zeiteinheiten. 
 
-Als Vergleichswert wurde der Algorithmus aus \cite{comp} verwendet. Die Tests wurden für drei, anhand der Link-Split-Ratio unterschiedenen Szenarien ausgelegt: 
-High-LSR(mehr als 80\% der Links dürfen gesplittet werden),
-Low-LSR(weniger als 20\%) und VLSR(varied LSR). Da letzteres Testszenario am meisten Bezug zur Realität hat, werden wir hier nur diese Ergebnisse vorstellen. 
+Als Vergleichswert wurde der Algorithmus aus \cite{comp} verwendet. Die Tests wurden für drei anhand der Link-Split-Ratio unterschiedenen Szenarien ausgelegt: 
+High-LSR (mehr als 80 \% der Links dürfen gesplittet werden),
+Low-LSR (weniger als 20 \%) und VLSR (varied LSR). Da letzteres Testszenario am meisten Bezug zur Realität hat, werden wir hier nur diese Ergebnisse vorstellen. 
 
 \begin{figure}[htb]
 \begin{center}
 	\includegraphics[width=1\textwidth]{perf_algo2.pdf}\newline
-	\caption{\label{graph12} Testresultate mit variabler LSR für Kosten/Nutzen, Akzeptanz und Durchschnitts-Nutzen (beginnend links). \cite{algo2}}
+	\caption{\label{graph12} Testresultate mit variabler LSR für Kosten/Nutzen, Akzeptanz und Durchschnittsnutzen (beginnend links). \cite{algo2}}
 \end{center}
 \end{figure}
 
-Man sieht in Abbildung~\ref{graph12} die drei, am schwersten gewichteten Aspekte dieses Ansatzes. Der Kosten-/Nutzen-Wert sinkt mit zunehmender LSR, während die Akzeptanz und der Nutzen gegenteiliges Verhalten zeigen. Die vorhandenen Laufzeitanalysen der Algorithmen bestätigen die Aussagen der Authoren. uSAV führt hier mit Werten zwischen 6 und 10 Minuten, während cSAV erst nach 14 bis 25 Minuten brauchbare Ergebnisse liefert. Hinzuzufügen sei hier, dass für alle Simulationen der einfachste Sicherheitsvektor verwendet wurde und bei Verwendung eines ausgeprägten Vektors die Rechenzeit mit Sicherheit andere Maße annimmt.
+Man sieht in Abbildung~\ref{graph12} die drei, am schwersten gewichteten Aspekte dieses Ansatzes. Der Kosten-/Nutzen-Wert sinkt mit zunehmender LSR, während die Akzeptanz und der Durchschnittsnutzen gegenteiliges Verhalten zeigen. Die vorhandenen Laufzeitanalysen der Algorithmen bestätigen die Aussagen der Authoren. uSAV führt hier mit Werten zwischen 6 und 10 Minuten, während cSAV erst nach 14 bis 25 Minuten brauchbare Ergebnisse liefert. Hinzuzufügen ist hier, dass für alle Simulationen der einfachste Sicherheitsvektor verwendet wurde und bei Verwendung eines ausgeprägten Vektors die Rechenzeit mit Sicherheit andere Maße annimmt.
 
 
 \subsection{Vergleich der beiden Ansätze}
@@ -322,11 +322,11 @@ Man sieht in Abbildung~\ref{graph12} die drei, am schwersten gewichteten Aspekte
 
 Um nun die beiden vorgestellten Ansätze in einen Vergleich zu bringen, möchten wir uns hier nicht auf die Ergebnisse der Testszenarien konzentrieren, sondern auf die unterschiedlichen Herangehensweisen.
 
-Der - für diese Arbeit wichtigste - Unterschied zwischen den beiden Ansätzen bezieht sich auf Granularität der Sicherheitsanforderungen. Ansatz 1 versucht hier mittels drei, auf Teilelemente bezogene, Sicherheitspläne Schutz zu bieten. Ein Vorteil dieses Vorgehens liegt klar in der Einfachheit der Umsetzungsmöglichkeit. Die Sicherheitsoptionen sind leicht verständlich und bieten eine gute Grundlage für die Abbildung sicherer Systeme. Nachteile könnten sich aus der Starrheit des Sicherheitssystems und dem Kostenfaktor ergeben. Mit Starrheit des Sicherheitssystems ist die Vernachlässigung vieler Sicherheitsaspekte und die ausschließliche Fokussierung auf die Isolation der Komponenten gemeint. Zwar bietet die Isolation eines gesamten Netzbereichs einen gewissen Schutz, eine Komprommittierung des physischen Hosts durch die isolierte VM ist so jedoch nicht gänzlich ausgeschlossen, was die Sinnhaftigkeit der teuren Netz-Isolation wiederum in Frage stellt. Der Kostenfaktor betrifft den Resourcenverbrauch bei High-Security-VNR. Man stelle sich ein Szenario vor, indem jeder VNR auf High-Security-Abbildung besteht. Virtualisierung wäre in diesem Szenario hinsichtlich der Resourcen-Optimierung völlig überflüssig. Ansatz 2 bietet hier etwas mehr Flexibilität sowie Präzision. Durch eine sinnvolle Definition der Sicherheitsvektoren könnte hier jeder mögliche Angriffsvektor benannt und die zugehörige Sicherheitsstufe bestimmt werden. Sollten neue Verwundbarkeiten entdeckt werden, könnten auch diese durch Hinzufügen entsprechender Werte zum Vektor binnen kurzer Zeit und mit wenig Aufwand integriert werden. Zusätzlich bietet das Zusammenspiel von Anforderungs- und Sicherheits-Level eine gewisse Flexibilität bezüglich der Resourcennutzung. 
+Der für diese Arbeit wichtigste Unterschied zwischen den beiden Ansätzen liegt in der Granularität der Sicherheitsanforderungen. Ansatz 1 versucht hier mittels drei auf Teilelemente bezogene Sicherheitspläne Schutz zu bieten. Ein Vorteil dieses Vorgehens liegt klar in der Einfachheit der Umsetzungsmöglichkeit. Die Sicherheitsoptionen sind leicht verständlich und bieten eine gute Grundlage für die Abbildung sicherer Systeme. Nachteile könnten sich aus der Starrheit des Sicherheitssystems und dem Kostenfaktor ergeben. Mit Starrheit des Sicherheitssystems ist die Vernachlässigung vieler Sicherheitsaspekte und die ausschließliche Fokussierung auf die Isolation der Komponenten gemeint. Zwar bietet die Isolation eines gesamten Netzbereichs einen gewissen Schutz, eine Komprommittierung des physischen Hosts durch die isolierte VM ist so jedoch nicht gänzlich ausgeschlossen, was die Sinnhaftigkeit der teuren Netzisolation wiederum in Frage stellt. Der Kostenfaktor betrifft den Resourcenverbrauch bei High-Security-VNR. Man stelle sich ein Szenario vor, indem jeder VNR auf High-Security-Abbildung besteht. Virtualisierung wäre in diesem Szenario hinsichtlich der Resourcen-Optimierung völlig überflüssig. Ansatz 2 bietet hier etwas mehr Flexibilität sowie Präzision. Durch eine sinnvolle Definition der Sicherheitsvektoren könnte hier jeder mögliche Angriffsvektor benannt und die zugehörige Sicherheitsstufe bestimmt werden. Sollten neue Verwundbarkeiten entdeckt werden, könnten Gegenmaßnahmen durch Hinzufügen entsprechender Werte zum Vektor binnen kurzer Zeit und mit wenig Aufwand integriert werden. Zusätzlich bietet das Zusammenspiel von Anforderungs- und Sicherheits-Level eine gewisse Flexibilität bezüglich der Resourcennutzung. 
 
 Abhängig vom Einsatzzweck sind dahingehend beide Ansätze als sinnvoll zu betrachten. Ansatz 1 eignet sich für Situationen, in denen optimale Resourcennutzung weniger im Mittelpunkt steht als Flexibilität bezüglich Simulation von Hardware-Elementen. In der Mobilkommunikation beispielsweise sind Anbieter von dedizierter Hardware abhängig. Sollte hier der Schritt zur Virtualisierung gewagt werden, sind die Betreiber der Systeme für die Sicherheitseinstellungen der physischen sowie auch der virtuellen Hosts selbst zuständig. Ein High-Security-VNR für die Abbildung der zu simulierenden Geräte bietet also eine ausreichende Grundlage. Alle weiteren Sicherheitsmechanismen sind selbst zu wählen und benötigen keine Übereinkunft/Absprache zwischen mehreren Parteien (bspw. Inp und SP). Ansatz 2 ist für Szenarien geeignet in denen InP und SP zwei verschiedene Parteien sind und optimale Resourcennutzung für den InP eine große Rolle spielt. Nach ausreichender Definition der Sicherheitsvektoren, ist eine Übereinkunft bezüglich der Sicherheitsmechanismen unproblematisch. Wichtig ist hierbei jedoch die Überprüfung der Einhaltung der Sicherheitsbestimmungen seitens des SP, um den Schutz der gesamten Infrastruktur zu gewährleisten. Ein weiterer positiver Aspekt hierbei ist die Möglichkeit seitens InP an den SP Mindestanforderungen zu stellen.
 
-Ein anderer Unterschied zwischen den beiden Ansätzen ist die Herangehensweise bei der Berechnung. Pre-Processing kann das Abbilden der VNR deutlich verkürzen, muss jedoch sequenziell durchgeführt werden und benötigt bei komplexeren VNR vermutlich auch eine nicht zu vernachlässigende Inanspruchnahme von Rechenzeit. Ansatz 2 versucht an dieser Stelle mittels Heuristiken und zweier unterschiedlicher, unter Umständen parallel laufender Algorithmen das gewünschte Ziel zu erreichen. Inwiefern welcher der beiden Ansätze bezüglich der Berechnungszeit als Gewinner hervorgeht, lässt sich aufgrund der unterschiedlichen Testsimulationen zu diesem Zeitpunkt nicht bestimmen. Eine Online-Evaluation beider Algorithmen zu selben Bedingungen würde hier Abhilfe schaffen.
+Ein weiterer Unterschied zwischen den beiden Ansätzen ist die Herangehensweise bei der Berechnung. Preprocessing kann das Abbilden der VNR deutlich verkürzen, muss jedoch sequenziell durchgeführt werden und benötigt bei komplexeren VNR vermutlich auch eine nicht zu vernachlässigende zusätzliche Berechenungszeit. Ansatz 2 versucht an dieser Stelle mittels Heuristiken und zweier unterschiedlicher, unter Umständen parallel laufender Algorithmen das gewünschte Ziel zu erreichen. Inwiefern welcher der beiden Ansätze bezüglich der Berechnungszeit als Gewinner hervorgeht, lässt sich aufgrund der unterschiedlichen Testsimulationen zu diesem Zeitpunkt nicht bestimmen. Eine Online-Evaluation beider Algorithmen zu selben Bedingungen würde hier Abhilfe schaffen.
 
 
 \section{Schlussfolgerung und Ausblick}
@@ -336,7 +336,7 @@ Das Ziel einer Klassifizierung von Sicherheitsrisiken und der Darstellung zweier
 
 \dots
 
-Die Komplexität des Themengebietes lässt hier keine Angabe einer Richtung zukünftiger Entwicklungen zu. Die Herangehensweise von VNR-Algorithmen sollte sich stets an die Bedürfnisse der Einsatzzwecke anpassen und da Virtualisierung den Einsatzzwecken kaum Grenzen in den Weg stellt, wird es wohl auch in Zukunft eine Vielzahl verschiedener Algorithmen mit unterschiedlichen Hauptaspekten geben. Die hier gezeigten Algorithmen sind nur zwei von vielen und sollen die Verschiedenartigkeit der möglichen Herangehensweisen verdeutlichen. Eine Verwendung neuronaler Netze oder anderen KI-Elementen wie Machine-Learning ist hierbei nicht auszuschließen.
+Die Komplexität des Themengebietes lässt hier keine Angabe einer Richtung zukünftiger Entwicklungen zu. Die Herangehensweise von VNR-Algorithmen sollte sich stets an die Bedürfnisse der Einsatzgebiete anpassen und da Virtualisierung den Einsatzmöglichekeiten kaum Grenzen in den Weg stellt, wird es wohl auch in Zukunft eine Vielzahl verschiedener Algorithmen mit unterschiedlichen Hauptaspekten geben. Die hier gezeigten Algorithmen sind nur zwei von vielen und sollen die Verschiedenartigkeit der möglichen Herangehensweisen verdeutlichen. Eine Verwendung neuronaler Netze oder anderen KI-Elementen wie Machine-Learning ist hierbei nicht auszuschließen.
 
 
 %Frage: Auf welcher Ebene wird virtualisiert? Auf IP-Ebene? Was ist dann aber mit IP-Support-Protokollen (ARP)? Oder nicht-IP-Protokollen? Will ich ein Netzwerk virtualisieren, oder nur den IP-Verkehr? Verkapselung führt zu Leistungseinbußen. \cite{cabuk2007towards}

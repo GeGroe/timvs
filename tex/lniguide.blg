@@ -27,45 +27,45 @@ Warning--empty journal in natarajansecurity
 Warning--empty year in natarajansecurity
 Too many commas in name 1 of "Shuhao Liu, Zhiping Cai, Hong Xu, Ming Xu" for entry algo2
 while executing---line 2651 of file lnig.bst
-You've used 23 entries,
+You've used 22 entries,
             2539 wiz_defined-function locations,
-            680 strings with 8206 characters,
-and the built_in function-call counts, 8930 in all, are:
-= -- 879
-> -- 452
-< -- 14
-+ -- 158
-- -- 156
-* -- 580
-:= -- 1451
-add.period$ -- 66
-call.type$ -- 23
-change.case$ -- 126
-chr.to.int$ -- 23
-cite$ -- 25
-duplicate$ -- 355
-empty$ -- 668
-format.name$ -- 178
-if$ -- 1854
+            674 strings with 7958 characters,
+and the built_in function-call counts, 8305 in all, are:
+= -- 812
+> -- 421
+< -- 13
++ -- 146
+- -- 144
+* -- 538
+:= -- 1358
+add.period$ -- 62
+call.type$ -- 22
+change.case$ -- 119
+chr.to.int$ -- 22
+cite$ -- 24
+duplicate$ -- 329
+empty$ -- 624
+format.name$ -- 165
+if$ -- 1716
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 15
-newline$ -- 110
-num.names$ -- 69
-pop$ -- 190
+missing$ -- 14
+newline$ -- 105
+num.names$ -- 66
+pop$ -- 180
 preamble$ -- 1
-purify$ -- 172
+purify$ -- 163
 quote$ -- 0
-skip$ -- 334
+skip$ -- 310
 stack$ -- 0
-substring$ -- 381
-swap$ -- 68
-text.length$ -- 14
+substring$ -- 342
+swap$ -- 57
+text.length$ -- 13
 text.prefix$ -- 2
 top$ -- 0
-type$ -- 184
+type$ -- 176
 warning$ -- 2
-while$ -- 81
-width$ -- 24
-write$ -- 274
+while$ -- 75
+width$ -- 23
+write$ -- 260
 (There were 8 error messages)

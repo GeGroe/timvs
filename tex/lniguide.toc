@@ -1,6 +1,6 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Einleitung}{3}
-\contentsline {section}{\numberline {2}Das Virtual Network Embedding Problem}{4}
+\contentsline {section}{\numberline {2}Das Virtual-Network-Embedding-Problem}{4}
 \contentsline {section}{\numberline {3}Sicherheitsaspekte virtueller Netzinfrastrukturen}{7}
 \contentsline {subsection}{\numberline {3.1}Neue Verwundbarkeiten in virtualisierten Umgebungen}{7}
 \contentsline {subsubsection}{\numberline {3.1.1}Technischer Art}{8}
