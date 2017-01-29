@@ -124,7 +124,7 @@ In der Regel ist es üblich, nicht nur einzelne Requests auf ein physisches Syst
 \newline
 % Gv=...
 Die Attributmenge bei den grundlegenden VNE-Algorithmen beschränkt  sich zumeist auf CPU- und Netzwerk-Leistung. 
-Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Attribute. Ein großes Problem bei der Berechnung des optimalen Mappings findet sich bei der Berechnungszeit. Die endliche Beschränkung der Knoten- sowie Link-Ressourcen und die "`on-line nature"' von VNRs stellen zusätzliche Hindernisse dar. Da selbst Lösungen für einfache Anfragen (geringe Anzahl von Knoten und Links), welche wenige Attribute beinhalten, exponentiellen Rechenaufwand benötigen, steigt der Aufwand sowohl mit der Anzahl der abzubildenden Knoten und Links, als auch mit steigender Attributanzahl dementsprechend. Teilweise gilt das Problem als rechnerisch unlösbar, grundsätzlich aber befinden wir uns im Komplexitätsbereich der NP-Vollständigkeit. \cite{SVNE2} Da die Erhöhung der Attributmenge - wie bereits genannt - grundsätzlich nicht positiv zur Laufzeit der existierenden Algorithmen beiträgt, werden wir den Komplexitätsbereich beim Hinzufügen von Sicherheitsanforderungen nicht verlassen. Dennoch gibt es Möglichkeiten, die den Rechenaufwand reduzieren können. Da neben solchen Performace- auch Sicherheitsapekte in den VNE-Algorithmus eingehen sollen, werden nun bekannte Risiken virtueller Netze betrachtet.
+Lokalität, GPU-Leistung und RAM-Menge wären einige weitere mögliche Standard-Attribute. Ein großes Problem bei der Berechnung des optimalen Mappings findet sich bei der Berechnungszeit. Die endliche Beschränkung der Knoten- sowie Link-Ressourcen und die "`on-line nature"' von VNRs stellen zusätzliche Hindernisse dar. Da selbst Lösungen für einfache Anfragen (geringe Anzahl von Knoten und Links), welche wenige Attribute beinhalten, exponentiellen Rechenaufwand benötigen, steigt der Aufwand sowohl mit der Anzahl der abzubildenden Knoten und Links, als auch mit steigender Attributanzahl dementsprechend. Teilweise gilt das Problem als rechnerisch unlösbar, grundsätzlich aber befinden wir uns im Komplexitätsbereich der NP-Vollständigkeit. \cite{SVNE2} Da die Erhöhung der Attributmenge -- wie bereits genannt -- grundsätzlich nicht positiv zur Laufzeit der existierenden Algorithmen beiträgt, werden wir den Komplexitätsbereich beim Hinzufügen von Sicherheitsanforderungen nicht verlassen. Dennoch gibt es Möglichkeiten, die den Rechenaufwand reduzieren können. Da neben solchen Performace- auch Sicherheitsapekte in den VNE-Algorithmus eingehen sollen, werden nun bekannte Risiken virtueller Netze betrachtet.
 
 
 
@@ -334,11 +334,16 @@ Ein weiterer Unterschied zwischen den beiden Ansätzen ist die Herangehensweise 
 
 Das Ziel einer Klassifizierung von Sicherheitsrisiken und der Darstellung zweier SVNE-Algorithmen konnte in dieser Arbeit umgesetzt werden.
 
-\dots
+%War die Klassifizierung sinnvoll/hilfreich?
+Die gewählte Klassifizierung erlaubte in Kapitel \ref{subsec:gefahren_vnerelevant} eine strukturierte Analyse, welchen Risiken bereits im VNE-Prozess begegnet werden kann.
+%In Kapitel \ref{subsec:gefahren_vnerelevant} als VNE-relevant klassifizierte Risiken
+Jene basieren maßgeblich auf Isolationverletzungen bei Nutzung gemeinsamer Ressourcen. Mit dem in Kapitel \ref{subsec:ansatz1} vorgestellten Ansatz konnte ein VNE-Algorithmus dargestellt werden, der im Stande ist solche Risiken über Zuordnung von Knotenleveln zu reduzieren.\\
+Die Komplexität des SVNE-Themengebietes lässt hier keine Angabe einer Richtung zukünftiger Entwicklungen zu. Die Herangehensweise von VNE-Algorithmen sollte sich stets an die Bedürfnisse der Einsatzgebiete anpassen und da Virtualisierung den Einsatzmöglichkeiten kaum Grenzen in den Weg stellt, wird es wohl auch in Zukunft eine Vielzahl verschiedener Algorithmen mit unterschiedlichen Hauptaspekten geben. Die hier gezeigten Algorithmen sind nur zwei von vielen und sollen die Verschiedenartigkeit der möglichen Herangehensweisen verdeutlichen. Eine Verwendung neuronaler Netze oder anderen KI-Elementen wie Machine-Learning ist hierbei nicht auszuschließen.
 
-Die Komplexität des Themengebietes lässt hier keine Angabe einer Richtung zukünftiger Entwicklungen zu. Die Herangehensweise von VNR-Algorithmen sollte sich stets an die Bedürfnisse der Einsatzgebiete anpassen und da Virtualisierung den Einsatzmöglichekeiten kaum Grenzen in den Weg stellt, wird es wohl auch in Zukunft eine Vielzahl verschiedener Algorithmen mit unterschiedlichen Hauptaspekten geben. Die hier gezeigten Algorithmen sind nur zwei von vielen und sollen die Verschiedenartigkeit der möglichen Herangehensweisen verdeutlichen. Eine Verwendung neuronaler Netze oder anderen KI-Elementen wie Machine-Learning ist hierbei nicht auszuschließen.
 
+%Betrachtung von "herkömmlichen" Gefahren im Kontext von Virtualisierung?
 
+%In dieser Arbeit nicht beachtet wurde die Frage, auf welcher Ebene die Virtualisierung stattfindet.  -> neue Gefahren, abhängig davon? 
 %Frage: Auf welcher Ebene wird virtualisiert? Auf IP-Ebene? Was ist dann aber mit IP-Support-Protokollen (ARP)? Oder nicht-IP-Protokollen? Will ich ein Netzwerk virtualisieren, oder nur den IP-Verkehr? Verkapselung führt zu Leistungseinbußen. \cite{cabuk2007towards}
 
 
