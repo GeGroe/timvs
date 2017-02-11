@@ -3,4 +3,9 @@ Mögliche Themen für die Diskussion im Anschluss:
 * Welchen der Sicherheitsrisiken kann mit Ansatz 1, welchen mit Ansatz 2 begegnet werden? 	
 	Effektiv?
 
-* 
+* Welche Kriterien könnte die Entscheidungswahl für die Algorithmen fallen.
+	1. Welchen Alg wähle ich aus?
+	2. Nach welchen Kriterien arbeitet mein Alg.?
+
+
+* Sicherheit ergibt sich nur aus Isolation. Stimmt das? Andere Aspekte? -> ASRL Adress-Space-Layout-Randominsation
