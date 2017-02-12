@@ -1,0 +1,6 @@
+1)Einleitung Miran
+
+2) Virtual Network Embedding
+
+Beim VNE geht es um das Abbilden virtueller Infrastrukturen auf physische Infrastrukturen.
+
