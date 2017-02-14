@@ -1,11 +1,19 @@
 Mögliche Themen für die Diskussion im Anschluss:
+- - - - - - - - - - - - - - - - - - - - - - - - 
 
 * Welchen der Sicherheitsrisiken kann mit Ansatz 1, welchen mit Ansatz 2 begegnet werden? 	
-	Effektiv?
-
-* Welche Kriterien könnte die Entscheidungswahl für die Algorithmen fallen.
-	1. Welchen Alg wähle ich aus?
-	2. Nach welchen Kriterien arbeitet mein Alg.?
+	Effektiv? Effizient?
 
 
-* Sicherheit ergibt sich nur aus Isolation. Stimmt das? Andere Aspekte? -> ASRL Adress-Space-Layout-Randominsation
+
+* Nach welchen Kriterien kann/sollte man sich für einen Algorithmus entscheiden?
+* Nach welchen Kriterien soll der VNE-Algorithmus das Mapping durchführen?
+
+
+
+* "Sicherheit ergibt sich nur aus Isolation." (Habe ich ja fast so dargestellt.) Stimmt das? Andere Aspekte? -> ASRL: Address-Space-Layout-Randomisation als Abhilfe?
+
+
+
+* Ist diese Klassifizierung sinnvoll? Erfüllt sie ihren Zweck? (welchen?)
+* Nach welchen Kritierien hätte man sonst klassifizieren können?
