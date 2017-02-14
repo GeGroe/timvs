@@ -1,6 +1,24 @@
-1)Einleitung Miran
+1)Einleitung [your turn]
 
 2) Virtual Network Embedding
 
-Beim VNE geht es um das Abbilden virtueller Infrastrukturen auf physische Infrastrukturen.
+#Beim VNE geht es um das Abbilden virtueller Infrastrukturen auf physische Infrastrukturen.
 
+Seite 1)
+VNR1.pdf
+Pfeil
+physical_structure2.pdf
+
+Seite 2)
+Menge VNR
+Menge physische_struktur
+
+Abbildungsfunktion
+
+
+3) Sicherheitsaspekte [your turn]
+
+4)
+
+SVNR.pdf
+auxgraph
