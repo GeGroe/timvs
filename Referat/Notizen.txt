@@ -1,0 +1,17 @@
+Notizen
+
+
+VNE:
+    "VNR" erklären
+    Kurz zur Notation (G^S, G^V?)
+    
+Klassifizierung
+    Angriffe gegen Management tools attraktiv
+   
+   
+SVNE:
+    Aussprache des Papers üben :P
+    Welche Eigenschaften umfasst "Node-Level"
+    Was kennzeichnet den Alg? Hauptmerkmale -> gut!
+    
+    Vergleich der beiden Alg?

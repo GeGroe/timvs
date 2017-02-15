@@ -17,3 +17,28 @@ Mˆgliche Themen f¸r die Diskussion im Anschluss:
 
 * Ist diese Klassifizierung sinnvoll? Erf¸llt sie ihren Zweck? (welchen?)
 * Nach welchen Kritierien h‰tte man sonst klassifizieren kˆnnen?
+
+
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+ANTWORTEN:
+
+Wahl des Verfahrens?
+
+Welche Szenarien gibt es? 
+    Telekom -> (Geschichte von Michael) -> einmal virt. dann relativ statisch -> Ansatz 1 geeigneter, da nicht regelm‰ﬂig alles ausgetauscht werden muss. 
+    InP / Webhoster etc. -> Viele neue Request, alte auslaufend -> Ansatz 2. -> Isolation leicht in Vektor integrierbar.
+    
+    
+    
+Mˆgliche Entwicklungsrichtungne
+    1. Sicherheitkonstraints -> es werden mehr. -> Flexibel bleiben. Neue Exploits entgegenwirken
+    2. Performance
+    3. Wie h‰ufig wird der Alg. eingesetzt.
+    4. Berechnungsart -> KI, Machinelearning (Durchschnittliche Lebenszeit, Sicheheitsanforderugen, freizuhaltende Kapazit‰ten, "zukunftsf‰higkeit"[Erfahrungsgem‰ﬂ kommt bei solchen Kunden nach zwei Wochen ein Kapazit‰tsupgradeanfrage], Wiederkehrende Hochlastsituationen)
+    
+    
+    
+    
