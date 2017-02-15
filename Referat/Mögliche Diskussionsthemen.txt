@@ -12,6 +12,8 @@ Mögliche Themen für die Diskussion im Anschluss:
 
 
 * "Sicherheit ergibt sich nur aus Isolation." (Habe ich ja fast so dargestellt.) Stimmt das? Andere Aspekte? -> ASRL: Address-Space-Layout-Randomisation als Abhilfe?
+    Angriffsweg des Users nicht betroffen.
+    ASLR als Alternative?
 
 
 
@@ -41,4 +43,6 @@ Mögliche Entwicklungsrichtungne
     
     
     
-    
+* Welchen der Sicherheitsrisiken kann mit Ansatz 1, welchen mit Ansatz 2 begegnet werden? 	
+    Ansatz1: Isolationsverletzungen
+    Ansatz 2: dies auch + x.
